@@ -3,6 +3,9 @@ import re
 import yaml
 import regex
 
+# smaller and non repeating data set
+# raw_log_by_type
+
 
 def remove_control_characters(string):
     return regex.sub(r'\p{C}', '', string)
