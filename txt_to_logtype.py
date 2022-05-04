@@ -29,18 +29,31 @@ def load_func_parse_data(path):
 
 if __name__ == '__main__':
 
+    # load replace yaml
+    replace_yaml_file = open('txt_replace.yaml', 'r', encoding='utf-8')
+    model_list_file = open('model_list.yaml', 'r', encoding='utf-8')
+    replace_yaml = yaml.load(replace_yaml_file, yaml.CFullLoader)
+    model_list = yaml.load(model_list_file, yaml.CFullLoader)
+
+    INPUT_DATA_TYPE = 'raw_log_by_type'
     # get files list
     logfloder_path = './TracelineLog/'
     logfiles = []
-    for model_name in os.listdir(logfloder_path):
-        for report_ID in os.listdir(logfloder_path + model_name):
-            if os.path.exists(logfloder_path + model_name + '/' + report_ID + '/syslog.log'):
-                logfiles.append(logfloder_path + model_name +
-                                '/' + report_ID + '/syslog_replaced.log')
+    # TracelineLog \ model_name \ report_ID
+    if INPUT_DATA_TYPE == 'traceline_log':
+        for model_name in os.listdir(logfloder_path):
+            for report_ID in os.listdir(logfloder_path + model_name):
+                if os.path.exists(logfloder_path + model_name + '/' + report_ID + '/syslog.log'):
+                    logfiles.append(logfloder_path + model_name +
+                                    '/' + report_ID + '/syslog_replaced.log')
+
+    # raw_log_by_type.txt
+    # smaller and non repeating data set
+    if INPUT_DATA_TYPE == 'raw_log_by_type':
+        log_paths = ['raw_log_by_type.txt']
 
     log_type = {}
-    max_len = 0
-    max_len_str = ''
+
     for log_path in logfiles:
 
         log_lines = open(log_path, 'r', encoding='utf-8',
