@@ -15,6 +15,7 @@ class log():
 
 
 def remove_control_characters(string):
+    # remove \n \t [ ] ( )....
     return regex.sub(r'[\p{C}\[\]\(\)]', '', string)
 
 
@@ -46,20 +47,19 @@ if __name__ == '__main__':
                          errors='ignore').readlines()
         for line in log_lines:
             line = remove_control_characters(line)
+            # split words by ': ,'
             splited_line = re.split('[: ,]+', line)
-            if len(splited_line) > max_len:
-                max_len = len(splited_line)
-                max_len_str = splited_line
+
+            # store log by word to dict recursively
             temp = log_type
             for i in range(len(splited_line)):
                 if splited_line[i] not in temp.keys():
                     temp[splited_line[i]] = {}
                 temp = temp[splited_line[i]]
-
+    # sort by char
     log_type = dict(sorted(log_type.items(), key=lambda x: x[0], reverse=True))
-    print(max_len)
-    print(max_len_str)
-    # write result to file
+
+    # write result to yaml file
     with open('logtype.yaml', 'w', encoding='utf-8') as file:
         yaml.dump(log_type, file, Dumper=yaml.SafeDumper,
                   encoding='utf-8', sort_keys=False, indent=4, width=1000)

@@ -22,12 +22,20 @@ if __name__ == '__main__':
     replace_yaml = yaml.load(replace_yaml_file, yaml.CFullLoader)
     model_list = yaml.load(model_list_file, yaml.CFullLoader)
 
+    INPUT_DATA_TYPE = 'raw_log_by_type'
+
     # TracelineLog \ model_name \ report_ID
-    for model_name in os.listdir(logfloder_path):
-        for report_ID in os.listdir(logfloder_path + model_name):
-            if os.path.exists(logfloder_path + model_name + '/' + report_ID + '/syslog.log'):
-                log_paths.append(logfloder_path + model_name +
-                                 '/' + report_ID)
+    if INPUT_DATA_TYPE == 'traceline_log':
+        for model_name in os.listdir(logfloder_path):
+            for report_ID in os.listdir(logfloder_path + model_name):
+                if os.path.exists(logfloder_path + model_name + '/' + report_ID + '/syslog.log'):
+                    log_paths.append(logfloder_path + model_name +
+                                     '/' + report_ID)
+
+    # raw_log_by_type.txt
+    # smaller and non repeating data set
+    if INPUT_DATA_TYPE == 'raw_log_by_type':
+        log_paths = ['raw_log_by_type.txt']
 
     for log_path in log_paths:
         print(log_path)
