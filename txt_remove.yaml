@@ -1,0 +1,34 @@
+Noise ^[[:
+  'regex': '(\^\[{2}[0-9]{0,2}(\;[0-9]{0,2})*m)'
+  'replace': ''
+Noise %M:
+  'regex': '((?<=[^A-Za-z0-9])|^)((\^M[0-9]+%%)+)((?=[^A-Za-z0-9])|$)'
+  'replace': ''
+Noise ^M:
+  'regex': '\^M'
+  'replace': ''
+
+USELESS_CHAR:
+  #                     in yaml ' -> ''
+  'regex': '[!\[\];\(\)=,<>#\*\''"]+'
+  'replace': ' '
+
+LONELY_MINUS:
+  'regex': ' -+ '
+  'replace': ' '
+
+END_OF_LINE:
+  'regex': '\.($| )'
+  'replace': ''
+
+COLON_WITH_SPACE:
+  'regex': '(: )|( :)'
+  'replace': ' '
+
+ARROW:
+  'regex': '[=-]+>'
+  'replace': ' '
+
+TO_MANY_SPACE:
+  'regex': '  +'
+  'replace': ' '

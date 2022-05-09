@@ -1,132 +1,148 @@
-- xt8pro
-- xt8_v2
-- xt12
-- xd4pro
-- vzw-ac1300
-- tuf-ax5400
-- tuf-ax3000_v2
-- tuf-ax3000
-- tuf-ac1750
-- rt-n800hp
-- rt-n66u
-- rt-n56ub2
-- rt-n56ub1
-- rt-n54u
-- rt-n53
-- rt-n300
-- rt-n19
-- rt-n18u
-- rt-n16
-- rt-n15u
-- rt-n14uhp
-- rt-n14u
-- rt-n12vp
-- rt-n12hp_b1
-- rt-n12hp
-- rt-n12d1
-- rt-n12c1
-- rt-n12b1
-- rt-n12
-- rt-n11p_b1
-- rt-n11p
-- rt-n10u
-- rt-n10pv2
-- rt-n10p_v3
-- rt-n10p
-- rt-n10d1
-- rt-n10+
-- rt-axe95q
-- rt-axe7800
-- ZenWiFi_XT9
-- ZenWiFi_XT8
-- ZenWiFi_XD6S
-- ZenWiFi_XD4
-- ZenWiFi_Pro_XT12
-- ZenWiFi_ET8
-- ZenWiFi_CT8
-- RT-AX89X
-- RT-AX3000
-- RT-AC1300GPLUS
-- RP-AC1900
-- Lyra_Trio
-- rt-ax95q
-- rt-ax92u
-- rt-ax89u
-- rt-ax88u
-- rt-ax86u
-- rt-ax82
-- rt-ax68u
-- rt-ax58u
-- rt-ax58u
-- rt-ax57q
-- rt-ax56u
-- rt-ax55
-- rt-ax54
-- rt-ax53u
-- rt-ax3000
-- rt-ad7200
-- rt-acrh26
-- rt-acrh18
-- rt-ac95u
-- rt-ac88u
-- rt-ac87u
-- rt-ac86u
-- rt-ac85u
-- rt-ac85p
-- rt-ac82u
-- rt-ac68u
-- rt-ac68a
-- rt-ac66u
-- rt-ac65u
-- rt-ac59
-- rt-ac58u
-- rt-ac56u
-- rt-ac56s
-- rt-ac55uhp
-- rt-ac55u
-- rt-ac54u
-- rt-ac5300
-- rt-ac53
-- rt-ac52u
-- rt-ac51u+
-- rt-ac51u
-- rt-ac3200
-- rt-ac3100
-- rt-ac1200
-- rp-ax58
-- rp-ax56
-- rp-ac92
-- rp-ac87
-- rp-ac68u
-- rp-ac66
-- rp-ac55
-- rp-ac53
-- rp-ac51
-- pl-ax56_xp4
-- map-ac2200
-- map-ac1750
-- map-ac1300
-- gt10
-- gt-axy16000
-- gt-axe16000
-- gt-axe11000
-- gt-ax6000n
-- gt-ax6000
-- gt-ax11000
-- gt-ac9600
-- gt-ac5300
-- gt-ac2900
-- gs-ax5400
-- gs-ax3000
-- etj
-- et8pro
-- et12
-- dsl-ax82u
-- dsl-ac68u
-- brt-ac828
-- bluecave
-- 4g-ax56
-- 4g-ac86u
-- 4g-ac68u
-- 4g-ac55u
-- 4g-ac53u
+4g-ac53u
+4g-ac55u
+4g-ac68u
+4g-ac86u
+4g-ax56
+bluecave
+brt-ac828
+CT-AC2900
+dsl-ac68u
+dsl-ax82u
+ET12
+et8pro
+etj
+GS-AX3000
+GS-AX5400
+GT-AC2900
+GT-AC5300
+gt-ac9600
+GT-AX11000
+GT-AX11000_BO4
+GT-AX6000
+gt-ax6000n
+GT-AXE11000
+gt-axe16000
+gt-axy16000
+gt10
+Lyra
+MAP-AC1300
+MAP-AC1750
+MAP-AC2200
+PL-AX56_XP4
+RP-AC1900
+rp-ac51
+rp-ac53
+rp-ac55
+rp-ac66
+rp-ac68u
+rp-ac87
+rp-ac92
+rp-ax56
+rp-ax58
+rt-ac1200
+RT-AC1300G_PLUS_V3
+RT-AC1300GPLUS
+RT-AC1900
+RT-AC1900P
+RT-AC2900
+RT-AC2900_OG
+RT-AC3100
+rt-ac3200
+rt-ac51u
+rt-ac51u+
+rt-ac52u
+rt-ac53
+RT-AC5300
+rt-ac54u
+rt-ac55u
+rt-ac56s
+rt-ac56u
+RT-AC57U_V3
+rt-ac58u
+RT-AC58U_V3
+rt-ac59
+RT-AC59_CD6N
+RT-AC59_CD6R
+RT-AC59U_V2
+rt-ac65u
+rt-ac66u
+RT-AC68A
+RT-AC68P
+RT-AC68R
+RT-AC68RW
+RT-AC68U
+RT-AC68U_AC1900
+RT-AC68U_AC1900P
+RT-AC68U_V4
+RT-AC68U_WHITE
+RT-AC68UF
+RT-AC68W
+rt-ac82u
+rt-ac85p
+rt-ac85u
+RT-AC86U
+rt-ac87u
+RT-AC88U
+RT-AC95U
+RT-ACRH12_V2
+rt-acrh18
+rt-acrh26
+rt-ad7200
+RT-AX1800_Plus
+RT-AX3000
+rt-ax53u
+rt-ax54
+RT-AX55
+RT-AX56_XD4
+RT-AX56U
+RT-AX56U_V2
+RT-AX5700
+rt-ax57q
+RT-AX58U
+RT-AX58U_V2
+RT-AX68U
+rt-ax82
+RT-AX82_XD6
+RT-AX82U
+RT-AX86U
+RT-AX88U
+RT-AX89U
+RT-AX89X
+RT-AX92U
+RT-AX95Q
+rt-axe7800
+rt-axe95q
+rt-n10
+rt-n11
+rt-n12
+rt-n14
+rt-n15
+rt-n16
+rt-n18
+rt-n19
+rt-n300
+rt-n53
+rt-n54
+rt-n56
+rt-n66u
+rt-n800hp
+tuf-ac1750
+TUF-AX3000
+TUF-AX5400
+vzw-ac1300
+xd4pro
+XT12
+xt8_v2
+XT8PRO
+ZenWiFi_CD6N
+ZenWiFi_CD6R
+ZenWiFi_CT8
+ZenWiFi_ET8
+ZenWiFi_Pro_ET12
+ZenWiFi_Pro_XT12
+ZenWiFi_XD4
+ZenWiFi_XD6
+ZenWiFi_XD6S
+ZenWiFi_XP4
+ZenWiFi_XT8
+ZenWiFi_XT9
