@@ -1,0 +1,28 @@
+=============================
+eth[-9]+ (Driver info).*$
+=============================
+---------------------------------------------
+(WLVERSION).*$
+---------------------------------------------
+	.+ version (.*)$|version
+---------------------------------------------
+(REVINFO).*$
+---------------------------------------------
+	vendorid (.*)$
+	deviceid (.*)$
+	radiorev (.*)$
+	chipnum (.*)$
+	chiprev (.*)$
+	chippackage (.*)$
+	corerev (.*)$
+	boardid (.*)$
+	boardvendor (.*)$
+	boardrev (.*)$
+	driverrev (.*)$
+	ucoderev (.*)$
+	bus (.*)$
+	phytype (.*)$
+	phyrev (.*)$
+	anarev (.*)$
+	nvramrev (.*)$
+	otpflag (.*)$
