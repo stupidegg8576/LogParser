@@ -1,5 +1,5 @@
 =============================
-eth[-9]+ (Driver info).*$
+eth[0-9]+ Driver info$|Driver_info
 =============================
 ---------------------------------------------
 (WLVERSION).*$
@@ -26,3 +26,30 @@ eth[-9]+ (Driver info).*$
 	anarev (.*)$
 	nvramrev (.*)$
 	otpflag (.*)$
+
+=============================================
+WL Statistics for eth|WL Statistics,
+=============================================
+---------------------------------------------
+(STATUS): wl -i eth. status
+---------------------------------------------
+	SSID: "(.+)"|SSID
+	Mode: (.+)	RSSI: (.+) dBm	SNR: (.+) dB	noise: (-?.+) dBm	Channel: (.+)$|Mode, RSSI, SNR, noise, Channel  
+	BSSID: (.+)	Capability: (.+)|BSSID, Capability
+	Beacon Interval: (.+) msecs|Beacon_Interval
+	Supported Rates: (.+)|Supported Rates
+	HE Capable:
+		Chanspec: (.+)GHz channel (.+)|Chanspec, channel
+		Primary channel: (.+)|Primary_channel
+		HT Capabilities: (.+)|HT_Capabilities
+		Supported HT MCS : (.+)|HT_MCS
+		Supported VHT MCS:
+			NSS1 Tx: (.+)        Rx: (.+)|VHT_MCS_NSS1_Tx, VHT_MCS_NSS1_Rx    
+			NSS2 Tx: (.+)        Rx: (.+)|VHT_MCS_NSS2_Tx, VHT_MCS_NSS2_Rx      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: (.+)        Rx: (.+)|HE_MCS_20/40/80_NSS1_Tx, HE_MCS_20/40/80_NSS1_Rx    
+			NSS2 Tx: (.+)        Rx: (.+)|HE_MCS_20/40/80_NSS2_Tx, HE_MCS_20/40/80_NSS2_Rx
+		    160 MHz:
+			NSS1 Tx: (.+)        Rx: (.+)|HE_MCS_160_NSS1_Tx, HE_MCS_160_NSS1_Rx
+			NSS2 Tx: (.+)        Rx: (.+)|HE_MCS_160_NSS2_Tx, HE_MCS_160_NSS2_Rx
