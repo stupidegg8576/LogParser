@@ -1,6 +1,8 @@
 import regex
 import os
 import json
+import getopt
+import sys
 
 
 def remove_control_characters_lines(lines):
@@ -80,14 +82,37 @@ def get_variable_name(line: str):
 
     # return a empty string
     else:
-        return []
+        return ['Something wrong in searching variable name']
 
 
 if __name__ == '__main__':
 
-    with open('Traceline_driver_stat_parser/format.txt', 'r', encoding='utf-8', errors='ignore') as format_file:
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "i:o:f:", [
+                                   "input_file_path=", "output_file_path=", "format.txt="])
+    except getopt.GetoptError:
+        sys.exit(2)
+    for i in opts:
+        if len(i) != 2:
+            print("Something wrong with opts")
+            raise getopt.GetoptError
+        if i[0] == '-i':
+            # example.xlsx:sheet tag
+            # sheet tag will be using at separate same sheet name from different file
+            # input_file_list.append(i[1].split(':'))
+            input_file_path = i[1]
+        elif i[0] == '-o':
+            output_file_path = i[1]
+        elif i[0] == '-f':
+            format_file_path = i[1]
+
+    input_file_path = 'Traceline_driver_stat_parser/WlGetDriverStats_eth4.log'
+    output_file_path = 'Traceline_driver_stat_parser/test.json'
+    format_file_path = 'Traceline_driver_stat_parser/format.txt'
+
+    with open(format_file_path, 'r', encoding='utf-8', errors='ignore') as format_file:
         format_lines = remove_control_characters_lines(format_file.readlines())
-    with open('Traceline_driver_stat_parser/WlGetDriverStats_eth4.log', 'r', encoding='utf-8', errors='ignore') as log_file:
+    with open(input_file_path, 'r', encoding='utf-8', errors='ignore') as log_file:
         log_lines = remove_control_characters_lines(log_file.readlines())
     command_set = 'Something wrong'
     command_name = 'Something wrong'
@@ -131,6 +156,7 @@ if __name__ == '__main__':
             elif is_command:
                 format_start, format_end = find_command(
                     log_lines[log_count], format_lines)
+                format_count = format_start
                 if format_start != -1:
                     command_name = get_variable_name(
                         format_lines[format_start])[0]
@@ -143,7 +169,7 @@ if __name__ == '__main__':
             # find a matched format line
             # and store value to result[command_set][command_name]
             else:
-                format_count = format_start
+
                 match = regex.match(
                     format_lines[format_count], log_lines[log_count])
                 # if not matched, move to next format line
@@ -171,5 +197,5 @@ if __name__ == '__main__':
             for func in result[command_set][command]:
                 print('\t\t' + func + ' : ' +
                       result[command_set][command][func])
-    with open('test.json', 'w', encoding='utf-8', errors='ignore') as output_file:
+    with open(output_file_path, 'w', encoding='utf-8', errors='ignore') as output_file:
         output_file.write(json.dumps(result, skipkeys=False))
