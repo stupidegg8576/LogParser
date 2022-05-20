@@ -1,0 +1,2296 @@
+=============================
+eth4 Driver info
+=============================
+---------------------------------------------
+WLVERSION: wl -i eth4 ver
+---------------------------------------------
+	Broadcom BCA: 17.10 RC188.55
+	wl0: Mar 23 2022 16:59:22 version 17.10.188.55 (r806225)
+---------------------------------------------
+REVINFO: wl -i eth4 revinfo
+---------------------------------------------
+	vendorid 0x14e4
+	deviceid 0x6018
+	radiorev 0x150e6
+	chipnum 0x6756
+	chiprev 0x1
+	chippackage 0x0
+	corerev 130.2
+	boardid 0x8ad
+	boardvendor 0x14e4
+	boardrev P104
+	driverrev 17.10.188.55
+	ucoderev 1659.306
+	bus 0x8
+	phytype 0xb
+	phyrev 131.1
+	anarev 0x0
+	nvramrev 769757
+	otpflag 0x1
+---------------------------------------------
+DHDVERSION: dhd -i eth4 version
+---------------------------------------------
+dhd: dhd_check: Operation not permitted
+---------------------------------------------
+WLCAP: wl -i eth4 cap
+---------------------------------------------
+	ap sta wet mac_spoof led wme 802.11d 802.11h rm cqa cac mbss16 ampdu ampdu_tx ampdu_rx amsdurx amsdutx wmf rxchain_pwrsave radio_pwrsave wds dwds dma-bulk-pktlist vht-prop-rates multi-user-beamformer single-user-beamformer multi-user-beamformee single-user-beamformee 160 dfrts stbc-tx stbc-rx-1ss pspretend probresp_mac_filter mfp wnm bsstrans scanmac cptlv-4 ve fbtoverds fbt_adpt ifver spp lpr_scan bkoff_evt awd_data_info monitor rtap cevent traffic_thresh 11ax stamon csimon cfp sae slaveradar 
+---------------------------------------------
+UPTIME (sec): [System uptime] [sum of how much time each core spent idle] 
+---------------------------------------------
+	81300.86 318771.48
+=================================
+Statistics for eth4 first run
+=================================
+=============================================
+WL Statistics for eth4
+=============================================
+---------------------------------------------
+STATUS: wl -i eth4 status
+---------------------------------------------
+	SSID: "Sprite-AX7800"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -67 dBm	Channel: 1
+	BSSID: 04:42:1A:52:7B:90	Capability: ESS ShortSlot RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
+	HE Capable:
+		Chanspec: 2.4GHz channel 1 20MHz (0x1001)
+		Primary channel: 1
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-15
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x8d (55 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth4 assoclist
+---------------------------------------------
+---------------------------------------------
+AUTH STA LIST: wl -i eth4 authe_sta_list
+---------------------------------------------
+---------------------------------------------
+SMFSTATS: wl -i eth4 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 524
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 494
+			Status_code 30 Count: 17
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 6 Count: 1
+			Reason_code 7 Count: 260
+			Reason_code 15 Count: 460
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth4 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth4 5g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+2G RATE: wl -i eth4 2g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+NRATE: wl -i eth4 nrate
+---------------------------------------------
+	legacy rate 1 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth4 rate
+---------------------------------------------
+	1 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth4 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth4 spect
+---------------------------------------------
+	802.11d mode
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth4 phy_ed_thresh
+---------------------------------------------
+	-43
+---------------------------------------------
+OPER MODE: wl -i eth4 oper_mode
+---------------------------------------------
+	16 (0x10)
+---------------------------------------------
+CHANIMSTATS: wl -i eth4 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	1	 4	0	19	13	42	0	11	0	0	2617	27	-67	15	76	81001216
+---------------------------------------------
+INTERFERENCE: wl -i eth4 interference
+---------------------------------------------
+	
+	Mode = 361. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 8:  Preemption is enabled
+		bit-mask 32: Low Power Detect Preemption
+		bit-mask 64: HW OBSS Detection + Mitigation
+		bit-mask 256: MCLIP ACI mitigation enabled 
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth4 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth4 bs_data -noreset
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+PKTQSTATS: wl -i eth4 pktq_stats
+---------------------------------------------
+no available addresses in assoclist for automatic operation
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth4 rx_report
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth4 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth4 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth4 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth4 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth4 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth4 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth4 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth4 dump txbf
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MUTX DUMP: wl -i eth4 dump mutx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MURX DUMP: wl -i eth4 dump murx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MSCHED DUMP: wl -i eth4 dump msched
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+UMSCHED DUMP: wl -i eth4 dump umsched
+---------------------------------------------
+	
+---------------------------------------------
+TWT DUMP: wl -i eth4 dump twt
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+D11CNTS DUMP: wl -i eth4 dump d11cnts
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WME COUNTERS: wl -i eth4 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 351818 bytes: 112610542 failed frames: 2090 failed bytes: 93964
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 1 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 1897 bytes: 229537 failed frames: 10 failed bytes: 580
+	       rx frames: 1866 bytes: 263106 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth4 if_counters
+---------------------------------------------
+	txframe 353715 txbyte 112840079 txerror 14880 rxframe 1866 rxbyte 263106 rxerror 0 
+	txnobuf 1 txfail 14004 
+	d11_txfrag 374008 d11_txmulti 353380 d11_txretry 11581 d11_txretrie 7297 
+	d11_txfrmsnt 374013 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+	txucastpkts 0 txucastbytes 0 txmcastpkts 0 txmcastbytes 0 
+	txbcastpkts 0 txbcastbytes 0 txaggrpktcnt 0 
+	txnoack 0 txretransfail 0 txretrans 111746 txdiscard 0 
+	rxucastpkts 0 rxucastbytes 0 rxmcastpkts 0 rxmcastbytes 0 
+	rxbcastpkts 0 rxbcastbytes 0 
+	rx_decrypt_failures 0 rx_mic_errors 0 rx_replay_failures 0 rx_dup 0 
+	rxdiscard 0 rxbadprotopkts 0 rxunknownprotopkts 0 
+---------------------------------------------
+COUNTERS: wl -i eth4 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 0
+	reinitreason_counts: 
+	reinit 0 reset 13 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 353715 txbyte 112840079 txretrans 111746 txlost 0 txfail 14004 txchanrej 581 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 793613 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 1866 rxbyte 263106 rxerror 1 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 1 txnoassoc 1136 txchit 0 txcmiss 351818 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 2012 txexptime 1 
+	d11_txfrag 374008 d11_txmulti 353380 d11_txbcast 0 d11_txretry 11581 d11_txretrie 7297 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 125750 d11_txfrmsnt 374013 
+	rxdropped 0 rxcrc 2113198 rxnobuf 0 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 211330 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 1897 rxbadsrcmac 1 rxrtry 310421 
+	d11_rxfrag 5215988 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 5213499 rxbadda 0 rxfilter 555 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 1967 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 0 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 449 txmpdu_stbc 0 rxmpdu_stbc 449 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 5215989 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 484 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 511 txreassocrsp 0 
+	txauth 535 txdeauth 721 txprobereq 2184 txprobersp 30868 txaction 147 
+	rxassocreq 514 rxreassocreq 0 rxdisassoc 2 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 537 rxdeauth 73 rxprobereq 41230 rxprobersp 468941 rxaction 1824 
+	txallfrm 1296370 txbcnfrm 785475 txrtsfrm 0 txctsfrm 1236 txackfrm 9806 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 146492 rxrsptmout 123392 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 86.0% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 12752676 rxbadplcp 4638771 rxcrsglitch 147988605 rxtoolate 179934 rxnodelim 852260 
+	rxdrop20s 0 bphy_badplcp 166597 bphy_rxcrsglitch 48181966 
+	rxbadfcs 2113198 rxfrmtoolong 103 rxfrmtooshrt 15016 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 17 pmqovfl 0 
+	rxctlucast 21821 rxrtsucast 1187 rxctsucast 0 rxackucast 20634 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 2416 rxmgucastmbss 7390 
+	rxbeaconobss 4700170 rxdtucastobss 0 rxdtocast 301395 rxmgocast 493361 
+	rxctlocast 1074594 rxrtsocast 249885 rxctsocast 251846 
+	rxctlmcast 212385 rxdtmcast 1097191 rxmgmcast 4741126 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 70143 m2vmsg 0 v2mmsg 0 
+	mboxout 428708 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth4 memuse
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+CHANNEL INFO: wl -i eth4 chan_info
+---------------------------------------------
+	Channel 1	2G Band
+	Channel 2	2G Band
+	Channel 3	2G Band
+	Channel 4	2G Band
+	Channel 5	2G Band
+	Channel 6	2G Band
+	Channel 7	2G Band
+	Channel 8	2G Band
+	Channel 9	2G Band
+	Channel 10	2G Band
+	Channel 11	2G Band
+	Channel 12	2G Band
+	Channel 13	2G Band
+---------------------------------------------
+DFS STATUS: wl -i eth4 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 1
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 1 (0x1001), chanspec last cleared: none, sub type: 0x00
+---------------------------------------------
+NOISE: wl -i eth4 noise
+---------------------------------------------
+	-67
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth4 phy_tempsense
+---------------------------------------------
+	56 (0x38)
+---------------------------------------------
+BAND: wl -i eth4 band
+---------------------------------------------
+	b
+---------------------------------------------
+SCAN RESULTS: wl -i eth4 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth4 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth4 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth4 dump ratelinkmem
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth4 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0x1001):	18.25  18.00  
+---------------------------------------------
+CEVENT: ceventc -i eth4 dump
+---------------------------------------------
+	1648196613549  196613549	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648196613550  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648196613549  -1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648196613566  17	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648196613566  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648196613566  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648196613574  8	eth4  04:42:1A:52:7B:41 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648196613574  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196613575  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196613577  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196613583  6	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196613583  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196613583  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196614576  993	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196614577  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196614579  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196614624  45	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196614624  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196614624  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196615578  954	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196615579  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196615587  8	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196615591  4	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196615592  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196615592  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196616579  987	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196616580  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196616603  23	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196616664  61	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196616665  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196616665  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196617583  918	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196617587  4	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196618388  801	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196637987  19599	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648196637987  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648196637987  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648196638071  84	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648196638071  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648196638071  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648196638078  7	eth4  04:42:1A:52:7B:41 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648196638077  -1	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196638078  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196638084  6	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196638121  37	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196638121  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196638121  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196639079  958	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196639082  3	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196639098  16	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196639166  68	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196639167  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196639167  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196640080  913	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196640081  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196640094  13	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196640117  23	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196640118  1	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196640118  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196641081  963	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196641082  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196641087  5	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196641095  8	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196641096  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196641096  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196642084  988	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196642095  11	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196642966  871	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195508246  -1134720	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195508373  127	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195508451  78	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648195508458  7	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195600155  91697	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648195600156  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648195600156  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648195600166  10	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648195600166  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648195600166  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648195600168  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648195600169  1	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195600171  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195600173  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195600375  202	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195600375  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195600375  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195601171  796	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195601172  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195601180  8	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195601190  10	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195601191  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195601191  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195602172  981	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195602173  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195602175  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195602194  19	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195602194  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195602194  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195603174  980	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195603175  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195603192  17	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195603220  28	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195603221  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195603221  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195604176  955	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648195604183  7	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195604628  445	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195604667  39	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648195604675  8	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195702261  97586	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648195702261  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648195702261  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648195702431  170	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648195702431  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648195702431  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648195702435  4	eth4  04:42:1A:52:7B:41 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648195702438  3	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195702440  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195702446  6	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195702452  6	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195702453  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195702453  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195703440  987	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195703441  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195703456  15	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195703468  12	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195703469  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195703469  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195704441  972	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195704442  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195704445  3	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195704450  5	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195704450  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195704450  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195705442  992	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648195705443  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648195705522  79	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648195705526  4	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648195705526  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648195705526  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648195706444  918	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648195706451  7	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195707030  579	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648195707092  62	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648195707097  5	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	-- 	E_DEAUTH/5
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+CPU Stats
+=================================
+/usr/sbin/WlGetDriverStats.sh: line 442: mpstat: not found
+=================================
+Process status
+=================================
+ps: invalid option -- 'a'
+BusyBox v1.24.1 (2022-03-23 16:30:48 CST) multi-call binary.
+
+Usage: ps 
+
+Show list of processes
+
+	w	Wide output
+	T	Show threads
+  PID USER       VSZ STAT COMMAND
+    1 admin    14384 S    /sbin/init
+    2 admin        0 SW   [kthreadd]
+    3 admin        0 IW<  [rcu_gp]
+    4 admin        0 IW<  [rcu_par_gp]
+    6 admin        0 IW<  [kworker/0:0H-kb]
+    8 admin        0 IW<  [mm_percpu_wq]
+    9 admin        0 SW   [ksoftirqd/0]
+   10 admin        0 IW   [rcu_preempt]
+   11 admin        0 IW   [rcu_sched]
+   12 admin        0 IW   [rcu_bh]
+   13 admin        0 SW   [migration/0]
+   14 admin        0 SW   [cpuhp/0]
+   15 admin        0 SW   [cpuhp/1]
+   16 admin        0 SW   [migration/1]
+   17 admin        0 SW   [ksoftirqd/1]
+   19 admin        0 IW<  [kworker/1:0H-kb]
+   20 admin        0 SW   [cpuhp/2]
+   21 admin        0 SW   [migration/2]
+   22 admin        0 SW   [ksoftirqd/2]
+   24 admin        0 IW<  [kworker/2:0H-kb]
+   25 admin        0 SW   [cpuhp/3]
+   26 admin        0 SW   [migration/3]
+   27 admin        0 SW   [ksoftirqd/3]
+   29 admin        0 IW<  [kworker/3:0H-ev]
+   30 admin        0 SW   [kdevtmpfs]
+   31 admin        0 SW   [rcu_tasks_kthre]
+   35 admin        0 SW   [oom_reaper]
+   36 admin        0 IW<  [writeback]
+   37 admin        0 IW<  [crypto]
+   38 admin        0 IW<  [kblockd]
+   39 admin        0 SW   [skb_free_task]
+   40 admin        0 SW   [watchdogd]
+   41 admin        0 IW<  [mptcp_wq]
+   48 admin        0 SW   [kswapd0]
+   81 admin        0 SW   [hwrng]
+   83 admin        0 SW   [spi1]
+   84 admin        0 SW   [irq/61-mmc0]
+   86 admin        0 IW<  [ipv6_addrconf]
+   87 admin        0 SW   [ubi_bgt0d]
+   88 admin        0 IW<  [kworker/0:1H-kb]
+   89 admin        0 IW<  [kworker/1:1H-kb]
+   91 admin        0 IW<  [kworker/2:1H-kb]
+  182 admin        0 SW   [ubifs_bgt0_10]
+  198 admin        0 SW   [ubifs_bgt0_11]
+  228 admin        0 SW   [ubifs_bgt0_13]
+  354 admin        0 SW   [bpm_monitor]
+  360 admin        0 SW   [fc_evt]
+  361 admin        0 SW   [fc_timer]
+  362 admin        0 SW   [bcmFlwStatsTask]
+  366 admin        0 SW   [bcm_archer_us]
+  368 admin        0 SW   [bcm_archer_wlan]
+  372 admin        0 SW   [bcmsw_rx]
+  373 admin        0 SW   [bcmsw_recycle]
+  374 admin        0 SW   [enet-kthrd]
+  381 admin        0 SW   [pdc_rx]
+  477 admin     1596 S    {wdtctl} wdtd
+  479 admin     1740 S    hotplug2 --persistent --no-coldplug
+  531 admin     2040 S    /usr/sbin/envrams
+  630 admin        0 IW<  [kworker/3:1H-ev]
+  689 admin        0 IW<  [cfg80211]
+  760 admin        0 SW   [wl0-kthrd]
+  761 admin        0 SW   [bcm_awl_xfer_0]
+  768 admin        0 SW   [wl1-kthrd]
+  769 admin        0 SW   [bcm_awl_xfer_1]
+  833 admin        0 SW   [dhd_watchdog_th]
+  834 admin        0 SW   [bcm_awl_xfer_2]
+  836 admin        0 SW   [archer_dhd_2]
+ 1002 admin    11884 S    /sbin/wanduck
+ 1044 admin     3172 S    avahi-daemon: running [ZenWiFi_XT9-7B90.local]
+ 1093 admin     2976 S    /bin/eapd
+ 1129 admin     7428 S    hostapd -B /tmp/wl0_hapd.conf
+ 1165 admin     7428 S    hostapd -B /tmp/wl1_hapd.conf
+ 1212 admin     7428 S    hostapd -B /tmp/wl2_hapd.conf
+ 1220 admin     4668 S    /usr/sbin/wlc_nt
+ 1221 admin     8796 S    wps_pbcd
+ 1224 admin     4664 S    /usr/sbin/wlc_monitor
+ 1241 admin     6076 S    /usr/sbin/bsd
+ 1250 admin     2972 S    /bin/ceventd
+ 1319 admin     4936 S    /usr/sbin/wlceventd
+ 1323 admin     2948 S    /usr/sbin/debug_monitor /data
+ 1364 admin    13108 S    networkmap
+ 1388 admin    18272 S    conn_diag
+ 1403 admin    11884 S    amas_ssd_cd
+ 1532 admin    14688 S    cfg_server
+ 1590 admin    11884 S    console
+ 1702 admin        0 IW   [kworker/3:1-mm_]
+ 1723 admin    11884 S    /sbin/PS_pod
+ 1736 admin        0 IW   [kworker/3:2]
+ 1820 admin     3272 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 1824 nobody    3396 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 2465 admin     2012 S    /usr/sbin/jitterentropy-rngd -p /var/run/jitterentro
+ 2466 admin    11140 S    asd
+ 2471 admin    13004 S    nt_monitor
+ 2472 admin     5680 S    protect_srv
+ 2473 admin    13936 S    /sbin/netool
+ 2483 admin    13236 S    nt_center
+ 2518 admin    11884 S    wpsaide
+ 2522 admin     6884 S    /usr/sbin/awsiot
+ 2533 admin     4872 S    nt_actMail
+ 2573 admin     3088 S    crond
+ 2575 admin     6600 S    /usr/sbin/infosvr br0
+ 2579 admin    12868 S    sysstate
+ 2580 admin    14120 S    ahs
+ 2581 admin    11884 S    watchdog
+ 2582 admin    11884 S    check_watchdog
+ 2583 admin    11884 S    alt_watchdog
+ 2584 admin    11884 S    amas_lanctrl
+ 2587 admin     4340 S    rstats
+ 2618 admin    13384 S    mastiff
+ 2619 admin    11884 S    bwdpi_check
+ 2622 admin    11884 S    pctime
+ 2623 admin     3832 S    /usr/sbin/acsd2
+ 2626 admin    17012 S    roamast
+ 2649 admin    19192 S    amas_lib
+ 2659 admin    11884 S    sched_daemon
+ 2674 admin     5744 S    fsmd
+ 2712 admin        0 SW   [scsi_eh_0]
+ 2713 admin        0 IW<  [scsi_tmf_0]
+ 2714 admin        0 SW   [usb-storage]
+ 2722 admin        0 IW<  [uas]
+ 2757 admin    11884 S    usbled
+ 2953 admin    11884 S    ntp
+ 3034 admin        0 Z    [ntpclient]
+ 3047 admin    11884 S    disk_monitor
+ 3062 admin     3088 S    {uuplugin_monito} /bin/sh /tmp/uu/uuplugin_monitor.s
+ 3147 admin     4308 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3153 admin     3288 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3316 admin        0 SW   [tntfsiupdated]
+ 3644 admin    17012 S    amas_port_status
+ 3757 admin     6044 S    ./asus_lighttpd -Df /opt/etc/asus_lighttpd.conf
+ 3999 admin     6596 S    /usr/lib/ipsec/starter --daemon charon
+ 4000 admin    34816 S    /usr/lib/ipsec/charon --use-syslog
+ 4834 admin        0 IW   [kworker/2:0-eve]
+ 4859 admin    12652 S    minidlna -f /etc/minidlna.conf -r
+ 5830 admin     3088 S    -sh
+ 9907 admin        0 IW   [kworker/1:3-eve]
+11563 admin        0 IW   [kworker/u8:0-fl]
+13815 admin        0 IW   [kworker/2:2]
+15548 admin        0 IW   [kworker/1:0-eve]
+15761 admin        0 IW   [kworker/0:3-eve]
+15763 admin        0 IW   [kworker/0:5-eve]
+16375 admin     5088 S    /usr/sbin/pppd file /tmp/ppp/options.wan0
+16393 admin     3088 S    /sbin/udhcpc -i eth0 -p /var/run/udhcpc0.pid -s /tmp
+16746 admin     1976 S    /bin/mcpd
+16969 admin        0 IW   [kworker/u8:2-fl]
+17091 admin        0 IW   [kworker/1:1]
+17180 admin        0 IW   [kworker/0:0-eve]
+17363 nobody    2404 S    dnsmasq --log-async
+17364 admin     2404 S    dnsmasq --log-async
+17381 admin     9968 S    /usr/sbin/nmbd -D -s /etc/smb.conf
+17383 admin    10264 S    /usr/sbin/smbd -D -s /etc/smb.conf
+17388 admin     1880 S    /usr/sbin/wsdd2 -d -w -i br0 -b sku:ZenWiFi_XT9,seri
+17392 admin     6528 S    vsftpd /etc/vsftpd.conf
+17528 admin        0 IW   [kworker/u8:3-fl]
+17529 admin        0 IW   [kworker/0:1-eve]
+17547 admin     3088 S    /sbin/syslogd -m 0 -S -O /jffs/syslog.log -s 256 -l
+17549 admin     3088 S    /sbin/klogd -c 5
+17817 admin     2112 S    miniupnpd -f /etc/upnp/config
+17848 admin    10512 S    httpds -s -i br0 -p 8443
+17849 admin    10404 S    httpd -i br0
+18444 admin     2956 S    sleep 60
+21159 admin     3088 S    sh -c WlGetDriverStats.sh eth4 nic 2 &> /tmp/WlGetDr
+21160 admin     3088 S    {WlGetDriverStat} /bin/sh /usr/sbin/WlGetDriverStats
+22728 admin     3088 R    ps
+29890 admin        0 IW   [kworker/u8:1-fl]
+[H[JMem: 268844K used, 240348K free, 23332K shrd, 5168K buff, 56552K cached
+CPU:  0.0% usr  2.3% sys  0.0% nic 97.6% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 1.81 1.35 1.24 1/199 22729
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[0m
+22729 21160 admin    R     3088  0.6   1  1.1 top -n 1
+ 1093     1 admin    S     2976  0.5   1  1.1 /bin/eapd
+ 4000  3999 admin    S    34816  6.8   2  0.0 /usr/lib/ipsec/charon --use-syslog
+ 2649     1 admin    S    19192  3.7   1  0.0 amas_lib
+ 1388     1 admin    S    18272  3.5   2  0.0 conn_diag
+ 3644     1 admin    S    17012  3.3   2  0.0 amas_port_status
+ 2626     1 admin    S    17012  3.3   2  0.0 roamast
+ 1532     1 admin    S    14688  2.8   1  0.0 cfg_server
+    1     0 admin    S    14384  2.8   1  0.0 /sbin/init
+ 2580     1 admin    S    14120  2.7   2  0.0 ahs
+ 2473     1 admin    S    13936  2.7   0  0.0 /sbin/netool
+ 2618     1 admin    S    13384  2.6   2  0.0 mastiff
+ 2483     1 admin    S    13236  2.6   2  0.0 nt_center
+ 1364     1 admin    S    13108  2.5   2  0.0 networkmap
+ 2471     1 admin    S    13004  2.5   0  0.0 nt_monitor
+ 2579     1 admin    S    12868  2.5   2  0.0 sysstate
+ 4859     1 admin    S    12652  2.4   1  0.0 minidlna -f /etc/minidlna.conf -r
+ 2581     1 admin    S    11884  2.3   0  0.0 watchdog
+ 2583     1 admin    S    11884  2.3   1  0.0 alt_watchdog
+ 2757     1 admin    S    11884  2.3   1  0.0 usbled
+=================================
+Memory status
+=================================
+MemTotal:         509192 kB
+MemFree:          240348 kB
+MemAvailable:     170384 kB
+Buffers:            5168 kB
+Cached:            56552 kB
+SwapCached:            0 kB
+Active:            87776 kB
+Inactive:          27292 kB
+Active(anon):      58116 kB
+Inactive(anon):    18564 kB
+Active(file):      29660 kB
+Inactive(file):     8728 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         509192 kB
+LowFree:          240348 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:         53304 kB
+Mapped:            27140 kB
+Shmem:             23332 kB
+Slab:              51964 kB
+SReclaimable:       6000 kB
+SUnreclaim:        45964 kB
+KernelStack:        1616 kB
+PageTables:         2352 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      254596 kB
+Committed_AS:     166328 kB
+VmallocTotal:     507904 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              704 kB
+CmaTotal:          12288 kB
+CmaFree:            1024 kB
+=================================
+Statistics for eth4 run 1/2 @10 s
+=================================
+=============================================
+WL Statistics for eth4
+=============================================
+---------------------------------------------
+STATUS: wl -i eth4 status
+---------------------------------------------
+	SSID: "Sprite-AX7800"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -70 dBm	Channel: 1
+	BSSID: 04:42:1A:52:7B:90	Capability: ESS ShortSlot RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
+	HE Capable:
+		Chanspec: 2.4GHz channel 1 20MHz (0x1001)
+		Primary channel: 1
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-15
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x9e (61 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth4 assoclist
+---------------------------------------------
+	assoclist 04:42:1A:52:7B:41
+---------------------------------------------
+STAINFO: stainfo for 04:42:1A:52:7B:41
+---------------------------------------------
+	[VER 8] STA 04:42:1A:52:7B:41:
+		 chanspec 1 (0x1001)
+		 aid:30 
+		 rateset [ 1 2 5.5 6 9 11 12 18 24 36 48 54 ]
+		 idle 0 seconds
+		 in network 0 seconds
+		 state: AUTHENTICATED ASSOCIATED
+		 connection: SECURED
+		 auth: WPA2-PSK
+		 crypto: NONE
+		 flags 0x151e01b: BRCM WME N_CAP VHT_CAP HE_CAP AMPDU AMSDU DWDS_CAP
+		 HT caps 0x19ef: LDPC 40MHz SGI20 SGI40 STBC-Tx STBC-Rx
+		 VHT caps 0xfb: LDPC SGI80 STBC-Tx STBC-Rx SU-BFR SU-BFE MU-BFR
+		 HE caps 0x6639: LDPC HE-HTC SU-BFR SU&MU-BFE
+		 OMI 0x0261: 20Mhz rx=2ss tx=2ss ER_SU_DISABLE UL_MU_DISABLE 
+		 tx total pkts: 26586
+		 tx total bytes: 5500626
+		 tx ucast pkts: 1
+		 tx ucast bytes: 121
+		 tx mcast/bcast pkts: 26585
+		 tx mcast/bcast bytes: 5500505
+		 tx failures: 0
+		 rx data pkts: 2
+		 rx data bytes: 227
+		 rx data dur: 0
+		 rx ucast pkts: 2
+		 rx ucast bytes: 227
+		 rx mcast/bcast pkts: 0
+		 rx mcast/bcast bytes: 0
+		 rate of last tx pkt: 1000 kbps - 1000 kbps
+		 rate of last rx pkt: 270830 kbps
+		 rx decrypt succeeds: 0
+		 rx decrypt failures: 0
+		 tx data pkts retried: 1
+		 per antenna rssi of last rx data frame: -18 -14 0 0
+		 per antenna average rssi of rx data frames: -19 -15 0 0
+		 per antenna noise floor: -71 -70 0 0
+		 tx total pkts sent: 3
+		 tx pkts retries: 1
+		 tx pkts retry exhausted: 0
+		 tx FW total pkts sent: 0
+		 tx FW pkts retries: 0
+		 tx FW pkts retry exhausted: 0
+		 rx total pkts retried: 2
+	MCS SET : [ 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 ]
+	VHT SET : 0x1 1x1 2x1 3x1 4x1 5x1 6x1 7x1 8x1 9x1 10x1 11x1 
+	        : 0x2 1x2 2x2 3x2 4x2 5x2 6x2 7x2 8x2 9x2 10x2 11x2 
+	HE SET  :
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+	smoothed rssi: -15
+	tx nrate
+	legacy rate 1 Mbps stf mode 0 auto
+	rx nrate
+	he mcs 11 Nss 2 Tx Exp 0 bw20 ldpc 2xLTF GI 1.6us auto
+	wnm
+	0x1:  BSS-Transition
+	VENDOR OUI VALUE[0] 00:90:4C 
+	VENDOR OUI VALUE[1] 00:10:18 
+	VENDOR OUI VALUE[2] 00:50:F2 
+	link bandwidth = 20 MHZ 
+	RRM capability = 0x30  Beacon_Passive Beacon_Active
+	Frequency Bands Supported: 2.4G 
+---------------------------------------------
+RSSI: rssi for 04:42:1A:52:7B:41
+---------------------------------------------
+	-15
+---------------------------------------------
+AUTH STA LIST: wl -i eth4 authe_sta_list
+---------------------------------------------
+	authe_sta_list 04:42:1A:52:7B:41
+---------------------------------------------
+SMFSTATS: wl -i eth4 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 525
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 495
+			Status_code 30 Count: 17
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 6 Count: 1
+			Reason_code 7 Count: 260
+			Reason_code 15 Count: 460
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth4 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth4 5g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+2G RATE: wl -i eth4 2g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+NRATE: wl -i eth4 nrate
+---------------------------------------------
+	legacy rate 1 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth4 rate
+---------------------------------------------
+	1 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth4 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth4 spect
+---------------------------------------------
+	802.11d mode
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth4 phy_ed_thresh
+---------------------------------------------
+	-43
+---------------------------------------------
+OPER MODE: wl -i eth4 oper_mode
+---------------------------------------------
+	16 (0x10)
+---------------------------------------------
+CHANIMSTATS: wl -i eth4 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	1	 5	1	18	16	41	0	10	1	1	3110	24	-70	13	78	81015552
+---------------------------------------------
+INTERFERENCE: wl -i eth4 interference
+---------------------------------------------
+	
+	Mode = 361. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 8:  Preemption is enabled
+		bit-mask 32: Low Power Detect Preemption
+		bit-mask 64: HW OBSS Detection + Mitigation
+		bit-mask 256: MCLIP ACI mitigation enabled 
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth4 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth4 bs_data -noreset
+---------------------------------------------
+	  Station Address   PHY Mbps  Data Mbps    Air Use   Data Use    Retries    bw   mcs   Nss   ofdma mu-mimo 
+	04:42:1A:52:7B:41        1.0        0.0       0.2%     100.0%       0.0%     0     0     0    0.0%    0.0% 
+	        (overall)          -        0.0       0.2%         -         -
+---------------------------------------------
+PKTQSTATS: wl -i eth4 pktq_stats
+---------------------------------------------
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	  04: BE        11,      11,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  10: VI         2,       2,       0,       0,       0,       0,       0,        2,    0,      0.00,      1.00,  -/ -/ -/ -,   0.2,   51.4
+	  14: VO         0,       0,       0,      23,       0,       2,       0,        8,    0,      0.00,      1.00,  -/ -/ -/ -,   0.0,    0.0
+	  15: VO        10,      10,       0,       -,       -,       0,       0,        0,    0,         -,         -,           -,     -,      -
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth4 rx_report
+---------------------------------------------
+	   Station Address (rssi)  tid   ampdu     mpdu  Data Mbps   PHY Mbps    bw   mcs   Nss   oow holes   dup rtries    mmu  ofdma  tones    air
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth4 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth4 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth4 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth4 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth4 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth4 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth4 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth4 dump txbf
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MUTX DUMP: wl -i eth4 dump mutx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MURX DUMP: wl -i eth4 dump murx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MSCHED DUMP: wl -i eth4 dump msched
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+UMSCHED DUMP: wl -i eth4 dump umsched
+---------------------------------------------
+	
+---------------------------------------------
+TWT DUMP: wl -i eth4 dump twt
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+D11CNTS DUMP: wl -i eth4 dump d11cnts
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WME COUNTERS: wl -i eth4 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 351829 bytes: 112611371 failed frames: 2092 failed bytes: 94084
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 1 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 1899 bytes: 229779 failed frames: 10 failed bytes: 580
+	       rx frames: 1868 bytes: 263388 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth4 if_counters
+---------------------------------------------
+	txframe 353728 txbyte 112841150 txerror 14882 rxframe 1868 rxbyte 263388 rxerror 0 
+	txnobuf 1 txfail 14006 
+	d11_txfrag 374029 d11_txmulti 353391 d11_txretry 11585 d11_txretrie 7300 
+	d11_txfrmsnt 374034 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+	txucastpkts 0 txucastbytes 0 txmcastpkts 0 txmcastbytes 0 
+	txbcastpkts 0 txbcastbytes 0 txaggrpktcnt 0 
+	txnoack 0 txretransfail 0 txretrans 111767 txdiscard 0 
+	rxucastpkts 0 rxucastbytes 0 rxmcastpkts 0 rxmcastbytes 0 
+	rxbcastpkts 0 rxbcastbytes 0 
+	rx_decrypt_failures 0 rx_mic_errors 0 rx_replay_failures 0 rx_dup 0 
+	rxdiscard 0 rxbadprotopkts 0 rxunknownprotopkts 0 
+---------------------------------------------
+COUNTERS: wl -i eth4 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 0
+	reinitreason_counts: 
+	reinit 0 reset 13 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 353728 txbyte 112841150 txretrans 111767 txlost 0 txfail 14006 txchanrej 581 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 793755 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 1868 rxbyte 263388 rxerror 1 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 1 txnoassoc 1138 txchit 0 txcmiss 351829 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 2014 txexptime 1 
+	d11_txfrag 374029 d11_txmulti 353391 d11_txbcast 0 d11_txretry 11585 d11_txretrie 7300 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 125773 d11_txfrmsnt 374034 
+	rxdropped 0 rxcrc 2113850 rxnobuf 0 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 211344 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 1897 rxbadsrcmac 1 rxrtry 310473 
+	d11_rxfrag 5216827 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 5214335 rxbadda 0 rxfilter 555 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 1969 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 0 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 450 txmpdu_stbc 0 rxmpdu_stbc 450 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 5216828 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 485 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 512 txreassocrsp 0 
+	txauth 536 txdeauth 721 txprobereq 2184 txprobersp 30876 txaction 147 
+	rxassocreq 515 rxreassocreq 0 rxdisassoc 2 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 538 rxdeauth 73 rxprobereq 41239 rxprobersp 469047 rxaction 1824 
+	txallfrm 1296564 txbcnfrm 785616 txrtsfrm 0 txctsfrm 1239 txackfrm 9812 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 146525 rxrsptmout 123415 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 86.0% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 12755283 rxbadplcp 4639155 rxcrsglitch 148029786 rxtoolate 179944 rxnodelim 852656 
+	rxdrop20s 0 bphy_badplcp 166676 bphy_rxcrsglitch 48205050 
+	rxbadfcs 2113850 rxfrmtoolong 103 rxfrmtooshrt 15017 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 17 pmqovfl 0 
+	rxctlucast 21834 rxrtsucast 1190 rxctsucast 0 rxackucast 20644 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 2419 rxmgucastmbss 7393 
+	rxbeaconobss 4700889 rxdtucastobss 0 rxdtocast 301396 rxmgocast 493467 
+	rxctlocast 1074878 rxrtsocast 249890 rxctsocast 251885 
+	rxctlmcast 212567 rxdtmcast 1097290 rxmgmcast 4741853 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 70147 m2vmsg 0 v2mmsg 0 
+	mboxout 428731 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth4 memuse
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+CHANNEL INFO: wl -i eth4 chan_info
+---------------------------------------------
+	Channel 1	2G Band
+	Channel 2	2G Band
+	Channel 3	2G Band
+	Channel 4	2G Band
+	Channel 5	2G Band
+	Channel 6	2G Band
+	Channel 7	2G Band
+	Channel 8	2G Band
+	Channel 9	2G Band
+	Channel 10	2G Band
+	Channel 11	2G Band
+	Channel 12	2G Band
+	Channel 13	2G Band
+---------------------------------------------
+DFS STATUS: wl -i eth4 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 1
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 1 (0x1001), chanspec last cleared: none, sub type: 0x00
+---------------------------------------------
+NOISE: wl -i eth4 noise
+---------------------------------------------
+	-70
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth4 phy_tempsense
+---------------------------------------------
+	56 (0x38)
+---------------------------------------------
+BAND: wl -i eth4 band
+---------------------------------------------
+	b
+---------------------------------------------
+SCAN RESULTS: wl -i eth4 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth4 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth4 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth4 dump ratelinkmem
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth4 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0x1001):	18.00  18.00  
+---------------------------------------------
+CEVENT: ceventc -i eth4 dump
+---------------------------------------------
+	1648196664289  196664289	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648196664289  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648196664290  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648196664493  203	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648196664493  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648196664493  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648196664497  4	eth4  04:42:1A:52:7B:41 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648196664498  1	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196664500  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196664503  3	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196664523  20	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196664524  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196664524  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196665499  975	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196665500  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196665502  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196665507  5	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196665507  0	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196665508  1	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196666500  992	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196666501  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196666503  2	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+HOST Statistics
+=================================
+	Flow Timer Interval = 10000 millisecs
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<86>, Cumulative [ 26575 - 26489 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+cat: can't open '/proc/wfd/stats': No such file or directory
+
+Error Stats:
+
+Slow Path Error Stats:
+
+Other RX stats: total=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0
+
+Other TX stats: total=0
+	blog_pool_empty=0 encap_ovfl=0  small_stack=0
+
+Slow Path Error Total: RX=0, TX=0
+
+
+Misc Error Stats: total=0
+	hent_not_found=0  fdb_hent_not_found=0  mdnat_hent_not_found=0
+	flow_not_found=0  mc_flow_not_found=0  static_unicast=0
+	mc_client_id_not_free=0  host_mac_hent_not_found=0
+	fdb_alloc_error=0  npe_flow_alloc_error=0  null_nwe=0
+	hw_add_host_mac_fail=0  hw_del_host_mac_fail=0
+	fc_alloc_fail=0  mdnat_alloc_fail=0
+	ovs_learning_fail=0 netdev_invalid_fail=0 
+	ucast_flow_max_limit=0 mcast_flow_max_limit=0 mcast_group_no_entry<0>
+
+
+Slow Path Stats:
+
+Other RX stats: total=1443765
+	blogged=9  unknown_proto=1359170  eth_bcast=84586  blog_action=0  mc_disabled=0
+	pktlen_gt_mtu=0 not_ipoe=0  not_ipoa=0  not_ppoa=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0 npe_alloc_err=0
+	cpu_cong_low_prio=0 udp_chksum_zero=0
+
+Other TX stats: total=2
+	learnt=2  unknown_proto=0  already_cached=0  mc_unknown=0  blog_pool_empty=0 encap_ovfl=0  small_stack=0
+	mcast_dev_info=0  mcast_dev_realloc=0 mcast_bitmap_alloc=0
+	mcast_master_flow_info_alloc=0  mcast_mdnat_add_flow=0  mcast_npe_hashin=0
+	mcast_flow_max_limit=0  ct_not_confirmed=0  ct_alg_helper=0
+
+IPv4 RX stats: total=257656
+	blogged=91215  unknown_proto=68062  disabled=0  pktlen_gt_mtu=0  ip_len_error=0 bad_ipv4_csum=0 cng_low_pri=0
+	option=19756  frag=270  ttl_exp=0  tcp_syn=47061  tcp_rst_fin=25390  6rd_tunl_src_addr=0
+	mc_disabled=0  mc_blogged=30  mc_control=0  mc_no_flow=0  mc_unknown_group=5872  mc_excl_port=0 
+	tcp_ack_done=0
+
+IPv4 TX stats: total=24479
+	learnt=24479  unknown_proto=0  mc_unknown=0  mc_uknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0  frag=0
+
+IPv6 RX stats: total=49155
+	blogged=3073  unknown_proto=39592  disabled=0  pktlen_gt_mtu=0  ip_len_error=0  cng_low_pri=0
+	dyn_tclass=0  hop_limit_exp=0  tcp_syn=1468  tcp_rst_fin=1800
+	mc_disabled=0  mc_blogged=0  bad_version=0
+	mc_control=0  mc_no_flow=0  mc_unknown_group=3222  mc_excl_port=0 
+	tcp_ack_done=0
+IPv6 TX stats: total=2094
+	learnt=2094  unknown_proto=0  mc_unknown=0  mc_unknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0
+
+GRE RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+GRE TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+L2TP RX stats: total=9
+	blogged=0  unknown_proto=0  session_tunnel_id_0=9  no_tunnel=0
+
+L2TP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0   checksum_failure=0 
+
+ESP RX stats: total=0
+	blogged=0  unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+ESP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+VXLAN RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	invalid_flags=0
+
+VXLAN TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0
+
+Slow Path Total: RX=1750585, TX=26575
+
+Bridge br0 igmp snooping 2  rate-limit 0pps, priority -1 brtype Linux
+ Port Name    Querier      Timeout
+    eth3           NO          000
+    wl2.5          NO          000
+    eth6           NO          000
+    eth5           NO          000
+    eth4           NO          000
+    eth1           NO          000
+bridge dstdev dstaccdev src-dev type #tags lan-tci  wan-tci info    group           mode RxGroup         source          reporter        timeout ExcludPt Index      
+br0    eth3   eth3   br0        1 00    0x0000   0x0000ffff 0x0 239.255.102.018 EX   239.255.102.018 000.000.000.000 192.168.050.173 36      -1     1 
+br0    eth3   eth3   eth0       2 00    0x0000   0x0000ffff 0x0 239.255.102.018 EX   239.255.102.018 000.000.000.000 192.168.050.173 36      -1     1 
+Broadcom Packet Flow Cache v4.0
+Flow   U/M M/C idle:+swhit SW_TotHits:          TotalBytes     HW_tpl Fhw_idx HW_Hits   HW_TotHits L1-Info Prot   SourceIpAddress:Port    DestinIpAddress:Port   Vlan0(mcast) Vlan1(mcast) tag# ToS IqPrio    SkbMark    RxDev    TxDev nf_conn[0] nf_conn[1] nf_conn[2] nf_conn[3]  
+  Flow I ClientId      L1-Info         MAC             wlinfo
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+wlc_monitor_doiovar
+wlc_monitor_doiovar
+=================================
+CPU Stats
+=================================
+/usr/sbin/WlGetDriverStats.sh: line 442: mpstat: not found
+=================================
+Process status
+=================================
+ps: invalid option -- 'a'
+BusyBox v1.24.1 (2022-03-23 16:30:48 CST) multi-call binary.
+
+Usage: ps 
+
+Show list of processes
+
+	w	Wide output
+	T	Show threads
+  PID USER       VSZ STAT COMMAND
+    1 admin    14384 S    /sbin/init
+    2 admin        0 SW   [kthreadd]
+    3 admin        0 IW<  [rcu_gp]
+    4 admin        0 IW<  [rcu_par_gp]
+    6 admin        0 IW<  [kworker/0:0H-kb]
+    8 admin        0 IW<  [mm_percpu_wq]
+    9 admin        0 SW   [ksoftirqd/0]
+   10 admin        0 IW   [rcu_preempt]
+   11 admin        0 IW   [rcu_sched]
+   12 admin        0 IW   [rcu_bh]
+   13 admin        0 SW   [migration/0]
+   14 admin        0 SW   [cpuhp/0]
+   15 admin        0 SW   [cpuhp/1]
+   16 admin        0 SW   [migration/1]
+   17 admin        0 SW   [ksoftirqd/1]
+   19 admin        0 IW<  [kworker/1:0H-kb]
+   20 admin        0 SW   [cpuhp/2]
+   21 admin        0 SW   [migration/2]
+   22 admin        0 SW   [ksoftirqd/2]
+   24 admin        0 IW<  [kworker/2:0H-kb]
+   25 admin        0 SW   [cpuhp/3]
+   26 admin        0 SW   [migration/3]
+   27 admin        0 SW   [ksoftirqd/3]
+   29 admin        0 IW<  [kworker/3:0H-ev]
+   30 admin        0 SW   [kdevtmpfs]
+   31 admin        0 SW   [rcu_tasks_kthre]
+   35 admin        0 SW   [oom_reaper]
+   36 admin        0 IW<  [writeback]
+   37 admin        0 IW<  [crypto]
+   38 admin        0 IW<  [kblockd]
+   39 admin        0 SW   [skb_free_task]
+   40 admin        0 SW   [watchdogd]
+   41 admin        0 IW<  [mptcp_wq]
+   48 admin        0 SW   [kswapd0]
+   81 admin        0 SW   [hwrng]
+   83 admin        0 SW   [spi1]
+   84 admin        0 SW   [irq/61-mmc0]
+   86 admin        0 IW<  [ipv6_addrconf]
+   87 admin        0 SW   [ubi_bgt0d]
+   88 admin        0 IW<  [kworker/0:1H-kb]
+   89 admin        0 IW<  [kworker/1:1H-kb]
+   91 admin        0 IW<  [kworker/2:1H-kb]
+  182 admin        0 SW   [ubifs_bgt0_10]
+  198 admin        0 SW   [ubifs_bgt0_11]
+  228 admin        0 SW   [ubifs_bgt0_13]
+  354 admin        0 SW   [bpm_monitor]
+  360 admin        0 SW   [fc_evt]
+  361 admin        0 SW   [fc_timer]
+  362 admin        0 SW   [bcmFlwStatsTask]
+  366 admin        0 SW   [bcm_archer_us]
+  368 admin        0 SW   [bcm_archer_wlan]
+  372 admin        0 SW   [bcmsw_rx]
+  373 admin        0 SW   [bcmsw_recycle]
+  374 admin        0 SW   [enet-kthrd]
+  381 admin        0 SW   [pdc_rx]
+  477 admin     1596 S    {wdtctl} wdtd
+  479 admin     1740 S    hotplug2 --persistent --no-coldplug
+  531 admin     2040 S    /usr/sbin/envrams
+  630 admin        0 IW<  [kworker/3:1H-ev]
+  689 admin        0 IW<  [cfg80211]
+  760 admin        0 SW   [wl0-kthrd]
+  761 admin        0 SW   [bcm_awl_xfer_0]
+  768 admin        0 SW   [wl1-kthrd]
+  769 admin        0 SW   [bcm_awl_xfer_1]
+  833 admin        0 SW   [dhd_watchdog_th]
+  834 admin        0 SW   [bcm_awl_xfer_2]
+  836 admin        0 SW   [archer_dhd_2]
+ 1002 admin    11884 S    /sbin/wanduck
+ 1044 admin     3172 S    avahi-daemon: running [ZenWiFi_XT9-7B90.local]
+ 1093 admin     2976 S    /bin/eapd
+ 1129 admin     7428 S    hostapd -B /tmp/wl0_hapd.conf
+ 1165 admin     7428 S    hostapd -B /tmp/wl1_hapd.conf
+ 1212 admin     7428 S    hostapd -B /tmp/wl2_hapd.conf
+ 1220 admin     4668 S    /usr/sbin/wlc_nt
+ 1221 admin     8796 S    wps_pbcd
+ 1224 admin     4664 S    /usr/sbin/wlc_monitor
+ 1241 admin     6076 S    /usr/sbin/bsd
+ 1250 admin     2972 S    /bin/ceventd
+ 1319 admin     4936 S    /usr/sbin/wlceventd
+ 1323 admin     2948 S    /usr/sbin/debug_monitor /data
+ 1364 admin    13108 S    networkmap
+ 1388 admin    18272 S    conn_diag
+ 1403 admin    11884 S    amas_ssd_cd
+ 1532 admin    14688 S    cfg_server
+ 1590 admin    11884 S    console
+ 1702 admin        0 IW   [kworker/3:1-mm_]
+ 1723 admin    11884 S    /sbin/PS_pod
+ 1736 admin        0 IW   [kworker/3:2]
+ 1820 admin     3272 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 1824 nobody    3396 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 2465 admin     2012 S    /usr/sbin/jitterentropy-rngd -p /var/run/jitterentro
+ 2466 admin    11140 S    asd
+ 2471 admin    13004 S    nt_monitor
+ 2472 admin     5680 S    protect_srv
+ 2473 admin    13936 S    /sbin/netool
+ 2483 admin    13236 S    nt_center
+ 2518 admin    11884 S    wpsaide
+ 2522 admin     6884 S    /usr/sbin/awsiot
+ 2533 admin     4872 S    nt_actMail
+ 2573 admin     3088 S    crond
+ 2575 admin     6600 S    /usr/sbin/infosvr br0
+ 2579 admin    12868 S    sysstate
+ 2580 admin    14120 S    ahs
+ 2581 admin    11884 S    watchdog
+ 2582 admin    11884 S    check_watchdog
+ 2583 admin    11884 S    alt_watchdog
+ 2584 admin    11884 S    amas_lanctrl
+ 2587 admin     4340 S    rstats
+ 2618 admin    13384 S    mastiff
+ 2619 admin    11884 S    bwdpi_check
+ 2622 admin    11884 S    pctime
+ 2623 admin     3832 S    /usr/sbin/acsd2
+ 2626 admin    17012 S    roamast
+ 2649 admin    19192 S    amas_lib
+ 2659 admin    11884 S    sched_daemon
+ 2674 admin     5744 S    fsmd
+ 2712 admin        0 SW   [scsi_eh_0]
+ 2713 admin        0 IW<  [scsi_tmf_0]
+ 2714 admin        0 SW   [usb-storage]
+ 2722 admin        0 IW<  [uas]
+ 2757 admin    11884 S    usbled
+ 2953 admin    11884 S    ntp
+ 3034 admin        0 Z    [ntpclient]
+ 3047 admin    11884 S    disk_monitor
+ 3062 admin     3088 S    {uuplugin_monito} /bin/sh /tmp/uu/uuplugin_monitor.s
+ 3147 admin     4308 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3153 admin     3288 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3316 admin        0 SW   [tntfsiupdated]
+ 3644 admin    17012 S    amas_port_status
+ 3757 admin     6044 S    ./asus_lighttpd -Df /opt/etc/asus_lighttpd.conf
+ 3999 admin     6596 S    /usr/lib/ipsec/starter --daemon charon
+ 4000 admin    34816 S    /usr/lib/ipsec/charon --use-syslog
+ 4834 admin        0 IW   [kworker/2:0-eve]
+ 4859 admin    12652 S    minidlna -f /etc/minidlna.conf -r
+ 5830 admin     3088 S    -sh
+ 9907 admin        0 IW   [kworker/1:3-eve]
+11563 admin        0 IW   [kworker/u8:0-fl]
+13815 admin        0 IW   [kworker/2:2]
+15548 admin        0 IW   [kworker/1:0-eve]
+15761 admin        0 IW   [kworker/0:3-eve]
+15763 admin        0 IW   [kworker/0:5-eve]
+16375 admin     5088 S    /usr/sbin/pppd file /tmp/ppp/options.wan0
+16393 admin     3088 S    /sbin/udhcpc -i eth0 -p /var/run/udhcpc0.pid -s /tmp
+16746 admin     1976 S    /bin/mcpd
+16969 admin        0 IW   [kworker/u8:2-fl]
+17091 admin        0 IW   [kworker/1:1]
+17180 admin        0 IW   [kworker/0:0-eve]
+17363 nobody    2404 S    dnsmasq --log-async
+17364 admin     2404 S    dnsmasq --log-async
+17381 admin     9968 S    /usr/sbin/nmbd -D -s /etc/smb.conf
+17383 admin    10264 S    /usr/sbin/smbd -D -s /etc/smb.conf
+17388 admin     1880 S    /usr/sbin/wsdd2 -d -w -i br0 -b sku:ZenWiFi_XT9,seri
+17392 admin     6528 S    vsftpd /etc/vsftpd.conf
+17528 admin        0 IW   [kworker/u8:3-fl]
+17529 admin        0 IW   [kworker/0:1-eve]
+17547 admin     3088 S    /sbin/syslogd -m 0 -S -O /jffs/syslog.log -s 256 -l
+17549 admin     3088 S    /sbin/klogd -c 5
+17817 admin     2112 S    miniupnpd -f /etc/upnp/config
+17848 admin    10512 S    httpds -s -i br0 -p 8443
+17849 admin    10404 S    httpd -i br0
+18444 admin     2956 S    sleep 60
+21159 admin     3088 S    sh -c WlGetDriverStats.sh eth4 nic 2 &> /tmp/WlGetDr
+21160 admin     3088 S    {WlGetDriverStat} /bin/sh /usr/sbin/WlGetDriverStats
+23585 admin     3088 R    ps
+29890 admin        0 IW   [kworker/u8:1-fl]
+[H[JMem: 268928K used, 240264K free, 23360K shrd, 5224K buff, 56628K cached
+CPU:  2.2% usr  2.2% sys  0.0% nic 95.4% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 1.76 1.37 1.25 1/199 23586
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[0m
+ 2466     1 admin    S    11140  2.1   0  2.2 asd
+23586 21160 admin    R     3088  0.6   0  2.2 top -n 1
+ 4000  3999 admin    S    34816  6.8   2  0.0 /usr/lib/ipsec/charon --use-syslog
+ 2649     1 admin    S    19192  3.7   1  0.0 amas_lib
+ 1388     1 admin    S    18272  3.5   2  0.0 conn_diag
+ 3644     1 admin    S    17012  3.3   2  0.0 amas_port_status
+ 2626     1 admin    S    17012  3.3   2  0.0 roamast
+ 1532     1 admin    S    14688  2.8   1  0.0 cfg_server
+    1     0 admin    S    14384  2.8   1  0.0 /sbin/init
+ 2580     1 admin    S    14120  2.7   2  0.0 ahs
+ 2473     1 admin    S    13936  2.7   0  0.0 /sbin/netool
+ 2618     1 admin    S    13384  2.6   2  0.0 mastiff
+ 2483     1 admin    S    13236  2.6   1  0.0 nt_center
+ 1364     1 admin    S    13108  2.5   1  0.0 networkmap
+ 2471     1 admin    S    13004  2.5   0  0.0 nt_monitor
+ 2579     1 admin    S    12868  2.5   2  0.0 sysstate
+ 4859     1 admin    S    12652  2.4   1  0.0 minidlna -f /etc/minidlna.conf -r
+ 2581     1 admin    S    11884  2.3   2  0.0 watchdog
+ 2583     1 admin    S    11884  2.3   1  0.0 alt_watchdog
+ 2757     1 admin    S    11884  2.3   1  0.0 usbled
+=================================
+Memory status
+=================================
+MemTotal:         509192 kB
+MemFree:          240348 kB
+MemAvailable:     170440 kB
+Buffers:            5224 kB
+Cached:            56628 kB
+SwapCached:            0 kB
+Active:            87852 kB
+Inactive:          27324 kB
+Active(anon):      58124 kB
+Inactive(anon):    18560 kB
+Active(file):      29728 kB
+Inactive(file):     8764 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         509192 kB
+LowFree:          240348 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                20 kB
+Writeback:             0 kB
+AnonPages:         53340 kB
+Mapped:            27140 kB
+Shmem:             23360 kB
+Slab:              51920 kB
+SReclaimable:       6004 kB
+SUnreclaim:        45916 kB
+KernelStack:        1640 kB
+PageTables:         2460 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      254596 kB
+Committed_AS:     166356 kB
+VmallocTotal:     507904 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              704 kB
+CmaTotal:          12288 kB
+CmaFree:            1024 kB
+=================================
+Statistics for eth4 run 2/2 @10 s
+=================================
+=============================================
+WL Statistics for eth4
+=============================================
+---------------------------------------------
+STATUS: wl -i eth4 status
+---------------------------------------------
+	SSID: "Sprite-AX7800"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -70 dBm	Channel: 1
+	BSSID: 04:42:1A:52:7B:90	Capability: ESS ShortSlot RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 1(b) 2(b) 5.5(b) 6 9 11(b) 12 18 24 36 48 54 ]
+	HE Capable:
+		Chanspec: 2.4GHz channel 1 20MHz (0x1001)
+		Primary channel: 1
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-15
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x80 (50 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth4 assoclist
+---------------------------------------------
+---------------------------------------------
+AUTH STA LIST: wl -i eth4 authe_sta_list
+---------------------------------------------
+---------------------------------------------
+SMFSTATS: wl -i eth4 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 525
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 495
+			Status_code 30 Count: 17
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 6 Count: 1
+			Reason_code 7 Count: 261
+			Reason_code 15 Count: 461
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth4 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth4 5g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+2G RATE: wl -i eth4 2g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+NRATE: wl -i eth4 nrate
+---------------------------------------------
+	legacy rate 1 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth4 rate
+---------------------------------------------
+	1 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth4 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth4 spect
+---------------------------------------------
+	802.11d mode
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth4 phy_ed_thresh
+---------------------------------------------
+	-43
+---------------------------------------------
+OPER MODE: wl -i eth4 oper_mode
+---------------------------------------------
+	16 (0x10)
+---------------------------------------------
+CHANIMSTATS: wl -i eth4 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	1	 5	0	26	10	39	0	10	0	0	2767	29	-70	14	78	81027840
+---------------------------------------------
+INTERFERENCE: wl -i eth4 interference
+---------------------------------------------
+	
+	Mode = 361. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 8:  Preemption is enabled
+		bit-mask 32: Low Power Detect Preemption
+		bit-mask 64: HW OBSS Detection + Mitigation
+		bit-mask 256: MCLIP ACI mitigation enabled 
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth4 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth4 bs_data -noreset
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+PKTQSTATS: wl -i eth4 pktq_stats
+---------------------------------------------
+no available addresses in assoclist for automatic operation
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	  04: BE        24,      24,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  10: VI         2,       2,       0,       0,       0,       0,       0,        2,    0,      0.00,      1.00,  -/ -/ -/ -,   0.0,   51.4
+	  14: VO         0,       0,       0,      14,       0,       1,       0,        6,    0,      0.00,      1.00,  -/ -/ -/ -,   0.8,   19.6
+	  15: VO         7,       7,       0,       -,       -,       0,       0,        0,    0,         -,         -,           -,     -,      -
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth4 rx_report
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth4 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth4 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth4 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth4 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth4 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth4 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth4 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth4 dump txbf
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MUTX DUMP: wl -i eth4 dump mutx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MURX DUMP: wl -i eth4 dump murx
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+MSCHED DUMP: wl -i eth4 dump msched
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+UMSCHED DUMP: wl -i eth4 dump umsched
+---------------------------------------------
+	
+---------------------------------------------
+TWT DUMP: wl -i eth4 dump twt
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+D11CNTS DUMP: wl -i eth4 dump d11cnts
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WME COUNTERS: wl -i eth4 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 351862 bytes: 112623230 failed frames: 2094 failed bytes: 94164
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 1 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 1901 bytes: 230021 failed frames: 10 failed bytes: 580
+	       rx frames: 1870 bytes: 263670 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth4 if_counters
+---------------------------------------------
+	txframe 353763 txbyte 112853251 txerror 14884 rxframe 1870 rxbyte 263670 rxerror 0 
+	txnobuf 1 txfail 14007 
+	d11_txfrag 374070 d11_txmulti 353424 d11_txretry 11589 d11_txretrie 7301 
+	d11_txfrmsnt 374075 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+	txucastpkts 0 txucastbytes 0 txmcastpkts 0 txmcastbytes 0 
+	txbcastpkts 0 txbcastbytes 0 txaggrpktcnt 0 
+	txnoack 0 txretransfail 0 txretrans 111780 txdiscard 0 
+	rxucastpkts 0 rxucastbytes 0 rxmcastpkts 0 rxmcastbytes 0 
+	rxbcastpkts 0 rxbcastbytes 0 
+	rx_decrypt_failures 0 rx_mic_errors 0 rx_replay_failures 0 rx_dup 0 
+	rxdiscard 0 rxbadprotopkts 0 rxunknownprotopkts 0 
+---------------------------------------------
+COUNTERS: wl -i eth4 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 0
+	reinitreason_counts: 
+	reinit 0 reset 13 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 353763 txbyte 112853251 txretrans 111780 txlost 0 txfail 14007 txchanrej 581 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 793874 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 1870 rxbyte 263670 rxerror 1 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 1 txnoassoc 1139 txchit 0 txcmiss 351862 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 2016 txexptime 1 
+	d11_txfrag 374070 d11_txmulti 353424 d11_txbcast 0 d11_txretry 11589 d11_txretrie 7301 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 125787 d11_txfrmsnt 374075 
+	rxdropped 0 rxcrc 2114446 rxnobuf 0 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 211362 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 1901 rxbadsrcmac 1 rxrtry 310520 
+	d11_rxfrag 5217551 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 5215057 rxbadda 0 rxfilter 558 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 1971 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 0 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 450 txmpdu_stbc 0 rxmpdu_stbc 450 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 5217552 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 485 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 512 txreassocrsp 0 
+	txauth 536 txdeauth 723 txprobereq 2184 txprobersp 30881 txaction 147 
+	rxassocreq 515 rxreassocreq 0 rxdisassoc 2 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 538 rxdeauth 73 rxprobereq 41245 rxprobersp 469123 rxaction 1828 
+	txallfrm 1296744 txbcnfrm 785735 txrtsfrm 0 txctsfrm 1239 txackfrm 9818 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 146547 rxrsptmout 123429 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 86.0% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 12757508 rxbadplcp 4639458 rxcrsglitch 148064890 rxtoolate 179952 rxnodelim 852974 
+	rxdrop20s 0 bphy_badplcp 166739 bphy_rxcrsglitch 48223890 
+	rxbadfcs 2114446 rxfrmtoolong 103 rxfrmtooshrt 15019 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 17 pmqovfl 0 
+	rxctlucast 21842 rxrtsucast 1190 rxctsucast 0 rxackucast 20652 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 2421 rxmgucastmbss 7397 
+	rxbeaconobss 4701525 rxdtucastobss 0 rxdtocast 301399 rxmgocast 493543 
+	rxctlocast 1075096 rxrtsocast 249891 rxctsocast 251902 
+	rxctlmcast 212729 rxdtmcast 1097366 rxmgmcast 4742495 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 70150 m2vmsg 0 v2mmsg 0 
+	mboxout 428773 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth4 memuse
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+CHANNEL INFO: wl -i eth4 chan_info
+---------------------------------------------
+	Channel 1	2G Band
+	Channel 2	2G Band
+	Channel 3	2G Band
+	Channel 4	2G Band
+	Channel 5	2G Band
+	Channel 6	2G Band
+	Channel 7	2G Band
+	Channel 8	2G Band
+	Channel 9	2G Band
+	Channel 10	2G Band
+	Channel 11	2G Band
+	Channel 12	2G Band
+	Channel 13	2G Band
+---------------------------------------------
+DFS STATUS: wl -i eth4 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 1
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 1 (0x1001), chanspec last cleared: none, sub type: 0x00
+---------------------------------------------
+NOISE: wl -i eth4 noise
+---------------------------------------------
+	-70
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth4 phy_tempsense
+---------------------------------------------
+	56 (0x38)
+---------------------------------------------
+BAND: wl -i eth4 band
+---------------------------------------------
+	b
+---------------------------------------------
+SCAN RESULTS: wl -i eth4 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth4 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth4 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth4 dump ratelinkmem
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth4 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0x1001):	18.25  18.00  
+---------------------------------------------
+CEVENT: ceventc -i eth4 dump
+---------------------------------------------
+	1648196667501  196667501	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196667502  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196667507  5	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196667509  2	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196667510  1	eth4  04:42:1A:52:7B:41 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196667510  0	eth4  04:42:1A:52:7B:41 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196668503  993	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196668517  14	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196668566  49	eth4  04:42:1A:52:7B:41 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196668726  160	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196668741  15	eth4  04:42:1A:52:7B:41 00000 0000 0007 0000 DRIVER 	-- 	E_DEAUTH/5
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+HOST Statistics
+=================================
+	Flow Timer Interval = 10000 millisecs
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<87>, Cumulative [ 26600 - 26513 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+cat: can't open '/proc/wfd/stats': No such file or directory
+
+Error Stats:
+
+Slow Path Error Stats:
+
+Other RX stats: total=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0
+
+Other TX stats: total=0
+	blog_pool_empty=0 encap_ovfl=0  small_stack=0
+
+Slow Path Error Total: RX=0, TX=0
+
+
+Misc Error Stats: total=0
+	hent_not_found=0  fdb_hent_not_found=0  mdnat_hent_not_found=0
+	flow_not_found=0  mc_flow_not_found=0  static_unicast=0
+	mc_client_id_not_free=0  host_mac_hent_not_found=0
+	fdb_alloc_error=0  npe_flow_alloc_error=0  null_nwe=0
+	hw_add_host_mac_fail=0  hw_del_host_mac_fail=0
+	fc_alloc_fail=0  mdnat_alloc_fail=0
+	ovs_learning_fail=0 netdev_invalid_fail=0 
+	ucast_flow_max_limit=0 mcast_flow_max_limit=0 mcast_group_no_entry<0>
+
+
+Slow Path Stats:
+
+Other RX stats: total=1444071
+	blogged=9  unknown_proto=1359461  eth_bcast=84601  blog_action=0  mc_disabled=0
+	pktlen_gt_mtu=0 not_ipoe=0  not_ipoa=0  not_ppoa=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0 npe_alloc_err=0
+	cpu_cong_low_prio=0 udp_chksum_zero=0
+
+Other TX stats: total=2
+	learnt=2  unknown_proto=0  already_cached=0  mc_unknown=0  blog_pool_empty=0 encap_ovfl=0  small_stack=0
+	mcast_dev_info=0  mcast_dev_realloc=0 mcast_bitmap_alloc=0
+	mcast_master_flow_info_alloc=0  mcast_mdnat_add_flow=0  mcast_npe_hashin=0
+	mcast_flow_max_limit=0  ct_not_confirmed=0  ct_alg_helper=0
+
+IPv4 RX stats: total=257744
+	blogged=91252  unknown_proto=68071  disabled=0  pktlen_gt_mtu=0  ip_len_error=0 bad_ipv4_csum=0 cng_low_pri=0
+	option=19759  frag=270  ttl_exp=0  tcp_syn=47085  tcp_rst_fin=25402  6rd_tunl_src_addr=0
+	mc_disabled=0  mc_blogged=30  mc_control=0  mc_no_flow=0  mc_unknown_group=5875  mc_excl_port=0 
+	tcp_ack_done=0
+
+IPv4 TX stats: total=24504
+	learnt=24504  unknown_proto=0  mc_unknown=0  mc_uknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0  frag=0
+
+IPv6 RX stats: total=49157
+	blogged=3073  unknown_proto=39592  disabled=0  pktlen_gt_mtu=0  ip_len_error=0  cng_low_pri=0
+	dyn_tclass=0  hop_limit_exp=0  tcp_syn=1468  tcp_rst_fin=1800
+	mc_disabled=0  mc_blogged=0  bad_version=0
+	mc_control=0  mc_no_flow=0  mc_unknown_group=3224  mc_excl_port=0 
+	tcp_ack_done=0
+IPv6 TX stats: total=2094
+	learnt=2094  unknown_proto=0  mc_unknown=0  mc_unknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0
+
+GRE RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+GRE TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+L2TP RX stats: total=9
+	blogged=0  unknown_proto=0  session_tunnel_id_0=9  no_tunnel=0
+
+L2TP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0   checksum_failure=0 
+
+ESP RX stats: total=0
+	blogged=0  unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+ESP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+VXLAN RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	invalid_flags=0
+
+VXLAN TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0
+
+Slow Path Total: RX=1750981, TX=26600
+
+Bridge br0 igmp snooping 2  rate-limit 0pps, priority -1 brtype Linux
+ Port Name    Querier      Timeout
+    eth3           NO          000
+    wl2.5          NO          000
+    eth6           NO          000
+    eth5           NO          000
+    eth4           NO          000
+    eth1           NO          000
+bridge dstdev dstaccdev src-dev type #tags lan-tci  wan-tci info    group           mode RxGroup         source          reporter        timeout ExcludPt Index      
+br0    eth3   eth3   br0        1 00    0x0000   0x0000ffff 0x0 239.255.102.018 EX   239.255.102.018 000.000.000.000 192.168.050.173 45      -1     1 
+br0    eth3   eth3   eth0       2 00    0x0000   0x0000ffff 0x0 239.255.102.018 EX   239.255.102.018 000.000.000.000 192.168.050.173 45      -1     1 
+Broadcom Packet Flow Cache v4.0
+Flow   U/M M/C idle:+swhit SW_TotHits:          TotalBytes     HW_tpl Fhw_idx HW_Hits   HW_TotHits L1-Info Prot   SourceIpAddress:Port    DestinIpAddress:Port   Vlan0(mcast) Vlan1(mcast) tag# ToS IqPrio    SkbMark    RxDev    TxDev nf_conn[0] nf_conn[1] nf_conn[2] nf_conn[3]  
+  Flow I ClientId      L1-Info         MAC             wlinfo
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+------- Dumping /tmp/wl0_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth4
+hw_mode=g
+channel=1
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wps_state=2
+wps_independent=1
+uuid=4caf2dd4-1956-ad4c-b2f2-2e3c0ce2f73b
+device_name=ZenWiFi_XT9
+manufacturer=ASUSTeK Computer Inc.
+model_name=Wi-Fi Protected Setup Router
+model_number=ZenWiFi_XT9
+serial_number=MAIG4S330061RF6
+os_version=134217728
+device_type=6-0050F204-1
+config_methods=label push_button keypad virtual_push_button physical_push_button 
+ap_pin=36750252
+wps_cred_processing=2
+wps_rf_bands=ag
+upnp_iface=br0
+friendly_name=WPS Access Point
+eap_server=1
+wps_cred_add_sae=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+------- Dumping /tmp/wl1_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth5
+hw_mode=a
+channel=36
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wps_state=2
+wps_independent=1
+uuid=4caf2dd4-1956-ad4c-b2f2-2e3c0ce2f73b
+device_name=ZenWiFi_XT9
+manufacturer=ASUSTeK Computer Inc.
+model_name=Wi-Fi Protected Setup Router
+model_number=ZenWiFi_XT9
+serial_number=MAIG4S330061RF6
+os_version=134217728
+device_type=6-0050F204-1
+config_methods=label push_button keypad virtual_push_button physical_push_button 
+ap_pin=36750252
+wps_cred_processing=2
+wps_rf_bands=ag
+upnp_iface=br0
+friendly_name=WPS Access Point
+eap_server=1
+wps_cred_add_sae=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+------- Dumping /tmp/wl2_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth6
+hw_mode=a
+channel=149
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800_dwb
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+## BSS configurations
+bss=wl2.5
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+bssid=72:42:1A:52:7B:9D
+ssid=7C3E2C1700F46BE26F65232CB5FB9AB5
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=C357A1EC0CB8551D57843233C94B7611
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0

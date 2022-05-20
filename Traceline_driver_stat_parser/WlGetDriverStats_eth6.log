@@ -1,0 +1,2676 @@
+eth6 DHD version =(null): 17.10 RC188.55 Dongle Host Driver, version 17.10.188.55 (r806225) Compiled in drivers/net/wireless/bcmdhd
+=============================
+eth6 Driver info
+=============================
+---------------------------------------------
+WLVERSION: wl -i eth6 ver
+---------------------------------------------
+	Broadcom BCA: 17.10 RC188.55
+	wl2: Mar 23 2022 17:18:24 version 17.10.188.55 (r806225) FWID 01-407a2d9d
+---------------------------------------------
+REVINFO: wl -i eth6 revinfo
+---------------------------------------------
+	vendorid 0x14e4
+	deviceid 0x6003
+	radiorev 0x250e4
+	chipnum 0x6715
+	chiprev 0x2
+	chippackage 0x0
+	corerev 132.2
+	boardid 0x92b
+	boardvendor 0x14e4
+	boardrev P101
+	driverrev 17.10.188.55
+	ucoderev 1659.306
+	bus 0x0
+	phytype 0xb
+	phyrev 130.1
+	anarev 0x0
+	nvramrev 0
+	otpflag 0x0
+---------------------------------------------
+DHDVERSION: dhd -i eth6 version
+---------------------------------------------
+	(null): 17.10 RC188.55
+	Dongle Host Driver, version 17.10.188.55 (r806225)
+	Compiled in drivers/net/wireless/bcmdhd
+---------------------------------------------
+WLCAP: wl -i eth6 cap
+---------------------------------------------
+	ap sta wet led wme 802.11d 802.11h cqa cac mbss8 ampdu ampdu_tx ampdu_rx amsdurx amsdutx rxchain_pwrsave wds dwds vht-prop-rates multi-user-beamformer single-user-beamformer multi-user-beamformee single-user-beamformee 160 dfrts stbc-tx stbc-rx-1ss pspretend probresp_mac_filter mfp wnm bsstrans scanmac cptlv-4 ve fbtoverds fbt_adpt ifver bgdfs bgdfs160 spp lpr_scan bkoff_evt awd_data_info monitor cevent traffic_thresh 11ax stamon csimon cfp hwa-1a-1b-2a-2b-3a-3b-4b-pp pqp sqs sae slaveradar swpaging 
+---------------------------------------------
+UPTIME (sec): [System uptime] [sum of how much time each core spent idle] 
+---------------------------------------------
+	81357.13 318974.20
+=================================
+Statistics for eth6 first run
+=================================
+=============================================
+WL Statistics for eth6
+=============================================
+---------------------------------------------
+STATUS: wl -i eth6 status
+---------------------------------------------
+	SSID: "Sprite-AX7800_dwb"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 161/80
+	BSSID: 04:42:1A:52:7B:98	Capability: ESS RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 6(b) 9 12 18 24(b) 36 48 54 ]
+	HE Capable:
+		Chanspec: 5GHz channel 155 80MHz (0xe39b)
+		Primary channel: 161
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-31
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+			NSS3 Tx: 0-11        Rx: 0-11      
+			NSS4 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+		    160 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x62 (38 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth6 assoclist
+---------------------------------------------
+---------------------------------------------
+AUTH STA LIST: wl -i eth6 authe_sta_list
+---------------------------------------------
+---------------------------------------------
+SMFSTATS: wl -i eth6 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 1
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 875
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 870
+			Status_code 30 Count: 1
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 7 Count: 520
+			Reason_code 15 Count: 862
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth6 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth6 5g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+2G RATE: wl -i eth6 2g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+NRATE: wl -i eth6 nrate
+---------------------------------------------
+	legacy rate 6 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth6 rate
+---------------------------------------------
+	6 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth6 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth6 spect
+---------------------------------------------
+	Loose interpretation of 11h spec - may join non 11h AP.
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth6 phy_ed_thresh
+---------------------------------------------
+	-65
+---------------------------------------------
+OPER MODE: wl -i eth6 oper_mode
+---------------------------------------------
+	50 (0x32)
+---------------------------------------------
+CHANIMSTATS: wl -i eth6 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	161/80	 2	0	34	7	24	0	19	0	0	12118	137	-87	20	64	216748877
+---------------------------------------------
+INTERFERENCE: wl -i eth6 interference
+---------------------------------------------
+	
+	Mode = 75. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 2:  Limit pktgain based on hwaci (high pwr aci)
+		bit-mask 8:  Preemption is enabled
+		bit-mask 64: HW OBSS Detection + Mitigation
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth6 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth6 bs_data -noreset
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+PKTQSTATS: wl -i eth6 pktq_stats
+---------------------------------------------
+no available addresses in assoclist for automatic operation
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth6 rx_report
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth6 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth6 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth6 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth6 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth6 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth6 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth6 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth6 dump txbf
+---------------------------------------------
+	Bfr capable: 0x1f Bfe capable: 0xf
+	Explicit txbf mode: auto, active: true
+	Allowed by country code: true
+	Allow txbf on non primaryIF: true
+	coremask0 0x30f coremask1 0xf07
+	CQI txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	MU txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	         inq:	0000_0000
+	SU txv bitmap: inuse 0000 free ffff
+	Implicit txbf mode: auto, calibr_flag: 0
+	
+	Beamforming Statistics:
+	txndpa 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) txndp 0 txbfpoll 0 txbrp 0 txbfm 0
+	rxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) exprxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) rxcqi 0
+	rxndpa_u 0 rxndpa_m 0 rxbfpoll 0 bferpt 0 rxcwrts 0 rxcwcts 0 bfd_dn 0 bfd_fl 0
+---------------------------------------------
+MUTX DUMP: wl -i eth6 dump mutx
+---------------------------------------------
+	MU BFR capable and configured; MU feature is ON, AC policy is ON
+	BW policy = 5 AC policy = 0
+	Maximum clients 16
+	MU clients: vhtmu  0 hemmu  0
+	Total mutx: tot_tx 0 txasmu 0 (0%) ncons 0 nlost 0
+	
+	MU capable but not admitted STAs:
+---------------------------------------------
+MURX DUMP: wl -i eth6 dump murx
+---------------------------------------------
+	MU-MIMO receive state:
+	MU RX active in BSS <none>
+	GID msgs rxd                  0
+	GID msgs dropped. No mem.     0
+	GID msgs rxd not in infra BSS 0
+	GID msgs rxd in other BSS     0
+---------------------------------------------
+MSCHED DUMP: wl -i eth6 dump msched
+---------------------------------------------
+	MU scheduler:
+	DL policy: AUTO (-1)  ofdma_en: 1 schidx: 1 flag: 0x0001 dyn_sigbmcs: 0 ack policy: trig_in_amp (1)
+	           RU alloc mode: UCRU (-1), mu-rts: 2, dsmps_war: 0 mixackp: 1, mixbw (80+160): 1
+	           dlofdma_users min 2 max 96 num 0 omutafwin 0 aggx 1 su_thresh 3000 mu_thresh 1000
+	           maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	
+	DL RU stats:
+---------------------------------------------
+UMSCHED DUMP: wl -i eth6 dump umsched
+---------------------------------------------
+	UL OFDMA admitted 0 maxclients 8 minulusers 2 fb 1 mode 1 brcm_only 0 ban_nonbrcm_160sta 0
+	maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 trigger: OFF drv_ulrtctl: 1
+	Scheduler parameters
+	  mctl 0x2024 mctl1 0x000c txcnt 65535 burst 2 maxtw 5
+	  interval 1 maxdur 5380 minidle 100 cpltf 1 nltf 1
+	  txlmt 0x206 txlowat0 0 txlowat1 0 rxlowat0 3 rxlowat1 30
+	  mlen 0 mmlen 0 aggn 0 csthr0 76 csthr1 418 tagid 0
+	  ulc_sz 32 autoulc 1 usched 0  dsched 1 hibernate 0 mixbw 0
+	  minrssi -110 pktthrsh 100 idleprd 10 qnullthrsh 3 always_admit 0
+	UL policy: AUTO (-1) bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	num_usrs: 0 num_pendutxd: 0 num_utxd_alloc: 0 
+	UL OFDMA stats:
+	UL MUMIMO stats:
+	
+---------------------------------------------
+TWT DUMP: wl -i eth6 dump twt
+---------------------------------------------
+	TWT Enab: 0
+---------------------------------------------
+D11CNTS DUMP: wl -i eth6 dump d11cnts
+---------------------------------------------
+	rxtrig_myaid 0 rxtrig_rand 0 rxswrst 65536 bfd_done 0 bfd_fail 0 rptovrd 0 rxsferr 0 rxpfflush 35375232 
+	rxflucmt 0 rxfluov 0 agg0 0 trigrefill 0 txtrig 0 rxhetbba 0 txbamtid 0 txbamsta 0 
+	rxmydtinrsp 0 rxexit 89301204 txampdu 0 txtrigampdu 0 txmurts 0 txmubar 0 txhetbba 0 txqnull 0 
+	txtbdata 0 skip_ffqcons 0 
+	m2vmsg 0 v2mmsg 0 m2vgrp 0 v2mgrp 0 v2mgrpinv 0 m2vsnd 0 v2msnd 0 v2msndinv 0 
+	m2vcqi 0 v2mcqi 0 ffqadd 777964 ffqdel 777961 mfqadd 0 mfqdel 0 mfoqadd 0 mfoqdel 0 
+	ofqadd 0 ofqdel 0 rucfg 0 m2vru 0 v2mru 0 ofqagg0 0 m2sq0 0 m2sq1 0 
+	m2sq2 0 m2sq3 0 m2sq4 0 sndfl 0 hecapinv 0 m2sqtxvevt 0 mmuregrp 0 mmuemgcgrp 0 
+	m2vgrpwait 0 om2sq0 0 om2sq1 0 om2sq2 0 om2sq3 0 om2sq4 0 om2sq5 0 om2sq6 0 
+	tafwmismatch 0 omredist 0 omtxd 0 
+	max sched idle time [%]:    0 (in 800msec)
+	last 8 measurements  [%]:    0     0     0     0     0     0     0     0  
+	
+	                 su ampdu cnt:      0
+	              muagg histo sum:      0
+	              muagg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	     vht mumimo agg histo sum:      0
+	     vht mumimo agg histogram:      0       0       0       0  
+	     he  mumimo agg histo sum:      0
+	     he  mumimo agg histogram:      0       0       0       0  
+	     he dlofdma agg histo sum:      0
+	     he dlofdma agg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	
+---------------------------------------------
+WME COUNTERS: wl -i eth6 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 705716 bytes: 226016015 failed frames: 158 failed bytes: 9480
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 83 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 3459 bytes: 418539 failed frames: 0 failed bytes: 0
+	       rx frames: 3447 bytes: 534285 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 3 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth6 if_counters
+---------------------------------------------
+	txframe 355899 txbyte 113406482 txerror 17 rxframe 3447 rxbyte 534285 rxerror 0 
+	txnobuf 0 txfail 17 
+	d11_txfrag 366637 d11_txmulti 353262 d11_txretry 600 d11_txretrie 36 
+	d11_txfrmsnt 366773 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+---------------------------------------------
+COUNTERS: wl -i eth6 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 2
+	reinitreason_counts: 
+	reinit 0 reset 25 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 709175 txbyte 226434554 txretrans 750 txlost 0 txfail 17 txchanrej 7 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 794161 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 3447 rxbyte 534285 rxerror 8 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 0 txnoassoc 0 txchit 0 txcmiss 705716 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 0 txexptime 86 
+	d11_txfrag 719822 d11_txmulti 706447 d11_txbcast 0 d11_txretry 600 d11_txretrie 36 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 762 d11_txfrmsnt 720007 
+	rxdropped 0 rxcrc 13543189 rxnobuf 8 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 4647147 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 4315 rxbadsrcmac 0 rxrtry 5711672 
+	d11_rxfrag 24984970 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 24979675 rxbadda 0 rxfilter 1113 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 0 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 3475 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 983 txmpdu_stbc 0 rxmpdu_stbc 983 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 24984970 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 983 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 871 txreassocrsp 0 
+	txauth 875 txdeauth 1382 txprobereq 1009 txprobersp 6773 txaction 36 
+	rxassocreq 876 rxreassocreq 0 rxdisassoc 3 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 877 rxdeauth 18 rxprobereq 860902 rxprobersp 7227205 rxaction 3481 
+	txallfrm 2337838 txbcnfrm 1585004 txrtsfrm 0 txctsfrm 15440 txackfrm 16821 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 14133 rxrsptmout 765 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 5.5% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 114870384 rxbadplcp 9765509 rxcrsglitch 170099760 rxtoolate 276317 rxnodelim 5353601 
+	rxdrop20s 25583972 bphy_badplcp 0 bphy_rxcrsglitch 0 
+	rxbadfcs 13543189 rxfrmtoolong 118048 rxfrmtooshrt 232234 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 1804 pmqovfl 0 
+	rxctlucast 20668 rxrtsucast 7306 rxctsucast 0 rxackucast 13362 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 4453 rxmgucastmbss 12368 
+	rxbeaconobss 16882127 rxdtucastobss 0 rxdtocast 3632796 rxmgocast 8070272 
+	rxctlocast 36623326 rxrtsocast 14212851 rxctsocast 12125834 
+	rxctlmcast 639 rxdtmcast 5292657 rxmgmcast 17741917 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 65917 m2vmsg 0 v2mmsg 0 
+	mboxout 777984 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth6 memuse
+---------------------------------------------
+	Heap Total: 2567188(2508K)
+	Free: 1349612(1318K), LWM: 1319304(1289K)
+	In use: 1216176(1188K), HWM: 1247884(1219K)
+	Malloc failure count: 0
+	In use + overhead: 1217576(1190K), Max memory in use: 2087520(2039K)
+---------------------------------------------
+CHANNEL INFO: wl -i eth6 chan_info
+---------------------------------------------
+	Channel 149	5G Band
+	Channel 153	5G Band
+	Channel 157	5G Band
+	Channel 161	5G Band
+	Channel 165	5G Band
+---------------------------------------------
+DFS STATUS: wl -i eth6 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 2
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 161/80 (0xE39B), chanspec last cleared: none, sub type: 0x00
+	@1: state: IDLE, time elapsed: 0ms, chanspec: none, chanspec last cleared: none, sub type: 0x01
+---------------------------------------------
+NOISE: wl -i eth6 noise
+---------------------------------------------
+	-87
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth6 phy_tempsense
+---------------------------------------------
+	61 (0x3d)
+---------------------------------------------
+BAND: wl -i eth6 band
+---------------------------------------------
+	a
+---------------------------------------------
+SCAN RESULTS: wl -i eth6 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth6 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth6 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth6 dump ratelinkmem
+---------------------------------------------
+	RateLinkMem Module DUMP
+	RateLinkMem SCB info (0014d610, mac: 04:42:1a:52:7b:98, index: 63, valid: 1): 
+	rate_state: 1, rmem_nupd/curptr/txptr/maxdepth: 146 1 1 7
+		rate_store[0]: flags: 0x1, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[1]: flags: 0x2, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[2]: flags: 0xb, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[3]: flags: 0xc, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[4]: flags: 0xd, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[5]: flags: 0xe, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[6]: flags: 0xf, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[7]: flags: 0x0, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+	link_state: 1, cur_link_count: 234
+		BssIdx: 0x0, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x4, TkipPhase1KeyIdx: 0x7
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+	RateLinkMem SCB info (00118170, mac: 72:42:1a:52:7b:9d, index: 249, valid: 1): 
+	rate_state: 0, rmem_nupd/curptr/txptr/maxdepth: 0 0 0 0
+	link_state: 1, cur_link_count: 51
+		BssIdx: 0xc5, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x1fc, TkipPhase1KeyIdx: 0x2
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth6 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0xe39b):	24.50  24.75  24.50  24.75  
+---------------------------------------------
+CEVENT: ceventc -i eth6 dump
+---------------------------------------------
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+DHD Statistics for eth6
+=================================
+---------------------------------------------
+DHDDUMP: dhd -i eth6 DHD dump
+---------------------------------------------
+	Dongle Host Driver, version 17.10.188.55 (r806225)
+	Compiled in drivers/net/wireless/bcmdhd
+	
+	pub.up 1 pub.txoff 0 pub.busstate 2
+	pub.hdrlen 0 pub.maxctl 0 pub.rxsz 1514
+	pub.iswl 1 pub.drv_version 0 pub.mac 04:42:1a:52:7b:98
+	pub.bcmerror -2 tickcnt 7369546
+	dongle stats:
+	tx_packets 0 tx_bytes 0 tx_errors 0 tx_dropped 0
+	rx_packets 0 rx_bytes 551685 rx_errors 0 rx_dropped 0
+	multicast 0
+	bus stats:
+	tx_packets 710390  tx_dropped 2286 tx_multicast 706773 tx_errors 0
+	tx_ctlpkts 0 tx_ctlerrs 0
+	rx_packets 4317 rx_multicast 870 rx_errors 0 
+	rx_ctlpkts 1146404 rx_ctlerrs 0 rx_dropped 0
+	rx_readahead_cnt 0 tx_realloc 0
+	tx_pktgetfail 0 rx_pktgetfail 0 rx_pktidfail 0
+	
+	tx_packets_wfd  0 tx_packets_dropped_wfd 0 tx_flowring_mismatch_drop_wfd 0
+	tx_packets_wfd_mcast  0 tx_packets_dropped_wfd_mcast 0
+	tx_nodup:		0
+	tx_tag_nobuf:	0	,free tags in the pool:	2592	,used:0 
+	fkbpool_nobuf:	0	,free fkbs in the pool: 1280	,used:0
+	
+	DHD Router: 3GMAC forwarding mode
+	DHDHDR supported
+	WI Format: haddr64=0 physaddrhi=0x00000000 TxP=2,32 RxP=1,8 TxC=1,8 RxC0=1,8
+	D2H SYNC: NONE: d2h_sync_wait max<0> tot<0>
+	Dongle DMA Indices: h2d 1  d2h 1 index size 2 bytes
+	
+	DHD Runner: 
+	  Status     : txoffl 0 rxoffl 1 txcmpl2host 0 dhdhdr 1  msgringformat 1 bkupq 1 hwawkup 1  
+	             :  
+	             : cpuqdpc 1 cmplnotif 1
+	  Profile    : prfl_id 3 id_valu  1024/0512   2048/1024   1024/0512   0512/0512   0512/0512 
+	  h2r_notif  : tx_post 0 rx_cmpl 5314 tx_cmpl 0 txp_fail 0
+	  r2h_req    : rx_cmpl 4317 tx_cmpl 0 wk_dngl 0
+	
+	CtrlPost: RD 14:14 WR 14:14
+	CtrlCpl: RD 126:126 WR 126:126
+	RxPost: RBP 0 RD 0:792 WR 395:395
+	RxCpl[0]: RD 396:396 WR 0:396
+	TxCpl: RD 0:758 WR 0:758
+	active_tx_count 0	 pktidmap_avail -1
+	dhd cumm_ctr 0
+	Num: Offl Flow If Prio :Dest_MacAddress: Qlen CLen L2CLen  Overflows        RD        WR Acked tossed noack 
+	  0.    0    2  5    0 01:80:c2:00:00:00    0    0      0          0  398: 398  398: 398    NA     NA    NA
+	  1.    0    3  0    0 01:80:c2:00:00:00    0    0      0          0  203: 203  203: 203    NA     NA    NA
+	D3 inform cnt 0
+	D0 inform cnt 0
+	D0 inform in use cnt 0
+	 [1m[34mDHD_PKTFWD[1.0.0][0m Dump, radios 1 wlifs 3 tx_accel YES dwds_accel(ap/sta) YES/YES init YES
+		 Pkt Tx[CHN 0] Rx[Fast 0,  Slow 0] sta 0 drop 0 fail 1
+		 dhd2 wfd_idx 2 pktfwd 2
+	 DHD_AWL Tx:  YES bound -1 A2W Xfer [rxd 0 drp 0 fwd 0 cls 0 chn 0/0]
+	 DHD_AWL Rx:  YES bound 64 a2w_max_pktl_len 0
+	 W2A List [rxd 0 flt 0 fwd 0 cls 0 chn 0/0] A2W List [rxd 0 drp 0 fwd 0 cls 0 chn 0/0 discard 0]
+	
+=================================
+CPU Stats
+=================================
+/usr/sbin/WlGetDriverStats.sh: line 442: mpstat: not found
+=================================
+Process status
+=================================
+ps: invalid option -- 'a'
+BusyBox v1.24.1 (2022-03-23 16:30:48 CST) multi-call binary.
+
+Usage: ps 
+
+Show list of processes
+
+	w	Wide output
+	T	Show threads
+  PID USER       VSZ STAT COMMAND
+    1 admin    14384 S    /sbin/init
+    2 admin        0 SW   [kthreadd]
+    3 admin        0 IW<  [rcu_gp]
+    4 admin        0 IW<  [rcu_par_gp]
+    6 admin        0 IW<  [kworker/0:0H-kb]
+    8 admin        0 IW<  [mm_percpu_wq]
+    9 admin        0 SW   [ksoftirqd/0]
+   10 admin        0 IW   [rcu_preempt]
+   11 admin        0 IW   [rcu_sched]
+   12 admin        0 IW   [rcu_bh]
+   13 admin        0 SW   [migration/0]
+   14 admin        0 SW   [cpuhp/0]
+   15 admin        0 SW   [cpuhp/1]
+   16 admin        0 SW   [migration/1]
+   17 admin        0 SW   [ksoftirqd/1]
+   19 admin        0 IW<  [kworker/1:0H-kb]
+   20 admin        0 SW   [cpuhp/2]
+   21 admin        0 SW   [migration/2]
+   22 admin        0 SW   [ksoftirqd/2]
+   24 admin        0 IW<  [kworker/2:0H-kb]
+   25 admin        0 SW   [cpuhp/3]
+   26 admin        0 SW   [migration/3]
+   27 admin        0 SW   [ksoftirqd/3]
+   29 admin        0 IW<  [kworker/3:0H-ev]
+   30 admin        0 SW   [kdevtmpfs]
+   31 admin        0 SW   [rcu_tasks_kthre]
+   35 admin        0 SW   [oom_reaper]
+   36 admin        0 IW<  [writeback]
+   37 admin        0 IW<  [crypto]
+   38 admin        0 IW<  [kblockd]
+   39 admin        0 SW   [skb_free_task]
+   40 admin        0 SW   [watchdogd]
+   41 admin        0 IW<  [mptcp_wq]
+   48 admin        0 SW   [kswapd0]
+   81 admin        0 SW   [hwrng]
+   83 admin        0 SW   [spi1]
+   84 admin        0 SW   [irq/61-mmc0]
+   86 admin        0 IW<  [ipv6_addrconf]
+   87 admin        0 SW   [ubi_bgt0d]
+   88 admin        0 IW<  [kworker/0:1H-kb]
+   89 admin        0 IW<  [kworker/1:1H-kb]
+   91 admin        0 IW<  [kworker/2:1H-kb]
+  182 admin        0 SW   [ubifs_bgt0_10]
+  198 admin        0 SW   [ubifs_bgt0_11]
+  228 admin        0 SW   [ubifs_bgt0_13]
+  354 admin        0 SW   [bpm_monitor]
+  360 admin        0 SW   [fc_evt]
+  361 admin        0 SW   [fc_timer]
+  362 admin        0 SW   [bcmFlwStatsTask]
+  366 admin        0 SW   [bcm_archer_us]
+  368 admin        0 SW   [bcm_archer_wlan]
+  372 admin        0 SW   [bcmsw_rx]
+  373 admin        0 SW   [bcmsw_recycle]
+  374 admin        0 SW   [enet-kthrd]
+  381 admin        0 SW   [pdc_rx]
+  477 admin     1596 S    {wdtctl} wdtd
+  479 admin     1740 S    hotplug2 --persistent --no-coldplug
+  531 admin     2040 S    /usr/sbin/envrams
+  630 admin        0 IW<  [kworker/3:1H-ev]
+  689 admin        0 IW<  [cfg80211]
+  760 admin        0 SW   [wl0-kthrd]
+  761 admin        0 SW   [bcm_awl_xfer_0]
+  768 admin        0 SW   [wl1-kthrd]
+  769 admin        0 SW   [bcm_awl_xfer_1]
+  833 admin        0 SW   [dhd_watchdog_th]
+  834 admin        0 SW   [bcm_awl_xfer_2]
+  836 admin        0 SW   [archer_dhd_2]
+ 1002 admin    11884 S    /sbin/wanduck
+ 1044 admin     3172 S    avahi-daemon: running [ZenWiFi_XT9-7B90.local]
+ 1093 admin     2976 S    /bin/eapd
+ 1129 admin     7428 S    hostapd -B /tmp/wl0_hapd.conf
+ 1165 admin     7428 S    hostapd -B /tmp/wl1_hapd.conf
+ 1212 admin     7428 S    hostapd -B /tmp/wl2_hapd.conf
+ 1220 admin     4668 S    /usr/sbin/wlc_nt
+ 1221 admin     8796 S    wps_pbcd
+ 1224 admin     4664 S    /usr/sbin/wlc_monitor
+ 1241 admin     6076 S    /usr/sbin/bsd
+ 1250 admin     2972 S    /bin/ceventd
+ 1319 admin     4936 S    /usr/sbin/wlceventd
+ 1323 admin     2948 S    /usr/sbin/debug_monitor /data
+ 1364 admin    13108 S    networkmap
+ 1388 admin    18272 S    conn_diag
+ 1403 admin    11884 S    amas_ssd_cd
+ 1532 admin    14688 S    cfg_server
+ 1590 admin    11884 S    console
+ 1702 admin        0 IW   [kworker/3:1-mm_]
+ 1723 admin    11884 S    /sbin/PS_pod
+ 1736 admin        0 IW   [kworker/3:2]
+ 1820 admin     3272 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 1824 nobody    3396 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 2465 admin     2012 S    /usr/sbin/jitterentropy-rngd -p /var/run/jitterentro
+ 2466 admin    11140 S    asd
+ 2471 admin    13004 S    nt_monitor
+ 2472 admin     5680 S    protect_srv
+ 2473 admin    13936 S    /sbin/netool
+ 2483 admin    13236 S    nt_center
+ 2518 admin    11884 S    wpsaide
+ 2522 admin     6884 S    /usr/sbin/awsiot
+ 2533 admin     4872 S    nt_actMail
+ 2573 admin     3088 S    crond
+ 2575 admin     6600 S    /usr/sbin/infosvr br0
+ 2579 admin    12868 S    sysstate
+ 2580 admin    14120 S    ahs
+ 2581 admin    11884 S    watchdog
+ 2582 admin    11884 S    check_watchdog
+ 2583 admin    11884 S    alt_watchdog
+ 2584 admin    11884 S    amas_lanctrl
+ 2587 admin     4340 S    rstats
+ 2618 admin    13384 S    mastiff
+ 2619 admin    11884 S    bwdpi_check
+ 2622 admin    11884 S    pctime
+ 2623 admin     3832 S    /usr/sbin/acsd2
+ 2626 admin    17012 S    roamast
+ 2649 admin    19192 S    amas_lib
+ 2659 admin    11884 S    sched_daemon
+ 2674 admin     5744 S    fsmd
+ 2712 admin        0 SW   [scsi_eh_0]
+ 2713 admin        0 IW<  [scsi_tmf_0]
+ 2714 admin        0 SW   [usb-storage]
+ 2722 admin        0 IW<  [uas]
+ 2757 admin    11884 S    usbled
+ 2953 admin    11884 S    ntp
+ 3034 admin        0 Z    [ntpclient]
+ 3047 admin    11884 S    disk_monitor
+ 3062 admin     3088 S    {uuplugin_monito} /bin/sh /tmp/uu/uuplugin_monitor.s
+ 3147 admin     4308 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3153 admin     3288 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3316 admin        0 SW   [tntfsiupdated]
+ 3644 admin    17012 S    amas_port_status
+ 3757 admin     6044 S    ./asus_lighttpd -Df /opt/etc/asus_lighttpd.conf
+ 3999 admin     6596 S    /usr/lib/ipsec/starter --daemon charon
+ 4000 admin    34816 S    /usr/lib/ipsec/charon --use-syslog
+ 4834 admin        0 IW   [kworker/2:0-eve]
+ 4859 admin    12652 S    minidlna -f /etc/minidlna.conf -r
+ 5830 admin     3088 S    -sh
+ 9907 admin        0 IW   [kworker/1:3-eve]
+11563 admin        0 IW   [kworker/u8:0-fl]
+13815 admin        0 IW   [kworker/2:2]
+15548 admin        0 IW   [kworker/1:0-eve]
+15761 admin        0 IW   [kworker/0:3-eve]
+15763 admin        0 IW   [kworker/0:5-eve]
+16375 admin     5088 S    /usr/sbin/pppd file /tmp/ppp/options.wan0
+16393 admin     3088 S    /sbin/udhcpc -i eth0 -p /var/run/udhcpc0.pid -s /tmp
+16746 admin     1976 S    /bin/mcpd
+16969 admin        0 IW   [kworker/u8:2-fl]
+17091 admin        0 IW   [kworker/1:1]
+17180 admin        0 IW   [kworker/0:0-eve]
+17363 nobody    2404 S    dnsmasq --log-async
+17364 admin     2404 S    dnsmasq --log-async
+17381 admin     9968 S    /usr/sbin/nmbd -D -s /etc/smb.conf
+17383 admin    10264 S    /usr/sbin/smbd -D -s /etc/smb.conf
+17388 admin     1880 S    /usr/sbin/wsdd2 -d -w -i br0 -b sku:ZenWiFi_XT9,seri
+17392 admin     6528 S    vsftpd /etc/vsftpd.conf
+17528 admin        0 IW   [kworker/u8:3-fl]
+17529 admin        0 IW   [kworker/0:1-eve]
+17547 admin     3088 S    /sbin/syslogd -m 0 -S -O /jffs/syslog.log -s 256 -l
+17549 admin     3088 S    /sbin/klogd -c 5
+17817 admin     2112 S    miniupnpd -f /etc/upnp/config
+17848 admin    10512 S    httpds -s -i br0 -p 8443
+17849 admin    10404 S    httpd -i br0
+25987 admin     2956 S    sleep 60
+26839 admin     3088 S    sh -c WlGetDriverStats.sh eth6 dhd 2 &> /tmp/WlGetDr
+26840 admin     3088 S    {WlGetDriverStat} /bin/sh /usr/sbin/WlGetDriverStats
+27776 admin     3088 R    ps
+29890 admin        0 IW   [kworker/u8:1-fl]
+[H[JMem: 269044K used, 240148K free, 23532K shrd, 5224K buff, 56816K cached
+CPU:  2.3% usr  0.0% sys  0.0% nic 97.6% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 1.49 1.35 1.25 1/199 27777
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[0m
+27777 26840 admin    R     3088  0.6   1  2.3 top -n 1
+ 4000  3999 admin    S    34816  6.8   2  0.0 /usr/lib/ipsec/charon --use-syslog
+ 2649     1 admin    S    19192  3.7   1  0.0 amas_lib
+ 1388     1 admin    S    18272  3.5   2  0.0 conn_diag
+ 3644     1 admin    S    17012  3.3   2  0.0 amas_port_status
+ 2626     1 admin    S    17012  3.3   1  0.0 roamast
+ 1532     1 admin    S    14688  2.8   1  0.0 cfg_server
+    1     0 admin    S    14384  2.8   1  0.0 /sbin/init
+ 2580     1 admin    S    14120  2.7   2  0.0 ahs
+ 2473     1 admin    S    13936  2.7   0  0.0 /sbin/netool
+ 2618     1 admin    S    13384  2.6   0  0.0 mastiff
+ 2483     1 admin    S    13236  2.6   0  0.0 nt_center
+ 1364     1 admin    S    13108  2.5   1  0.0 networkmap
+ 2471     1 admin    S    13004  2.5   0  0.0 nt_monitor
+ 2579     1 admin    S    12868  2.5   1  0.0 sysstate
+ 4859     1 admin    S    12652  2.4   0  0.0 minidlna -f /etc/minidlna.conf -r
+ 2581     1 admin    S    11884  2.3   0  0.0 watchdog
+ 2583     1 admin    S    11884  2.3   0  0.0 alt_watchdog
+ 2757     1 admin    S    11884  2.3   1  0.0 usbled
+ 2584     1 admin    S    11884  2.3   2  0.0 amas_lanctrl
+=================================
+Memory status
+=================================
+MemTotal:         509192 kB
+MemFree:          240136 kB
+MemAvailable:     170240 kB
+Buffers:            5224 kB
+Cached:            56816 kB
+SwapCached:            0 kB
+Active:            88092 kB
+Inactive:          27276 kB
+Active(anon):      58312 kB
+Inactive(anon):    18548 kB
+Active(file):      29780 kB
+Inactive(file):     8728 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         509192 kB
+LowFree:          240136 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                20 kB
+Writeback:             0 kB
+AnonPages:         53348 kB
+Mapped:            27140 kB
+Shmem:             23532 kB
+Slab:              51912 kB
+SReclaimable:       6012 kB
+SUnreclaim:        45900 kB
+KernelStack:        1616 kB
+PageTables:         2456 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      254596 kB
+Committed_AS:     166372 kB
+VmallocTotal:     507904 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              704 kB
+CmaTotal:          12288 kB
+CmaFree:            1024 kB
+=================================
+Statistics for eth6 run 1/2 @10 s
+=================================
+=============================================
+WL Statistics for eth6
+=============================================
+---------------------------------------------
+STATUS: wl -i eth6 status
+---------------------------------------------
+	SSID: "Sprite-AX7800_dwb"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 161/80
+	BSSID: 04:42:1A:52:7B:98	Capability: ESS RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 6(b) 9 12 18 24(b) 36 48 54 ]
+	HE Capable:
+		Chanspec: 5GHz channel 155 80MHz (0xe39b)
+		Primary channel: 161
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-31
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+			NSS3 Tx: 0-11        Rx: 0-11      
+			NSS4 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+		    160 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x5a (35 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth6 assoclist
+---------------------------------------------
+---------------------------------------------
+AUTH STA LIST: wl -i eth6 authe_sta_list
+---------------------------------------------
+---------------------------------------------
+SMFSTATS: wl -i eth6 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 1
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 876
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 871
+			Status_code 30 Count: 1
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 7 Count: 521
+			Reason_code 15 Count: 863
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth6 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth6 5g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+2G RATE: wl -i eth6 2g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+NRATE: wl -i eth6 nrate
+---------------------------------------------
+	legacy rate 6 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth6 rate
+---------------------------------------------
+	6 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth6 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth6 spect
+---------------------------------------------
+	Loose interpretation of 11h spec - may join non 11h AP.
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth6 phy_ed_thresh
+---------------------------------------------
+	-65
+---------------------------------------------
+OPER MODE: wl -i eth6 oper_mode
+---------------------------------------------
+	50 (0x32)
+---------------------------------------------
+CHANIMSTATS: wl -i eth6 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	161/80	 2	0	37	6	22	0	20	0	0	12130	101	-87	21	64	216760861
+---------------------------------------------
+INTERFERENCE: wl -i eth6 interference
+---------------------------------------------
+	
+	Mode = 75. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 2:  Limit pktgain based on hwaci (high pwr aci)
+		bit-mask 8:  Preemption is enabled
+		bit-mask 64: HW OBSS Detection + Mitigation
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth6 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth6 bs_data -noreset
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+PKTQSTATS: wl -i eth6 pktq_stats
+---------------------------------------------
+no available addresses in assoclist for automatic operation
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	  04: BE        22,      22,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  10: VI         4,       4,       0,       0,       0,       0,       0,        4,    0,      0.00,      6.00,  -/ -/ -/ -,   0.0,   49.4
+	  14: VO         0,       0,       0,       0,       0,       0,       0,        9,    0,      0.00,      6.00,  -/ -/ -/ -,   0.0,    0.0
+	  15: VO         9,       9,       0,       -,       -,       0,       0,        0,    0,         -,         -,           -,     -,      -
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth6 rx_report
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth6 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth6 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth6 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth6 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth6 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth6 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth6 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth6 dump txbf
+---------------------------------------------
+	Bfr capable: 0x1f Bfe capable: 0xf
+	Explicit txbf mode: auto, active: true
+	Allowed by country code: true
+	Allow txbf on non primaryIF: true
+	coremask0 0x30f coremask1 0xf07
+	CQI txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	MU txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	         inq:	0000_0000
+	SU txv bitmap: inuse 0000 free ffff
+	Implicit txbf mode: auto, calibr_flag: 0
+	
+	Beamforming Statistics:
+	txndpa 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) txndp 0 txbfpoll 0 txbrp 0 txbfm 0
+	rxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) exprxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) rxcqi 0
+	rxndpa_u 0 rxndpa_m 0 rxbfpoll 0 bferpt 0 rxcwrts 0 rxcwcts 0 bfd_dn 0 bfd_fl 0
+---------------------------------------------
+MUTX DUMP: wl -i eth6 dump mutx
+---------------------------------------------
+	MU BFR capable and configured; MU feature is ON, AC policy is ON
+	BW policy = 5 AC policy = 0
+	Maximum clients 16
+	MU clients: vhtmu  0 hemmu  0
+	Total mutx: tot_tx 0 txasmu 0 (0%) ncons 0 nlost 0
+	
+	MU capable but not admitted STAs:
+---------------------------------------------
+MURX DUMP: wl -i eth6 dump murx
+---------------------------------------------
+	MU-MIMO receive state:
+	MU RX active in BSS <none>
+	GID msgs rxd                  0
+	GID msgs dropped. No mem.     0
+	GID msgs rxd not in infra BSS 0
+	GID msgs rxd in other BSS     0
+---------------------------------------------
+MSCHED DUMP: wl -i eth6 dump msched
+---------------------------------------------
+	MU scheduler:
+	DL policy: AUTO (-1)  ofdma_en: 1 schidx: 1 flag: 0x0001 dyn_sigbmcs: 0 ack policy: trig_in_amp (1)
+	           RU alloc mode: UCRU (-1), mu-rts: 2, dsmps_war: 0 mixackp: 1, mixbw (80+160): 1
+	           dlofdma_users min 2 max 96 num 0 omutafwin 0 aggx 1 su_thresh 3000 mu_thresh 1000
+	           maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	
+	DL RU stats:
+---------------------------------------------
+UMSCHED DUMP: wl -i eth6 dump umsched
+---------------------------------------------
+	UL OFDMA admitted 0 maxclients 8 minulusers 2 fb 1 mode 1 brcm_only 0 ban_nonbrcm_160sta 0
+	maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 trigger: OFF drv_ulrtctl: 1
+	Scheduler parameters
+	  mctl 0x2024 mctl1 0x000c txcnt 65535 burst 2 maxtw 5
+	  interval 1 maxdur 5380 minidle 100 cpltf 1 nltf 1
+	  txlmt 0x206 txlowat0 0 txlowat1 0 rxlowat0 3 rxlowat1 30
+	  mlen 0 mmlen 0 aggn 0 csthr0 76 csthr1 418 tagid 0
+	  ulc_sz 32 autoulc 1 usched 0  dsched 1 hibernate 0 mixbw 0
+	  minrssi -110 pktthrsh 100 idleprd 10 qnullthrsh 3 always_admit 0
+	UL policy: AUTO (-1) bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	num_usrs: 0 num_pendutxd: 0 num_utxd_alloc: 0 
+	UL OFDMA stats:
+	UL MUMIMO stats:
+	
+---------------------------------------------
+TWT DUMP: wl -i eth6 dump twt
+---------------------------------------------
+	TWT Enab: 0
+---------------------------------------------
+D11CNTS DUMP: wl -i eth6 dump d11cnts
+---------------------------------------------
+	rxtrig_myaid 0 rxtrig_rand 0 rxswrst 65536 bfd_done 0 bfd_fail 0 rptovrd 0 rxsferr 0 rxpfflush 35380533 
+	rxflucmt 0 rxfluov 0 agg0 0 trigrefill 0 txtrig 0 rxhetbba 0 txbamtid 0 txbamsta 0 
+	rxmydtinrsp 0 rxexit 89312037 txampdu 0 txtrigampdu 0 txmurts 0 txmubar 0 txhetbba 0 txqnull 0 
+	txtbdata 0 skip_ffqcons 0 
+	m2vmsg 0 v2mmsg 0 m2vgrp 0 v2mgrp 0 v2mgrpinv 0 m2vsnd 0 v2msnd 0 v2msndinv 0 
+	m2vcqi 0 v2mcqi 0 ffqadd 777996 ffqdel 777993 mfqadd 0 mfqdel 0 mfoqadd 0 mfoqdel 0 
+	ofqadd 0 ofqdel 0 rucfg 0 m2vru 0 v2mru 0 ofqagg0 0 m2sq0 0 m2sq1 0 
+	m2sq2 0 m2sq3 0 m2sq4 0 sndfl 0 hecapinv 0 m2sqtxvevt 0 mmuregrp 0 mmuemgcgrp 0 
+	m2vgrpwait 0 om2sq0 0 om2sq1 0 om2sq2 0 om2sq3 0 om2sq4 0 om2sq5 0 om2sq6 0 
+	tafwmismatch 0 omredist 0 omtxd 0 
+	max sched idle time [%]:    0 (in 800msec)
+	last 8 measurements  [%]:    0     0     0     0     0     0     0     0  
+	
+	                 su ampdu cnt:      0
+	              muagg histo sum:      0
+	              muagg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	     vht mumimo agg histo sum:      0
+	     vht mumimo agg histogram:      0       0       0       0  
+	     he  mumimo agg histo sum:      0
+	     he  mumimo agg histogram:      0       0       0       0  
+	     he dlofdma agg histo sum:      0
+	     he dlofdma agg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	
+---------------------------------------------
+WME COUNTERS: wl -i eth6 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 705735 bytes: 226017622 failed frames: 159 failed bytes: 9540
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 83 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 3463 bytes: 419023 failed frames: 0 failed bytes: 0
+	       rx frames: 3451 bytes: 534905 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 3 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth6 if_counters
+---------------------------------------------
+	txframe 355912 txbyte 113407739 txerror 17 rxframe 3451 rxbyte 534905 rxerror 0 
+	txnobuf 0 txfail 17 
+	d11_txfrag 366659 d11_txmulti 353271 d11_txretry 600 d11_txretrie 36 
+	d11_txfrmsnt 366795 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+---------------------------------------------
+COUNTERS: wl -i eth6 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 2
+	reinitreason_counts: 
+	reinit 0 reset 25 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 709198 txbyte 226436645 txretrans 750 txlost 0 txfail 17 txchanrej 7 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 794283 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 3451 rxbyte 534905 rxerror 8 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 0 txnoassoc 0 txchit 0 txcmiss 705735 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 0 txexptime 86 
+	d11_txfrag 719854 d11_txmulti 706466 d11_txbcast 0 d11_txretry 600 d11_txretrie 36 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 762 d11_txfrmsnt 720039 
+	rxdropped 0 rxcrc 13545054 rxnobuf 8 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 4647480 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 4320 rxbadsrcmac 0 rxrtry 5712191 
+	d11_rxfrag 24988685 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 24983384 rxbadda 0 rxfilter 1116 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 0 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 3479 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 984 txmpdu_stbc 0 rxmpdu_stbc 984 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 24988685 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 984 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 872 txreassocrsp 0 
+	txauth 876 txdeauth 1384 txprobereq 1009 txprobersp 6778 txaction 36 
+	rxassocreq 877 rxreassocreq 0 rxdisassoc 3 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 878 rxdeauth 18 rxprobereq 861048 rxprobersp 7227911 rxaction 3485 
+	txallfrm 2338127 txbcnfrm 1585248 txrtsfrm 0 txctsfrm 15441 txackfrm 16833 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 14146 rxrsptmout 765 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 5.5% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 114885513 rxbadplcp 9766467 rxcrsglitch 170187465 rxtoolate 276341 rxnodelim 5354073 
+	rxdrop20s 25588267 bphy_badplcp 0 bphy_rxcrsglitch 0 
+	rxbadfcs 13545054 rxfrmtoolong 118061 rxfrmtooshrt 232249 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 1804 pmqovfl 0 
+	rxctlucast 20682 rxrtsucast 7307 rxctsucast 0 rxackucast 13375 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 4458 rxmgucastmbss 12375 
+	rxbeaconobss 16884978 rxdtucastobss 0 rxdtocast 3632989 rxmgocast 8071113 
+	rxctlocast 36626914 rxrtsocast 14214080 rxctsocast 12126972 
+	rxctlmcast 639 rxdtmcast 5293495 rxmgmcast 17744913 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 65918 m2vmsg 0 v2mmsg 0 
+	mboxout 778016 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth6 memuse
+---------------------------------------------
+	Heap Total: 2567188(2508K)
+	Free: 1348976(1318K), LWM: 1319304(1289K)
+	In use: 1216800(1189K), HWM: 1247884(1219K)
+	Malloc failure count: 0
+	In use + overhead: 1218212(1190K), Max memory in use: 2087520(2039K)
+---------------------------------------------
+CHANNEL INFO: wl -i eth6 chan_info
+---------------------------------------------
+	Channel 149	5G Band
+	Channel 153	5G Band
+	Channel 157	5G Band
+	Channel 161	5G Band
+	Channel 165	5G Band
+---------------------------------------------
+DFS STATUS: wl -i eth6 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 2
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 161/80 (0xE39B), chanspec last cleared: none, sub type: 0x00
+	@1: state: IDLE, time elapsed: 0ms, chanspec: none, chanspec last cleared: none, sub type: 0x01
+---------------------------------------------
+NOISE: wl -i eth6 noise
+---------------------------------------------
+	-87
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth6 phy_tempsense
+---------------------------------------------
+	61 (0x3d)
+---------------------------------------------
+BAND: wl -i eth6 band
+---------------------------------------------
+	a
+---------------------------------------------
+SCAN RESULTS: wl -i eth6 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth6 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth6 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth6 dump ratelinkmem
+---------------------------------------------
+	RateLinkMem Module DUMP
+	RateLinkMem SCB info (0014d610, mac: 04:42:1a:52:7b:98, index: 63, valid: 1): 
+	rate_state: 1, rmem_nupd/curptr/txptr/maxdepth: 146 1 1 7
+		rate_store[0]: flags: 0x1, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[1]: flags: 0x2, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[2]: flags: 0xb, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[3]: flags: 0xc, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[4]: flags: 0xd, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[5]: flags: 0xe, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[6]: flags: 0xf, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[7]: flags: 0x0, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+	link_state: 1, cur_link_count: 234
+		BssIdx: 0x0, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x4, TkipPhase1KeyIdx: 0x7
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+	RateLinkMem SCB info (00118170, mac: 72:42:1a:52:7b:9d, index: 249, valid: 1): 
+	rate_state: 0, rmem_nupd/curptr/txptr/maxdepth: 0 0 0 0
+	link_state: 1, cur_link_count: 51
+		BssIdx: 0xc5, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x1fc, TkipPhase1KeyIdx: 0x2
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth6 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0xe39b):	24.75  24.75  24.75  24.75  
+---------------------------------------------
+CEVENT: ceventc -i eth6 dump
+---------------------------------------------
+	1648196711227  196711227	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	AUTH_RX
+	1648196711228  1	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	-- 	E_AUTH_IND/4
+	1648196711228  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	AUTH_TX_QUEUED
+	1648196711234  6	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	-- 	E_ASSOC/7
+	1648196711234  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	ASSOC_RX
+	1648196711234  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	ASSOC_TX_QUEUED
+	1648196711234  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0128 DRIVER 	-- 	E_ASSOC_IND/8
+	1648196711237  3	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196711238  1	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196711238  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196711246  8	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196711246  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196711247  1	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196712238  991	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196712238  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196712240  2	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196712243  3	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196712243  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196712243  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196713239  996	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196713240  1	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196713240  0	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196713242  2	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196713242  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196713242  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196714241  999	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	TX 	M1_TX
+	1648196714242  1	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_QUEUED
+	1648196714243  1	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	TX 	EAP_TX_SUCCESS
+	1648196714246  3	eth6  04:42:1A:52:7B:48 00000 0000 0000 0000 DRIVER 	RX 	EAP_RX
+	1648196714246  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 HOSTAPD 	RX 	M2_RX
+	1648196714246  0	eth6  04:42:1A:52:7B:48 06144 0000 0000 0000 EAPD 	RX 	M2_RX
+	1648196715243  997	eth6  04:42:1A:52:7B:48 00000 0000 0015 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196715245  2	eth6  04:42:1A:52:7B:48 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196715317  72	eth6  04:42:1A:52:7B:48 00000 0000 0015 0000 DRIVER 	-- 	E_DEAUTH/5
+	1648196715444  127	eth6  04:42:1A:52:7B:48 00000 0000 0007 0000 DRIVER 	TX 	DEAUTH_TX_QUEUED
+	1648196715446  2	eth6  04:42:1A:52:7B:48 00000 0000 0007 0000 DRIVER 	-- 	E_DEAUTH/5
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+DHD Statistics for eth6
+=================================
+---------------------------------------------
+DHDDUMP: dhd -i eth6 DHD dump
+---------------------------------------------
+	Dongle Host Driver, version 17.10.188.55 (r806225)
+	Compiled in drivers/net/wireless/bcmdhd
+	
+	pub.up 1 pub.txoff 0 pub.busstate 2
+	pub.hdrlen 0 pub.maxctl 0 pub.rxsz 1514
+	pub.iswl 1 pub.drv_version 0 pub.mac 04:42:1a:52:7b:98
+	pub.bcmerror -2 tickcnt 7370728
+	dongle stats:
+	tx_packets 0 tx_bytes 0 tx_errors 0 tx_dropped 0
+	rx_packets 0 rx_bytes 552325 rx_errors 0 rx_dropped 0
+	multicast 0
+	bus stats:
+	tx_packets 710414  tx_dropped 2290 tx_multicast 706792 tx_errors 0
+	tx_ctlpkts 0 tx_ctlerrs 0
+	rx_packets 4322 rx_multicast 871 rx_errors 0 
+	rx_ctlpkts 1146636 rx_ctlerrs 0 rx_dropped 0
+	rx_readahead_cnt 0 tx_realloc 0
+	tx_pktgetfail 0 rx_pktgetfail 0 rx_pktidfail 0
+	
+	tx_packets_wfd  0 tx_packets_dropped_wfd 0 tx_flowring_mismatch_drop_wfd 0
+	tx_packets_wfd_mcast  0 tx_packets_dropped_wfd_mcast 0
+	tx_nodup:		0
+	tx_tag_nobuf:	0	,free tags in the pool:	2592	,used:0 
+	fkbpool_nobuf:	0	,free fkbs in the pool: 1280	,used:0
+	
+	DHD Router: 3GMAC forwarding mode
+	DHDHDR supported
+	WI Format: haddr64=0 physaddrhi=0x00000000 TxP=2,32 RxP=1,8 TxC=1,8 RxC0=1,8
+	D2H SYNC: NONE: d2h_sync_wait max<0> tot<0>
+	Dongle DMA Indices: h2d 1  d2h 1 index size 2 bytes
+	
+	DHD Runner: 
+	  Status     : txoffl 0 rxoffl 1 txcmpl2host 0 dhdhdr 1  msgringformat 1 bkupq 1 hwawkup 1  
+	             :  
+	             : cpuqdpc 1 cmplnotif 1
+	  Profile    : prfl_id 3 id_valu  1024/0512   2048/1024   1024/0512   0512/0512   0512/0512 
+	  h2r_notif  : tx_post 0 rx_cmpl 5320 tx_cmpl 0 txp_fail 0
+	  r2h_req    : rx_cmpl 4322 tx_cmpl 0 wk_dngl 0
+	
+	CtrlPost: RD 17:17 WR 17:17
+	CtrlCpl: RD 1:1 WR 1:1
+	RxPost: RBP 0 RD 0:800 WR 406:406
+	RxCpl[0]: RD 407:407 WR 0:407
+	TxCpl: RD 0:782 WR 0:782
+	active_tx_count 0	 pktidmap_avail -1
+	dhd cumm_ctr 0
+	Num: Offl Flow If Prio :Dest_MacAddress: Qlen CLen L2CLen  Overflows        RD        WR Acked tossed noack 
+	  0.    0    2  5    0 01:80:c2:00:00:00    0    0      0          0  408: 408  408: 408    NA     NA    NA
+	  1.    0    3  0    0 01:80:c2:00:00:00    0    0      0          0  212: 212  212: 212    NA     NA    NA
+	D3 inform cnt 0
+	D0 inform cnt 0
+	D0 inform in use cnt 0
+	 [1m[34mDHD_PKTFWD[1.0.0][0m Dump, radios 1 wlifs 3 tx_accel YES dwds_accel(ap/sta) YES/YES init YES
+		 Pkt Tx[CHN 0] Rx[Fast 0,  Slow 0] sta 0 drop 0 fail 1
+		 dhd2 wfd_idx 2 pktfwd 2
+	 DHD_AWL Tx:  YES bound -1 A2W Xfer [rxd 0 drp 0 fwd 0 cls 0 chn 0/0]
+	 DHD_AWL Rx:  YES bound 64 a2w_max_pktl_len 0
+	 W2A List [rxd 0 flt 0 fwd 0 cls 0 chn 0/0] A2W List [rxd 0 drp 0 fwd 0 cls 0 chn 0/0 discard 0]
+	
+=================================
+HOST Statistics
+=================================
+	Flow Timer Interval = 10000 millisecs
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<16>, Cumulative [ 26735 - 26719 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+cat: can't open '/proc/wfd/stats': No such file or directory
+
+Error Stats:
+
+Slow Path Error Stats:
+
+Other RX stats: total=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0
+
+Other TX stats: total=0
+	blog_pool_empty=0 encap_ovfl=0  small_stack=0
+
+Slow Path Error Total: RX=0, TX=0
+
+
+Misc Error Stats: total=0
+	hent_not_found=0  fdb_hent_not_found=0  mdnat_hent_not_found=0
+	flow_not_found=0  mc_flow_not_found=0  static_unicast=0
+	mc_client_id_not_free=0  host_mac_hent_not_found=0
+	fdb_alloc_error=0  npe_flow_alloc_error=0  null_nwe=0
+	hw_add_host_mac_fail=0  hw_del_host_mac_fail=0
+	fc_alloc_fail=0  mdnat_alloc_fail=0
+	ovs_learning_fail=0 netdev_invalid_fail=0 
+	ucast_flow_max_limit=0 mcast_flow_max_limit=0 mcast_group_no_entry<0>
+
+
+Slow Path Stats:
+
+Other RX stats: total=1444823
+	blogged=9  unknown_proto=1360173  eth_bcast=84641  blog_action=0  mc_disabled=0
+	pktlen_gt_mtu=0 not_ipoe=0  not_ipoa=0  not_ppoa=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0 npe_alloc_err=0
+	cpu_cong_low_prio=0 udp_chksum_zero=0
+
+Other TX stats: total=2
+	learnt=2  unknown_proto=0  already_cached=0  mc_unknown=0  blog_pool_empty=0 encap_ovfl=0  small_stack=0
+	mcast_dev_info=0  mcast_dev_realloc=0 mcast_bitmap_alloc=0
+	mcast_master_flow_info_alloc=0  mcast_mdnat_add_flow=0  mcast_npe_hashin=0
+	mcast_flow_max_limit=0  ct_not_confirmed=0  ct_alg_helper=0
+
+IPv4 RX stats: total=258209
+	blogged=91427  unknown_proto=68134  disabled=0  pktlen_gt_mtu=0  ip_len_error=0 bad_ipv4_csum=0 cng_low_pri=0
+	option=19772  frag=270  ttl_exp=0  tcp_syn=47178  tcp_rst_fin=25514  6rd_tunl_src_addr=0
+	mc_disabled=0  mc_blogged=30  mc_control=0  mc_no_flow=0  mc_unknown_group=5884  mc_excl_port=0 
+	tcp_ack_done=0
+
+IPv4 TX stats: total=24639
+	learnt=24639  unknown_proto=0  mc_unknown=0  mc_uknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0  frag=0
+
+IPv6 RX stats: total=49164
+	blogged=3073  unknown_proto=39593  disabled=0  pktlen_gt_mtu=0  ip_len_error=0  cng_low_pri=0
+	dyn_tclass=0  hop_limit_exp=0  tcp_syn=1468  tcp_rst_fin=1800
+	mc_disabled=0  mc_blogged=0  bad_version=0
+	mc_control=0  mc_no_flow=0  mc_unknown_group=3230  mc_excl_port=0 
+	tcp_ack_done=0
+IPv6 TX stats: total=2094
+	learnt=2094  unknown_proto=0  mc_unknown=0  mc_unknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0
+
+GRE RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+GRE TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+L2TP RX stats: total=9
+	blogged=0  unknown_proto=0  session_tunnel_id_0=9  no_tunnel=0
+
+L2TP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0   checksum_failure=0 
+
+ESP RX stats: total=0
+	blogged=0  unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+ESP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+VXLAN RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	invalid_flags=0
+
+VXLAN TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0
+
+Slow Path Total: RX=1752205, TX=26735
+
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+Bridge br0 igmp snooping 2  rate-limit 0pps, priority -1 brtype Linux
+ Port Name    Querier      Timeout
+    eth3           NO          000
+    wl2.5          NO          000
+    eth6           NO          000
+    eth5           NO          000
+    eth4           NO          000
+    eth1           NO          000
+bridge dstdev dstaccdev src-dev type #tags lan-tci  wan-tci info    group           mode RxGroup         source          reporter        timeout ExcludPt Index      
+Broadcom Packet Flow Cache v4.0
+Flow   U/M M/C idle:+swhit SW_TotHits:          TotalBytes     HW_tpl Fhw_idx HW_Hits   HW_TotHits L1-Info Prot   SourceIpAddress:Port    DestinIpAddress:Port   Vlan0(mcast) Vlan1(mcast) tag# ToS IqPrio    SkbMark    RxDev    TxDev nf_conn[0] nf_conn[1] nf_conn[2] nf_conn[3]  
+  Flow I ClientId      L1-Info         MAC             wlinfo
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+=================================
+CPU Stats
+=================================
+/usr/sbin/WlGetDriverStats.sh: line 442: mpstat: not found
+=================================
+Process status
+=================================
+ps: invalid option -- 'a'
+BusyBox v1.24.1 (2022-03-23 16:30:48 CST) multi-call binary.
+
+Usage: ps 
+
+Show list of processes
+
+	w	Wide output
+	T	Show threads
+  PID USER       VSZ STAT COMMAND
+    1 admin    14384 S    /sbin/init
+    2 admin        0 SW   [kthreadd]
+    3 admin        0 IW<  [rcu_gp]
+    4 admin        0 IW<  [rcu_par_gp]
+    6 admin        0 IW<  [kworker/0:0H-kb]
+    8 admin        0 IW<  [mm_percpu_wq]
+    9 admin        0 SW   [ksoftirqd/0]
+   10 admin        0 IW   [rcu_preempt]
+   11 admin        0 IW   [rcu_sched]
+   12 admin        0 IW   [rcu_bh]
+   13 admin        0 SW   [migration/0]
+   14 admin        0 SW   [cpuhp/0]
+   15 admin        0 SW   [cpuhp/1]
+   16 admin        0 SW   [migration/1]
+   17 admin        0 SW   [ksoftirqd/1]
+   19 admin        0 IW<  [kworker/1:0H-kb]
+   20 admin        0 SW   [cpuhp/2]
+   21 admin        0 SW   [migration/2]
+   22 admin        0 SW   [ksoftirqd/2]
+   24 admin        0 IW<  [kworker/2:0H-kb]
+   25 admin        0 SW   [cpuhp/3]
+   26 admin        0 SW   [migration/3]
+   27 admin        0 SW   [ksoftirqd/3]
+   29 admin        0 IW<  [kworker/3:0H-ev]
+   30 admin        0 SW   [kdevtmpfs]
+   31 admin        0 SW   [rcu_tasks_kthre]
+   35 admin        0 SW   [oom_reaper]
+   36 admin        0 IW<  [writeback]
+   37 admin        0 IW<  [crypto]
+   38 admin        0 IW<  [kblockd]
+   39 admin        0 SW   [skb_free_task]
+   40 admin        0 SW   [watchdogd]
+   41 admin        0 IW<  [mptcp_wq]
+   48 admin        0 SW   [kswapd0]
+   81 admin        0 SW   [hwrng]
+   83 admin        0 SW   [spi1]
+   84 admin        0 SW   [irq/61-mmc0]
+   86 admin        0 IW<  [ipv6_addrconf]
+   87 admin        0 SW   [ubi_bgt0d]
+   88 admin        0 IW<  [kworker/0:1H-kb]
+   89 admin        0 IW<  [kworker/1:1H-kb]
+   91 admin        0 IW<  [kworker/2:1H-kb]
+  182 admin        0 SW   [ubifs_bgt0_10]
+  198 admin        0 SW   [ubifs_bgt0_11]
+  228 admin        0 SW   [ubifs_bgt0_13]
+  354 admin        0 SW   [bpm_monitor]
+  360 admin        0 SW   [fc_evt]
+  361 admin        0 SW   [fc_timer]
+  362 admin        0 SW   [bcmFlwStatsTask]
+  366 admin        0 SW   [bcm_archer_us]
+  368 admin        0 SW   [bcm_archer_wlan]
+  372 admin        0 SW   [bcmsw_rx]
+  373 admin        0 SW   [bcmsw_recycle]
+  374 admin        0 SW   [enet-kthrd]
+  381 admin        0 SW   [pdc_rx]
+  477 admin     1596 S    {wdtctl} wdtd
+  479 admin     1740 S    hotplug2 --persistent --no-coldplug
+  531 admin     2040 S    /usr/sbin/envrams
+  630 admin        0 IW<  [kworker/3:1H-ev]
+  689 admin        0 IW<  [cfg80211]
+  760 admin        0 SW   [wl0-kthrd]
+  761 admin        0 SW   [bcm_awl_xfer_0]
+  768 admin        0 SW   [wl1-kthrd]
+  769 admin        0 SW   [bcm_awl_xfer_1]
+  833 admin        0 SW   [dhd_watchdog_th]
+  834 admin        0 SW   [bcm_awl_xfer_2]
+  836 admin        0 SW   [archer_dhd_2]
+ 1002 admin    11884 S    /sbin/wanduck
+ 1044 admin     3172 S    avahi-daemon: running [ZenWiFi_XT9-7B90.local]
+ 1093 admin     2976 S    /bin/eapd
+ 1129 admin     7428 S    hostapd -B /tmp/wl0_hapd.conf
+ 1165 admin     7428 S    hostapd -B /tmp/wl1_hapd.conf
+ 1212 admin     7428 S    hostapd -B /tmp/wl2_hapd.conf
+ 1220 admin     4668 S    /usr/sbin/wlc_nt
+ 1221 admin     8796 S    wps_pbcd
+ 1224 admin     4664 S    /usr/sbin/wlc_monitor
+ 1241 admin     6076 S    /usr/sbin/bsd
+ 1250 admin     2972 S    /bin/ceventd
+ 1319 admin     4936 S    /usr/sbin/wlceventd
+ 1323 admin     2948 S    /usr/sbin/debug_monitor /data
+ 1364 admin    13108 S    networkmap
+ 1388 admin    18272 S    conn_diag
+ 1403 admin    11884 S    amas_ssd_cd
+ 1532 admin    14688 S    cfg_server
+ 1590 admin    11884 S    console
+ 1702 admin        0 IW   [kworker/3:1-mm_]
+ 1723 admin    11884 S    /sbin/PS_pod
+ 1736 admin        0 IW   [kworker/3:2]
+ 1820 admin     3272 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 1824 nobody    3396 S    lldpd -L /usr/sbin/lldpcli -I eth1,eth2,eth3,eth4,et
+ 2465 admin     2012 S    /usr/sbin/jitterentropy-rngd -p /var/run/jitterentro
+ 2466 admin    11140 S    asd
+ 2471 admin    13004 S    nt_monitor
+ 2472 admin     5680 S    protect_srv
+ 2473 admin    13936 S    /sbin/netool
+ 2483 admin    13236 S    nt_center
+ 2518 admin    11884 S    wpsaide
+ 2522 admin     6884 S    /usr/sbin/awsiot
+ 2533 admin     4872 S    nt_actMail
+ 2573 admin     3088 S    crond
+ 2575 admin     6600 S    /usr/sbin/infosvr br0
+ 2579 admin    12868 S    sysstate
+ 2580 admin    14120 S    ahs
+ 2581 admin    11884 S    watchdog
+ 2582 admin    11884 S    check_watchdog
+ 2583 admin    11884 S    alt_watchdog
+ 2584 admin    11884 S    amas_lanctrl
+ 2587 admin     4340 S    rstats
+ 2618 admin    13384 S    mastiff
+ 2619 admin    11884 S    bwdpi_check
+ 2622 admin    11884 S    pctime
+ 2623 admin     3832 S    /usr/sbin/acsd2
+ 2626 admin    17012 S    roamast
+ 2649 admin    19192 S    amas_lib
+ 2659 admin    11884 S    sched_daemon
+ 2674 admin     5744 S    fsmd
+ 2712 admin        0 SW   [scsi_eh_0]
+ 2713 admin        0 IW<  [scsi_tmf_0]
+ 2714 admin        0 SW   [usb-storage]
+ 2722 admin        0 IW<  [uas]
+ 2757 admin    11884 S    usbled
+ 2953 admin    11884 S    ntp
+ 3034 admin        0 Z    [ntpclient]
+ 3047 admin    11884 S    disk_monitor
+ 3062 admin     3088 S    {uuplugin_monito} /bin/sh /tmp/uu/uuplugin_monitor.s
+ 3147 admin     4308 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3153 admin     3288 S    /tmp/uu/uuplugin /tmp/uu/uu.conf
+ 3316 admin        0 SW   [tntfsiupdated]
+ 3644 admin    17012 S    amas_port_status
+ 3757 admin     6044 S    ./asus_lighttpd -Df /opt/etc/asus_lighttpd.conf
+ 3999 admin     6596 S    /usr/lib/ipsec/starter --daemon charon
+ 4000 admin    34816 S    /usr/lib/ipsec/charon --use-syslog
+ 4834 admin        0 IW   [kworker/2:0-eve]
+ 4859 admin    12652 S    minidlna -f /etc/minidlna.conf -r
+ 5830 admin     3088 S    -sh
+ 9907 admin        0 IW   [kworker/1:3-eve]
+11563 admin        0 IW   [kworker/u8:0-fl]
+13815 admin        0 IW   [kworker/2:2]
+15548 admin        0 IW   [kworker/1:0-eve]
+15761 admin        0 IW   [kworker/0:3-eve]
+15763 admin        0 IW   [kworker/0:5-eve]
+16375 admin     5088 S    /usr/sbin/pppd file /tmp/ppp/options.wan0
+16393 admin     3088 S    /sbin/udhcpc -i eth0 -p /var/run/udhcpc0.pid -s /tmp
+16746 admin     1976 S    /bin/mcpd
+16969 admin        0 IW   [kworker/u8:2-fl]
+17091 admin        0 IW   [kworker/1:1]
+17180 admin        0 IW   [kworker/0:0-eve]
+17363 nobody    2404 S    dnsmasq --log-async
+17364 admin     2404 S    dnsmasq --log-async
+17381 admin     9968 S    /usr/sbin/nmbd -D -s /etc/smb.conf
+17383 admin    10264 S    /usr/sbin/smbd -D -s /etc/smb.conf
+17388 admin     1880 S    /usr/sbin/wsdd2 -d -w -i br0 -b sku:ZenWiFi_XT9,seri
+17392 admin     6528 S    vsftpd /etc/vsftpd.conf
+17528 admin        0 IW   [kworker/u8:3-fl]
+17529 admin        0 IW   [kworker/0:1-eve]
+17547 admin     3088 S    /sbin/syslogd -m 0 -S -O /jffs/syslog.log -s 256 -l
+17549 admin     3088 S    /sbin/klogd -c 5
+17817 admin     2112 S    miniupnpd -f /etc/upnp/config
+17848 admin    10512 S    httpds -s -i br0 -p 8443
+17849 admin    10404 S    httpd -i br0
+25987 admin     2956 S    sleep 60
+26839 admin     3088 S    sh -c WlGetDriverStats.sh eth6 dhd 2 &> /tmp/WlGetDr
+26840 admin     3088 S    {WlGetDriverStat} /bin/sh /usr/sbin/WlGetDriverStats
+28837 admin     3088 R    ps
+29890 admin        0 IW   [kworker/u8:1-fl]
+[H[JMem: 268864K used, 240328K free, 23564K shrd, 5224K buff, 56856K cached
+CPU:  0.0% usr  0.0% sys  0.0% nic  100% idle  0.0% io  0.0% irq  0.0% sirq
+Load average: 1.52 1.37 1.26 1/199 28838
+[7m  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND[0m
+28838 26840 admin    R     3088  0.6   2  0.0 top -n 1
+ 9907     2 admin    IW       0  0.0   1  0.0 [kworker/1:3-eve]
+ 4000  3999 admin    S    34816  6.8   2  0.0 /usr/lib/ipsec/charon --use-syslog
+ 2649     1 admin    S    19192  3.7   1  0.0 amas_lib
+ 1388     1 admin    S    18272  3.5   2  0.0 conn_diag
+ 3644     1 admin    S    17012  3.3   2  0.0 amas_port_status
+ 2626     1 admin    S    17012  3.3   1  0.0 roamast
+ 1532     1 admin    S    14688  2.8   1  0.0 cfg_server
+    1     0 admin    S    14384  2.8   1  0.0 /sbin/init
+ 2580     1 admin    S    14120  2.7   2  0.0 ahs
+ 2473     1 admin    S    13936  2.7   0  0.0 /sbin/netool
+ 2618     1 admin    S    13384  2.6   0  0.0 mastiff
+ 2483     1 admin    S    13236  2.6   0  0.0 nt_center
+ 1364     1 admin    S    13108  2.5   1  0.0 networkmap
+ 2471     1 admin    S    13004  2.5   1  0.0 nt_monitor
+ 2579     1 admin    S    12868  2.5   1  0.0 sysstate
+ 4859     1 admin    S    12652  2.4   0  0.0 minidlna -f /etc/minidlna.conf -r
+ 2581     1 admin    S    11884  2.3   0  0.0 watchdog
+ 2583     1 admin    S    11884  2.3   0  0.0 alt_watchdog
+ 2757     1 admin    S    11884  2.3   1  0.0 usbled
+=================================
+Memory status
+=================================
+MemTotal:         509192 kB
+MemFree:          240084 kB
+MemAvailable:     170188 kB
+Buffers:            5224 kB
+Cached:            56856 kB
+SwapCached:            0 kB
+Active:            88136 kB
+Inactive:          27276 kB
+Active(anon):      58352 kB
+Inactive(anon):    18548 kB
+Active(file):      29784 kB
+Inactive(file):     8728 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         509192 kB
+LowFree:          240084 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:         53392 kB
+Mapped:            27140 kB
+Shmem:             23564 kB
+Slab:              51916 kB
+SReclaimable:       6012 kB
+SUnreclaim:        45904 kB
+KernelStack:        1640 kB
+PageTables:         2344 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      254596 kB
+Committed_AS:     166556 kB
+VmallocTotal:     507904 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+Percpu:              704 kB
+CmaTotal:          12288 kB
+CmaFree:            1024 kB
+=================================
+Statistics for eth6 run 2/2 @10 s
+=================================
+=============================================
+WL Statistics for eth6
+=============================================
+---------------------------------------------
+STATUS: wl -i eth6 status
+---------------------------------------------
+	SSID: "Sprite-AX7800_dwb"
+	Mode: Managed	RSSI: 0 dBm	SNR: 0 dB	noise: -87 dBm	Channel: 161/80
+	BSSID: 04:42:1A:52:7B:98	Capability: ESS RRM 
+	Beacon Interval: 100 msecs	
+	Supported Rates: [ 6(b) 9 12 18 24(b) 36 48 54 ]
+	HE Capable:
+		Chanspec: 5GHz channel 155 80MHz (0xe39b)
+		Primary channel: 161
+		HT Capabilities: 40MHz SGI20 SGI40 
+		Supported HT MCS : 0-31
+		Supported VHT MCS:
+			NSS1 Tx: 0-11        Rx: 0-11      
+			NSS2 Tx: 0-11        Rx: 0-11      
+			NSS3 Tx: 0-11        Rx: 0-11      
+			NSS4 Tx: 0-11        Rx: 0-11      
+		Supported HE MCS:
+		    20/40/80 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+		    160 MHz:
+			NSS1 Tx: 0-11        Rx: 0-11
+			NSS2 Tx: 0-11        Rx: 0-11
+			NSS3 Tx: 0-11        Rx: 0-11
+			NSS4 Tx: 0-11        Rx: 0-11
+	QBSS Channel Utilization: 0x5f (37 %)
+	
+---------------------------------------------
+ASSOCLIST: wl -i eth6 assoclist
+---------------------------------------------
+---------------------------------------------
+AUTH STA LIST: wl -i eth6 authe_sta_list
+---------------------------------------------
+---------------------------------------------
+SMFSTATS: wl -i eth6 smfstats
+---------------------------------------------
+	Frame type: Authentication_Request
+		Ignored Count: 1
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 876
+	Frame type: Association_Request
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Status_code 0 Count: 871
+			Status_code 30 Count: 1
+	Frame type: Reassociation_Request
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Disassociation_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+	Frame type: Deauthentication_Request_TX
+		Ignored Count: 0
+		Malformed Count: 0
+		Successful/Failed Count:
+			Reason_code 7 Count: 521
+			Reason_code 15 Count: 863
+	Frame type: Deauthentication_Request_RX
+		Ignored Count: 0
+		Malformed Count: 0
+---------------------------------------------
+6G RATE: wl -i eth6 6g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+5G RATE: wl -i eth6 5g_rate
+---------------------------------------------
+	auto
+---------------------------------------------
+2G RATE: wl -i eth6 2g_rate
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+NRATE: wl -i eth6 nrate
+---------------------------------------------
+	legacy rate 6 Mbps stf mode 0 auto
+---------------------------------------------
+RATE: wl -i eth6 rate
+---------------------------------------------
+	6 Mbps
+---------------------------------------------
+RATEDUMP: wl -i eth6 ratedump
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+11H SPECT: wl -i eth6 spect
+---------------------------------------------
+	Loose interpretation of 11h spec - may join non 11h AP.
+---------------------------------------------
+PHY_ED_THRESH: wl -i eth6 phy_ed_thresh
+---------------------------------------------
+	-65
+---------------------------------------------
+OPER MODE: wl -i eth6 oper_mode
+---------------------------------------------
+	50 (0x32)
+---------------------------------------------
+CHANIMSTATS: wl -i eth6 chanim_stats
+---------------------------------------------
+	version: 4 
+	chanspec tx    inbss    obss    nocat   nopkt   doze     txop   goodtx  badtx   glitch  badplcp knoise  idle    busy    timestamp
+	161/80	 2	0	34	7	22	0	21	0	0	13006	94	-87	22	62	216773840
+---------------------------------------------
+INTERFERENCE: wl -i eth6 interference
+---------------------------------------------
+	
+	Mode = 75. Following ACI modes are enabled:
+		bit-mask 1:  Receiver Desense based on glitch count
+		bit-mask 2:  Limit pktgain based on hwaci (high pwr aci)
+		bit-mask 8:  Preemption is enabled
+		bit-mask 64: HW OBSS Detection + Mitigation
+	
+---------------------------------------------
+INTERFERENCE_OVR: wl -i eth6 interference_override
+---------------------------------------------
+	
+	Mode = -1. Following ACI modes :
+	Interference override disabled.
+	
+---------------------------------------------
+BSDATA: wl -i eth6 bs_data -noreset
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+PKTQSTATS: wl -i eth6 pktq_stats
+---------------------------------------------
+no available addresses in assoclist for automatic operation
+	common queue
+	prec:(AC)    rqstd,  stored, dropped, retried, rtsfail,rtrydrop, psretry,    acked,utlsn,data Mbits, phy Mbits,%nss 1/2/3/4,  %air, %effcy  (v6)
+	  04: BE        20,      20,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  10: VI         0,       0,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  14: VO         0,       0,       0,       0,       0,       0,       0,        0,    0,      0.00,      0.00,  -/ -/ -/ -,   0.0,    0.0
+	  15: VO         0,       0,       0,       -,       -,       0,       0,        0,    0,         -,         -,           -,     -,      -
+	
+	broadcast queue
+	prec:    rqstd,  stored, dropped,utlsn  (v6)
+	
+---------------------------------------------
+RXREPORT: wl -i eth6 rx_report
+---------------------------------------------
+	No stations are currently associated.
+---------------------------------------------
+TAF ATOS DUMP: wl -i eth6 dump taf -atos
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXFIFO DUMP: wl -i eth6 dump txfifo
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXQ DUMP: wl -i eth6 dump txq
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+PERFSTATS DUMP: wl -i eth6 dump perf_stats
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMPDU DUMP: wl -i eth6 dump ampdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+AMSDU DUMP: wl -i eth6 dump amsdu
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+WLC DUMP: wl -i eth6 dump wlc
+---------------------------------------------
+wl: Unsupported
+---------------------------------------------
+TXBF DUMP: wl -i eth6 dump txbf
+---------------------------------------------
+	Bfr capable: 0x1f Bfe capable: 0xf
+	Explicit txbf mode: auto, active: true
+	Allowed by country code: true
+	Allow txbf on non primaryIF: true
+	coremask0 0x30f coremask1 0xf07
+	CQI txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	MU txv bitmap:
+	       inuse:	0000_0000
+	      active:	0000_0000
+	         new:	0000_0000
+	      rptrdy:	0000_0000
+	       tmout:	0000_0000
+	       ingrp:	0000_0000
+	         m2v:	0000_0000
+	          su:	0000_0000
+	         del:	0000_0000
+	         rem:	0000_0000
+	         inq:	0000_0000
+	SU txv bitmap: inuse 0000 free ffff
+	Implicit txbf mode: auto, calibr_flag: 0
+	
+	Beamforming Statistics:
+	txndpa 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) txndp 0 txbfpoll 0 txbrp 0 txbfm 0
+	rxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) exprxsf 0 (vhtsu 0 vhtmu 0 hesu 0 hemu 0) rxcqi 0
+	rxndpa_u 0 rxndpa_m 0 rxbfpoll 0 bferpt 0 rxcwrts 0 rxcwcts 0 bfd_dn 0 bfd_fl 0
+---------------------------------------------
+MUTX DUMP: wl -i eth6 dump mutx
+---------------------------------------------
+	MU BFR capable and configured; MU feature is ON, AC policy is ON
+	BW policy = 5 AC policy = 0
+	Maximum clients 16
+	MU clients: vhtmu  0 hemmu  0
+	Total mutx: tot_tx 0 txasmu 0 (0%) ncons 0 nlost 0
+	
+	MU capable but not admitted STAs:
+---------------------------------------------
+MURX DUMP: wl -i eth6 dump murx
+---------------------------------------------
+	MU-MIMO receive state:
+	MU RX active in BSS <none>
+	GID msgs rxd                  0
+	GID msgs dropped. No mem.     0
+	GID msgs rxd not in infra BSS 0
+	GID msgs rxd in other BSS     0
+---------------------------------------------
+MSCHED DUMP: wl -i eth6 dump msched
+---------------------------------------------
+	MU scheduler:
+	DL policy: AUTO (-1)  ofdma_en: 1 schidx: 1 flag: 0x0001 dyn_sigbmcs: 0 ack policy: trig_in_amp (1)
+	           RU alloc mode: UCRU (-1), mu-rts: 2, dsmps_war: 0 mixackp: 1, mixbw (80+160): 1
+	           dlofdma_users min 2 max 96 num 0 omutafwin 0 aggx 1 su_thresh 3000 mu_thresh 1000
+	           maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	
+	DL RU stats:
+---------------------------------------------
+UMSCHED DUMP: wl -i eth6 dump umsched
+---------------------------------------------
+	UL OFDMA admitted 0 maxclients 8 minulusers 2 fb 1 mode 1 brcm_only 0 ban_nonbrcm_160sta 0
+	maxn bw20: 0 bw40: 4 bw80: 4 bw160: 8 trigger: OFF drv_ulrtctl: 1
+	Scheduler parameters
+	  mctl 0x2024 mctl1 0x000c txcnt 65535 burst 2 maxtw 5
+	  interval 1 maxdur 5380 minidle 100 cpltf 1 nltf 1
+	  txlmt 0x206 txlowat0 0 txlowat1 0 rxlowat0 3 rxlowat1 30
+	  mlen 0 mmlen 0 aggn 0 csthr0 76 csthr1 418 tagid 0
+	  ulc_sz 32 autoulc 1 usched 0  dsched 1 hibernate 0 mixbw 0
+	  minrssi -110 pktthrsh 100 idleprd 10 qnullthrsh 3 always_admit 0
+	UL policy: AUTO (-1) bw20: 0 bw40: 4 bw80: 4 bw160: 8 
+	num_usrs: 0 num_pendutxd: 0 num_utxd_alloc: 0 
+	UL OFDMA stats:
+	UL MUMIMO stats:
+	
+---------------------------------------------
+TWT DUMP: wl -i eth6 dump twt
+---------------------------------------------
+	TWT Enab: 0
+---------------------------------------------
+D11CNTS DUMP: wl -i eth6 dump d11cnts
+---------------------------------------------
+	rxtrig_myaid 0 rxtrig_rand 0 rxswrst 65536 bfd_done 0 bfd_fail 0 rptovrd 0 rxsferr 0 rxpfflush 35385818 
+	rxflucmt 0 rxfluov 0 agg0 0 trigrefill 0 txtrig 0 rxhetbba 0 txbamtid 0 txbamsta 0 
+	rxmydtinrsp 0 rxexit 89323981 txampdu 0 txtrigampdu 0 txmurts 0 txmubar 0 txhetbba 0 txqnull 0 
+	txtbdata 0 skip_ffqcons 0 
+	m2vmsg 0 v2mmsg 0 m2vgrp 0 v2mgrp 0 v2mgrpinv 0 m2vsnd 0 v2msnd 0 v2msndinv 0 
+	m2vcqi 0 v2mcqi 0 ffqadd 778016 ffqdel 778013 mfqadd 0 mfqdel 0 mfoqadd 0 mfoqdel 0 
+	ofqadd 0 ofqdel 0 rucfg 0 m2vru 0 v2mru 0 ofqagg0 0 m2sq0 0 m2sq1 0 
+	m2sq2 0 m2sq3 0 m2sq4 0 sndfl 0 hecapinv 0 m2sqtxvevt 0 mmuregrp 0 mmuemgcgrp 0 
+	m2vgrpwait 0 om2sq0 0 om2sq1 0 om2sq2 0 om2sq3 0 om2sq4 0 om2sq5 0 om2sq6 0 
+	tafwmismatch 0 omredist 0 omtxd 0 
+	max sched idle time [%]:    0 (in 800msec)
+	last 8 measurements  [%]:    0     0     0     0     0     0     0     0  
+	
+	                 su ampdu cnt:      0
+	              muagg histo sum:      0
+	              muagg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	     vht mumimo agg histo sum:      0
+	     vht mumimo agg histogram:      0       0       0       0  
+	     he  mumimo agg histo sum:      0
+	     he  mumimo agg histogram:      0       0       0       0  
+	     he dlofdma agg histo sum:      0
+	     he dlofdma agg histogram:      0       0       0       0       0       0       0       0  
+	                                    0       0       0       0       0       0       0       0  
+	
+---------------------------------------------
+WME COUNTERS: wl -i eth6 wme counters
+---------------------------------------------
+	
+	AC_BE: tx frames: 705755 bytes: 226019726 failed frames: 159 failed bytes: 9540
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 83 
+	
+	AC_BK: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VI: tx frames: 3463 bytes: 419023 failed frames: 0 failed bytes: 0
+	       rx frames: 3451 bytes: 534905 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 0 
+	
+	AC_VO: tx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       rx frames: 0 bytes: 0 failed frames: 0 failed bytes: 0
+	       foward frames: 0 bytes: 0 
+	       tx frames time expired: 3 
+	
+---------------------------------------------
+INTERFACE COUNTERS: wl -i eth6 if_counters
+---------------------------------------------
+	txframe 355922 txbyte 113408790 txerror 17 rxframe 3451 rxbyte 534905 rxerror 0 
+	txnobuf 0 txfail 17 
+	d11_txfrag 366669 d11_txmulti 353281 d11_txretry 600 d11_txretrie 36 
+	d11_txfrmsnt 366805 d11_rxmulti 0 
+	rxnobuf 0 rxfragerr 0 rxrunt 0 rxerror 0 
+	txexptime 0 txrts 0 txnocts 0 
+---------------------------------------------
+COUNTERS: wl -i eth6 counters
+---------------------------------------------
+	counters_version 30
+	datalen 1316
+	Slice_index: 2
+	reinitreason_counts: 
+	reinit 0 reset 25 pciereset 0 cfgrestore 0 dma_hang 0 ampdu_wds 0 
+	txframe 709218 txbyte 226438749 txretrans 750 txlost 0 txfail 17 txchanrej 7 
+	txdatamcast 0 txdatabcast 0 
+	tbtt 794410 p2p_tbtt 0 p2p_tbtt_miss 0 
+	rxframe 3451 rxbyte 534905 rxerror 8 
+	txdropped 0 txprshort 0 txdmawar 0 txnobuf 0 txnoassoc 0 txchit 0 txcmiss 705755 
+	txserr 0 txphyerr 0 txphycrs 0 txerror 0 txexptime 86 
+	d11_txfrag 719874 d11_txmulti 706486 d11_txbcast 0 d11_txretry 600 d11_txretrie 36 
+	d11_txrts 0 d11_txnocts 0 d11_txnoack 762 d11_txfrmsnt 720059 
+	rxdropped 0 rxcrc 13547113 rxnobuf 8 rxnondata 0 rxbadds 0 rxbadcm 0 rxdup 4647820 rxfragerr 0 
+	rxrunt 0 rxgiant 0 rxnoscb 0 rxbadproto 4320 rxbadsrcmac 0 rxrtry 5712690 
+	d11_rxfrag 24992537 d11_rxmulti 0 d11_rxbcast 0 d11_rxundec 0 
+	rxctl 24987236 rxbadda 0 rxfilter 1116 rxuflo: 0 0 0 0 0 0 
+	
+	tkipmicfaill 0 tkipicverr 0 tkipcntrmsr 0 
+	tkipreplay 0 ccmpfmterr 0 ccmpreplay 0 
+	ccmpundec 0 fourwayfail 0 wepundec 0 
+	wepicverr 0 decsuccess 0 rxundec 0 
+	
+	rx1mbps 0 rx2mbps 0 rx5mbps5 0 rx11mbps 0 
+	rx6mbps 3479 rx9mbps 0 rx12mbps 0 rx18mbps 0 
+	rx24mbps 0 rx36mbps 0 rx48mbps 0 rx54mbps 0 
+	txmpdu_sgi 0 rxmpdu_sgi 984 txmpdu_stbc 0 rxmpdu_stbc 984 rxmpdu_mu 0 
+	cso_normal 0 cso_passthrough 0 
+	chained 0 chainedsz1 0 unchained 24992537 maxchainsz 0 currchainsz 0 
+	
+	txbar 0 txpspoll 0 rxbar 0 rxpspoll 0 
+	txnull 0 txqosnull 0 rxnull 0 rxqosnull 984 
+	txassocreq 0 txreassocreq 0 txdisassoc 0 txassocrsp 872 txreassocrsp 0 
+	txauth 876 txdeauth 1384 txprobereq 1009 txprobersp 6778 txaction 36 
+	rxassocreq 877 rxreassocreq 0 rxdisassoc 3 rxassocrsp 0 rxreassocrsp 0 
+	rxauth 878 rxdeauth 18 rxprobereq 861201 rxprobersp 7228572 rxaction 3485 
+	txallfrm 2338401 txbcnfrm 1585502 txrtsfrm 0 txctsfrm 15441 txackfrm 16833 txback 0 txdnlfrm 0 
+	txampdu 0 txmpdu 0 txucast 14146 rxrsptmout 765 txinrtstxop 0 txrtsfail 0 
+	txper_ucastdt 5.5% txper_rts 0.0%
+	txfunfl: 0 0 0 0 0 0 txtplunfl 0 txphyerror 0 
+	
+	rxstrt 114901618 rxbadplcp 9767546 rxcrsglitch 170222243 rxtoolate 276360 rxnodelim 5354526 
+	rxdrop20s 25592505 bphy_badplcp 0 bphy_rxcrsglitch 0 
+	rxbadfcs 13547113 rxfrmtoolong 118086 rxfrmtooshrt 232263 rxanyerr 0 
+	rxf0ovfl 0 rxf1ovfl 0 rxhlovfl 1804 pmqovfl 0 
+	rxctlucast 20682 rxrtsucast 7307 rxctsucast 0 rxackucast 13375 rxback 0 
+	rxbeaconmbss 0 rxdtucastmbss 4458 rxmgucastmbss 12375 
+	rxbeaconobss 16888016 rxdtucastobss 0 rxdtocast 3633301 rxmgocast 8071909 
+	rxctlocast 36631295 rxrtsocast 14215535 rxctsocast 12128527 
+	rxctlmcast 639 rxdtmcast 5294163 rxmgmcast 17748104 
+	
+	rxcgprqfrm 0 rxcgprsqovfl 0 txcgprsfail 0 txcgprssuc 0 prs_timeout 0 
+	pktengrxducast 0 pktengrxdmcast 0 bcntxcancl 0 missbcn_dbg 0 
+	
+	macxsusp 65919 m2vmsg 0 v2mmsg 0 
+	mboxout 778036 musnd 0 sfb2v 0 
+	txbcnloss 0 stadecerr 0 apdecerr 0 misc_cnt1 0 
+---------------------------------------------
+MEMORY USAGE: wl -i eth6 memuse
+---------------------------------------------
+	Heap Total: 2567188(2508K)
+	Free: 1348976(1318K), LWM: 1319304(1289K)
+	In use: 1216800(1189K), HWM: 1247884(1219K)
+	Malloc failure count: 0
+	In use + overhead: 1218212(1190K), Max memory in use: 2087520(2039K)
+---------------------------------------------
+CHANNEL INFO: wl -i eth6 chan_info
+---------------------------------------------
+	Channel 149	5G Band
+	Channel 153	5G Band
+	Channel 157	5G Band
+	Channel 161	5G Band
+	Channel 165	5G Band
+---------------------------------------------
+DFS STATUS: wl -i eth6 dfs_status_all
+---------------------------------------------
+	version: 1, num_sub_status: 2
+	@0: state: IDLE, time elapsed: 0ms, chanspec: 161/80 (0xE39B), chanspec last cleared: none, sub type: 0x00
+	@1: state: IDLE, time elapsed: 0ms, chanspec: none, chanspec last cleared: none, sub type: 0x01
+---------------------------------------------
+NOISE: wl -i eth6 noise
+---------------------------------------------
+	-87
+---------------------------------------------
+TEMPERATURE SENSOR: wl -i eth6 phy_tempsense
+---------------------------------------------
+	61 (0x3d)
+---------------------------------------------
+BAND: wl -i eth6 band
+---------------------------------------------
+	a
+---------------------------------------------
+SCAN RESULTS: wl -i eth6 scanresults
+---------------------------------------------
+wl: Not Found
+---------------------------------------------
+MACMODE DUMP: wl -i eth6 macmode
+---------------------------------------------
+	0
+---------------------------------------------
+MAC DUMP: wl -i eth6 mac
+---------------------------------------------
+---------------------------------------------
+RATELINKMEM: wl -i eth6 dump ratelinkmem
+---------------------------------------------
+	RateLinkMem Module DUMP
+	RateLinkMem SCB info (0014d610, mac: 04:42:1a:52:7b:98, index: 63, valid: 1): 
+	rate_state: 1, rmem_nupd/curptr/txptr/maxdepth: 146 1 1 7
+		rate_store[0]: flags: 0x1, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[1]: flags: 0x2, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[2]: flags: 0xb, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[3]: flags: 0xc, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[4]: flags: 0xd, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[5]: flags: 0xe, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[6]: flags: 0xf, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+		rate_store[7]: flags: 0x0, rspecs: 0x1000c 0x1000c 0x1000c 0x1000c, use_rts: 0x0
+	link_state: 1, cur_link_count: 234
+		BssIdx: 0x0, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x4, TkipPhase1KeyIdx: 0x7
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+	RateLinkMem SCB info (00118170, mac: 72:42:1a:52:7b:9d, index: 249, valid: 1): 
+	rate_state: 0, rmem_nupd/curptr/txptr/maxdepth: 0 0 0 0
+	link_state: 1, cur_link_count: 51
+		BssIdx: 0xc5, BssColor: 0x80, StaID: 0x8000, FragTx: 0x0
+		EncryptAlgo: 0x5, KeyIdx: 0x1fc, TkipPhase1KeyIdx: 0x2
+		OMI: 0x0, RtsDurThresh: 0x0
+		MaxAmpduLenExp: 0x0, AmpduMpduAll: 0x0
+			TID: 0 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 1 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 2 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 3 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 4 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 5 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 6 | BAWin: 0x0, ampdu_mpdu: 0x0
+			TID: 7 | BAWin: 0x0, ampdu_mpdu: 0x0
+		MultiTIDAggBitmap: 0x0, MultiTIDAggNum: 0x0
+		AmpMaxDurIdx: 0x0
+		PPET0: 0x0, AmpMinDur: 0x0
+			BFIConfig0:0x0000 BFIConfig1:0x0000 BFRStat0:0x0000
+			minRU: 0x00 
+---------------------------------------------
+LAST ADJ EST POWER: wl -i eth6 txpwr_adj_est
+---------------------------------------------
+	Last adjusted est. power (chanspec:0xe39b):	24.75  24.75  24.50  24.75  
+---------------------------------------------
+CEVENT: ceventc -i eth6 dump
+---------------------------------------------
+	TIME(ms)  TDiff IFace STA_MAC_ADDRESS   Flags Stts Rsn  Auth AT    	Dir 	EVENT
+=================================
+DHD Statistics for eth6
+=================================
+---------------------------------------------
+DHDDUMP: dhd -i eth6 DHD dump
+---------------------------------------------
+	Dongle Host Driver, version 17.10.188.55 (r806225)
+	Compiled in drivers/net/wireless/bcmdhd
+	
+	pub.up 1 pub.txoff 0 pub.busstate 2
+	pub.hdrlen 0 pub.maxctl 0 pub.rxsz 1514
+	pub.iswl 1 pub.drv_version 0 pub.mac 04:42:1a:52:7b:98
+	pub.bcmerror -2 tickcnt 7371857
+	dongle stats:
+	tx_packets 0 tx_bytes 0 tx_errors 0 tx_dropped 0
+	rx_packets 0 rx_bytes 552325 rx_errors 0 rx_dropped 0
+	multicast 0
+	bus stats:
+	tx_packets 710432  tx_dropped 2292 tx_multicast 706810 tx_errors 0
+	tx_ctlpkts 0 tx_ctlerrs 0
+	rx_packets 4322 rx_multicast 871 rx_errors 0 
+	rx_ctlpkts 1147088 rx_ctlerrs 0 rx_dropped 0
+	rx_readahead_cnt 0 tx_realloc 0
+	tx_pktgetfail 0 rx_pktgetfail 0 rx_pktidfail 0
+	
+	tx_packets_wfd  0 tx_packets_dropped_wfd 0 tx_flowring_mismatch_drop_wfd 0
+	tx_packets_wfd_mcast  0 tx_packets_dropped_wfd_mcast 0
+	tx_nodup:		0
+	tx_tag_nobuf:	0	,free tags in the pool:	2592	,used:0 
+	fkbpool_nobuf:	0	,free fkbs in the pool: 1280	,used:0
+	
+	DHD Router: 3GMAC forwarding mode
+	DHDHDR supported
+	WI Format: haddr64=0 physaddrhi=0x00000000 TxP=2,32 RxP=1,8 TxC=1,8 RxC0=1,8
+	D2H SYNC: NONE: d2h_sync_wait max<0> tot<0>
+	Dongle DMA Indices: h2d 1  d2h 1 index size 2 bytes
+	
+	DHD Runner: 
+	  Status     : txoffl 0 rxoffl 1 txcmpl2host 0 dhdhdr 1  msgringformat 1 bkupq 1 hwawkup 1  
+	             :  
+	             : cpuqdpc 1 cmplnotif 1
+	  Profile    : prfl_id 3 id_valu  1024/0512   2048/1024   1024/0512   0512/0512   0512/0512 
+	  h2r_notif  : tx_post 0 rx_cmpl 5320 tx_cmpl 0 txp_fail 0
+	  r2h_req    : rx_cmpl 4322 tx_cmpl 0 wk_dngl 0
+	
+	CtrlPost: RD 42:42 WR 42:42
+	CtrlCpl: RD 26:26 WR 26:26
+	RxPost: RBP 0 RD 0:800 WR 406:406
+	RxCpl[0]: RD 407:407 WR 0:407
+	TxCpl: RD 0:800 WR 0:800
+	active_tx_count 0	 pktidmap_avail -1
+	dhd cumm_ctr 0
+	Num: Offl Flow If Prio :Dest_MacAddress: Qlen CLen L2CLen  Overflows        RD        WR Acked tossed noack 
+	  0.    0    2  5    0 01:80:c2:00:00:00    0    0      0          0  417: 417  417: 417    NA     NA    NA
+	  1.    0    3  0    0 01:80:c2:00:00:00    0    0      0          0  221: 221  221: 221    NA     NA    NA
+	D3 inform cnt 0
+	D0 inform cnt 0
+	D0 inform in use cnt 0
+	 [1m[34mDHD_PKTFWD[1.0.0][0m Dump, radios 1 wlifs 3 tx_accel YES dwds_accel(ap/sta) YES/YES init YES
+		 Pkt Tx[CHN 0] Rx[Fast 0,  Slow 0] sta 0 drop 0 fail 1
+		 dhd2 wfd_idx 2 pktfwd 2
+	 DHD_AWL Tx:  YES bound -1 A2W Xfer [rxd 0 drp 0 fwd 0 cls 0 chn 0/0]
+	 DHD_AWL Rx:  YES bound 64 a2w_max_pktl_len 0
+	 W2A List [rxd 0 flt 0 fwd 0 cls 0 chn 0/0] A2W List [rxd 0 drp 0 fwd 0 cls 0 chn 0/0 discard 0]
+	
+=================================
+HOST Statistics
+=================================
+	Flow Timer Interval = 10000 millisecs
+	Pkt-HW Activate Deferral rate = 1
+	Pkt-HW Idle Deactivate = 0
+	Pkt-SW Activate Deferral count = 0
+	Flow Low Pkt Rate = 10
+	Acceleration Mode: <L2 & L3>
+	MCast Acceleration IPv4<Enabled> IPv6<Enabled>
+	IPv6 Learning <Enabled>
+	L2TP Learning <Enabled>
+	GRE Learning <Enabled>
+	4o6 Fragmentation <Enabled>
+	TCP Ack Prioritization <Enabled> 
+	ToS Multi Flow <Enabled> 
+	Notify Processing Mode <Hybrid> 
+	OVS Flow Learning <Disabled> 
+	HW Acceleration <Enabled> 
+	Flow Ucast Learning Enabled  : Max<16383>, Active<10>, Cumulative [ 26735 - 26725 ]
+	Flow Mcast Learning Enabled  : Max<1152>, Active<0>, Cumulative [ 0 - 0 ]
+cat: can't open '/proc/wfd/stats': No such file or directory
+
+Error Stats:
+
+Slow Path Error Stats:
+
+Other RX stats: total=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0
+
+Other TX stats: total=0
+	blog_pool_empty=0 encap_ovfl=0  small_stack=0
+
+Slow Path Error Total: RX=0, TX=0
+
+
+Misc Error Stats: total=0
+	hent_not_found=0  fdb_hent_not_found=0  mdnat_hent_not_found=0
+	flow_not_found=0  mc_flow_not_found=0  static_unicast=0
+	mc_client_id_not_free=0  host_mac_hent_not_found=0
+	fdb_alloc_error=0  npe_flow_alloc_error=0  null_nwe=0
+	hw_add_host_mac_fail=0  hw_del_host_mac_fail=0
+	fc_alloc_fail=0  mdnat_alloc_fail=0
+	ovs_learning_fail=0 netdev_invalid_fail=0 
+	ucast_flow_max_limit=0 mcast_flow_max_limit=0 mcast_group_no_entry<0>
+
+
+Slow Path Stats:
+
+Other RX stats: total=1445018
+	blogged=9  unknown_proto=1360353  eth_bcast=84656  blog_action=0  mc_disabled=0
+	pktlen_gt_mtu=0 not_ipoe=0  not_ipoa=0  not_ppoa=0
+	encap_ovfl=0  no_free_flow=0  blog_pool_empty=0 npe_alloc_err=0
+	cpu_cong_low_prio=0 udp_chksum_zero=0
+
+Other TX stats: total=2
+	learnt=2  unknown_proto=0  already_cached=0  mc_unknown=0  blog_pool_empty=0 encap_ovfl=0  small_stack=0
+	mcast_dev_info=0  mcast_dev_realloc=0 mcast_bitmap_alloc=0
+	mcast_master_flow_info_alloc=0  mcast_mdnat_add_flow=0  mcast_npe_hashin=0
+	mcast_flow_max_limit=0  ct_not_confirmed=0  ct_alg_helper=0
+
+IPv4 RX stats: total=258227
+	blogged=91428  unknown_proto=68137  disabled=0  pktlen_gt_mtu=0  ip_len_error=0 bad_ipv4_csum=0 cng_low_pri=0
+	option=19775  frag=270  ttl_exp=0  tcp_syn=47187  tcp_rst_fin=25516  6rd_tunl_src_addr=0
+	mc_disabled=0  mc_blogged=30  mc_control=0  mc_no_flow=0  mc_unknown_group=5884  mc_excl_port=0 
+	tcp_ack_done=0
+
+IPv4 TX stats: total=24639
+	learnt=24639  unknown_proto=0  mc_unknown=0  mc_uknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0  frag=0
+
+IPv6 RX stats: total=49164
+	blogged=3073  unknown_proto=39593  disabled=0  pktlen_gt_mtu=0  ip_len_error=0  cng_low_pri=0
+	dyn_tclass=0  hop_limit_exp=0  tcp_syn=1468  tcp_rst_fin=1800
+	mc_disabled=0  mc_blogged=0  bad_version=0
+	mc_control=0  mc_no_flow=0  mc_unknown_group=3230  mc_excl_port=0 
+	tcp_ack_done=0
+IPv6 TX stats: total=2094
+	learnt=2094  unknown_proto=0  mc_unknown=0  mc_unknown_group=0  mc_learnt=0
+	mc_client_not_joined=0  disabled=0
+
+GRE RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+GRE TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0  pptp_unknown_proto=0
+
+L2TP RX stats: total=9
+	blogged=0  unknown_proto=0  session_tunnel_id_0=9  no_tunnel=0
+
+L2TP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0   checksum_failure=0 
+
+ESP RX stats: total=0
+	blogged=0  unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+ESP TX stats: total=0
+	learnt=0   unknown_proto=0  session_tunnel_id_0=0  no_tunnel=0
+
+VXLAN RX stats: total=0
+	blogged=0  unknown_proto=0  disabled=0
+	invalid_flags=0
+
+VXLAN TX stats: total=0
+	learnt=0   unknown_proto=0  disabled=0
+	unknown_flags=0
+
+Slow Path Total: RX=1752418, TX=26735
+
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+Bridge br0 igmp snooping 2  rate-limit 0pps, priority -1 brtype Linux
+ Port Name    Querier      Timeout
+    eth3           NO          000
+    wl2.5          NO          000
+    eth6           NO          000
+    eth5           NO          000
+    eth4           NO          000
+    eth1           NO          000
+bridge dstdev dstaccdev src-dev type #tags lan-tci  wan-tci info    group           mode RxGroup         source          reporter        timeout ExcludPt Index      
+Broadcom Packet Flow Cache v4.0
+Flow   U/M M/C idle:+swhit SW_TotHits:          TotalBytes     HW_tpl Fhw_idx HW_Hits   HW_TotHits L1-Info Prot   SourceIpAddress:Port    DestinIpAddress:Port   Vlan0(mcast) Vlan1(mcast) tag# ToS IqPrio    SkbMark    RxDev    TxDev nf_conn[0] nf_conn[1] nf_conn[2] nf_conn[3]  
+  Flow I ClientId      L1-Info         MAC             wlinfo
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+/usr/sbin/WlGetDriverStats.sh: line 442: bs: not found
+------- Dumping /tmp/wl0_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth4
+hw_mode=g
+channel=1
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wps_state=2
+wps_independent=1
+uuid=4caf2dd4-1956-ad4c-b2f2-2e3c0ce2f73b
+device_name=ZenWiFi_XT9
+manufacturer=ASUSTeK Computer Inc.
+model_name=Wi-Fi Protected Setup Router
+model_number=ZenWiFi_XT9
+serial_number=MAIG4S330061RF6
+os_version=134217728
+device_type=6-0050F204-1
+config_methods=label push_button keypad virtual_push_button physical_push_button 
+ap_pin=36750252
+wps_cred_processing=2
+wps_rf_bands=ag
+upnp_iface=br0
+friendly_name=WPS Access Point
+eap_server=1
+wps_cred_add_sae=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+------- Dumping /tmp/wl1_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth5
+hw_mode=a
+channel=36
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=0
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wps_state=2
+wps_independent=1
+uuid=4caf2dd4-1956-ad4c-b2f2-2e3c0ce2f73b
+device_name=ZenWiFi_XT9
+manufacturer=ASUSTeK Computer Inc.
+model_name=Wi-Fi Protected Setup Router
+model_number=ZenWiFi_XT9
+serial_number=MAIG4S330061RF6
+os_version=134217728
+device_type=6-0050F204-1
+config_methods=label push_button keypad virtual_push_button physical_push_button 
+ap_pin=36750252
+wps_cred_processing=2
+wps_rf_bands=ag
+upnp_iface=br0
+friendly_name=WPS Access Point
+eap_server=1
+wps_cred_add_sae=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+------- Dumping /tmp/wl2_hapd.conf ----------
+## General configurations
+driver=nl80211
+ctrl_interface_group=0
+## Interface configurations
+interface=eth6
+hw_mode=a
+channel=149
+country_code=CN
+ieee80211d=1
+ieee80211h=1
+beacon_int=100
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+ssid=Sprite-AX7800_dwb
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=123abc,./
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
+## BSS configurations
+bss=wl2.5
+bridge=br0
+dtim_period=1
+ctrl_interface=/var/run/hostapd
+bssid=72:42:1A:52:7B:9D
+ssid=7C3E2C1700F46BE26F65232CB5FB9AB5
+auth_algs=1
+ap_isolate=0
+ignore_broadcast_ssid=1
+wpa=2
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=CCMP
+wpa_group_rekey=3600
+wpa_ptk_rekey=0
+wpa_passphrase=C357A1EC0CB8551D57843233C94B7611
+ieee80211w=1
+disable_dgaf=0
+hs20_deauth_req_timeout=0
+osen=0
+wmm_enabled=1
+beacon_prot=0
+transition_disable=0
