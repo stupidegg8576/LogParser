@@ -55,15 +55,15 @@ WL Statistics for eth|WL Statistics,
 		HT Capabilities: (.+)|HT_Capabilities
 		Supported HT MCS : (.+)|HT_MCS
 		Supported VHT MCS:
-			NSS1 Tx: (.+)        Rx: (.+)|VHT_MCS_NSS1_Tx, VHT_MCS_NSS1_Rx    
-			NSS2 Tx: (.+)        Rx: (.+)|VHT_MCS_NSS2_Tx, VHT_MCS_NSS2_Rx      
+			NSS1 Tx: (.+)        Rx: ([\S]+)|VHT_MCS_NSS1_Tx, VHT_MCS_NSS1_Rx    
+			NSS2 Tx: (.+)        Rx: ([\S]+)|VHT_MCS_NSS2_Tx, VHT_MCS_NSS2_Rx      
 		Supported HE MCS:
 		    20/40/80 MHz:
-			NSS1 Tx: (.+)        Rx: (.+)|HE_MCS_20/40/80_NSS1_Tx, HE_MCS_20/40/80_NSS1_Rx    
-			NSS2 Tx: (.+)        Rx: (.+)|HE_MCS_20/40/80_NSS2_Tx, HE_MCS_20/40/80_NSS2_Rx
+			NSS1 Tx: (.+)        Rx: ([\S]+)|HE_MCS_20/40/80_NSS1_Tx, HE_MCS_20/40/80_NSS1_Rx    
+			NSS2 Tx: (.+)        Rx: ([\S]+)|HE_MCS_20/40/80_NSS2_Tx, HE_MCS_20/40/80_NSS2_Rx
 		    160 MHz:
-			NSS1 Tx: (.+)        Rx: (.+)|HE_MCS_160_NSS1_Tx, HE_MCS_160_NSS1_Rx
-			NSS2 Tx: (.+)        Rx: (.+)|HE_MCS_160_NSS2_Tx, HE_MCS_160_NSS2_Rx
+			NSS1 Tx: (.+)        Rx: ([\S]+)|HE_MCS_160_NSS1_Tx, HE_MCS_160_NSS1_Rx
+			NSS2 Tx: (.+)        Rx: ([\S]+)|HE_MCS_160_NSS2_Tx, HE_MCS_160_NSS2_Rx
 ---------------------------------------------
 (ASSOCLIST): wl -i eth. assoclist
 ---------------------------------------------
