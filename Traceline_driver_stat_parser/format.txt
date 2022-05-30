@@ -1,12 +1,12 @@
 =============================
-eth[0-9]+ Driver info$|Driver_info
+(.*) Driver info$|Driver_info
 =============================
 ---------------------------------------------
 (WLVERSION).*$
 ---------------------------------------------
 	.+ version (.*)$|version
 ---------------------------------------------
-(REVINFO).*$
+(REVINFO): .* revinfo$
 ---------------------------------------------
 	vendorid (.*)$
 	deviceid (.*)$
@@ -26,26 +26,18 @@ eth[0-9]+ Driver info$|Driver_info
 	anarev (.*)$
 	nvramrev (.*)$
 	otpflag (.*)$
----------------------------------------------
-(DHDVERSION): dhd -i eth4 version
----------------------------------------------
 
----------------------------------------------
-(WLCAP): wl -i eth4 cap
----------------------------------------------
-
----------------------------------------------
-(UPTIME) .+
----------------------------------------------
 
 =============================================
-WL Statistics for eth|WL Statistics,
+WL Statistics for .*|WL Statistics,
 =============================================
 ---------------------------------------------
-(STATUS): wl -i eth. status
----------------------------------------------
+(STATUS): .* status$
+---------------------------------------------	
+	(Not associated).*|Not_associated
 	SSID: "(.+)"|SSID
 	Mode: (.+)	RSSI: (.+) dBm	SNR: (.+) dB	noise: (-?.+) dBm	Channel: (.+)$|Mode, RSSI, SNR, noise, Channel  
+	Mode: (.+)	RSSI: (.+) dBm	SNR: (.+) dB	noise: (-?.+) dBm	Flags: (.+) 	Channel: (.+)$|Mode, RSSI, SNR, noise, Flags, Channel
 	BSSID: (.+)	Capability: (.+)|BSSID, Capability
 	Beacon Interval: (.+) msecs|Beacon_Interval
 	Supported Rates: (.+)|Supported Rates
@@ -64,12 +56,3 @@ WL Statistics for eth|WL Statistics,
 		    160 MHz:
 			NSS1 Tx: (.+)        Rx: ([\S]+)|HE_MCS_160_NSS1_Tx, HE_MCS_160_NSS1_Rx
 			NSS2 Tx: (.+)        Rx: ([\S]+)|HE_MCS_160_NSS2_Tx, HE_MCS_160_NSS2_Rx
----------------------------------------------
-(ASSOCLIST): wl -i eth. assoclist
----------------------------------------------
----------------------------------------------
-(AUTH STA LIST): wl -i eth. authe_sta_list
----------------------------------------------
----------------------------------------------
-(SMFSTATS): wl -i eth. smfstats
----------------------------------------------

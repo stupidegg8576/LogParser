@@ -69,13 +69,13 @@ def get_variable_name(line: str):
         for i in range(len(splited)):
             if i + 2 < len(splited):
                 if splited[i] == '(' and splited[i+2] == ')':
-                    if regex.match(r'[A-Za-z0-9]', splited[i+1]) != None:
+                    if regex.match(r'[A-Za-z0-9_ ]{3}', splited[i+1]) != None:
                         variables.append(splited[i+1])
         # if can't find a word, try the first split not empty
         if len(variables) == 0:
             for i in range(len(splited)):
-                if splited[i] != '':
-                    variables.append(splited[i+1])
+                if splited[i] != '' and splited[i] != '(' and splited[i] != ')':
+                    variables.append(splited[i])
                     break
         # if still can't find anything
         if len(variables) == 0:
@@ -88,35 +88,7 @@ def get_variable_name(line: str):
         return ['Something wrong in searching variable name']
 
 
-if __name__ == '__main__':
-
-    try:
-        opts, args = getopt.getopt(sys.argv[1:], "i:o:f:", [
-                                   "input_file_path=", "output_file_path=", "format.txt="])
-    except getopt.GetoptError:
-        sys.exit(2)
-    for i in opts:
-        if len(i) != 2:
-            print("Something wrong with opts")
-            raise getopt.GetoptError
-        if i[0] == '-i':
-            # example.xlsx:sheet tag
-            # sheet tag will be using at separate same sheet name from different file
-            # input_file_list.append(i[1].split(':'))
-            input_file_path = i[1]
-        elif i[0] == '-o':
-            output_file_path = i[1]
-        elif i[0] == '-f':
-            format_file_path = i[1]
-
-    input_file_path = 'Traceline_driver_stat_parser/WlGetDriverStats_eth4.log'
-    output_file_path = 'Traceline_driver_stat_parser/test.json'
-    format_file_path = 'Traceline_driver_stat_parser/format.txt'
-
-    with open(format_file_path, 'r', encoding='utf-8', errors='ignore') as format_file:
-        format_lines = remove_control_characters_lines(format_file.readlines())
-    with open(input_file_path, 'r', encoding='utf-8', errors='ignore') as log_file:
-        log_lines = remove_control_characters_lines(log_file.readlines())
+def stat_to_dict(log_lines, format_lines, input_file_path):
     command_set = 'Something wrong'
     command_name = 'Something wrong'
     is_command_set = False
@@ -127,17 +99,21 @@ if __name__ == '__main__':
     for log_count in range(len(log_lines)):
 
         # start with ==============
-        if regex.match(r'^={10}', log_lines[log_count]) != None:
-            is_command_set = not is_command_set
-        # start with ------------------
-        elif regex.match(r'^-{10}', log_lines[log_count]) != None:
+        if regex.match(r'^=+$', log_lines[log_count]) != None:
+            if regex.match(r'^=+$', log_lines[log_count+2]):
+                is_command_set = True
+                is_command = False
+            else:
+                is_command_set = False
+        # start with ---------------------------------
+        elif regex.match(r'^-{30,50}$', log_lines[log_count]) != None:
             is_command = not is_command
 
         else:
             if is_command_set and is_command:
-                raise BaseException(
-                    'Something wrong with finding command_set and command_name')
-
+                print('Something wrong with finding command_set and command_name: ' +
+                      input_file_path + ' at line: ' + str(log_count))
+                break
             elif is_command_set:
                 command_set_start, command_set_end = find_command_set(
                     log_lines[log_count], format_lines)
@@ -205,13 +181,58 @@ if __name__ == '__main__':
                 for i in range(1, len(match)):
                     result[command_set][command_name][variable_name[i-1]
                                                       ] = match.group(i)
+    return result
 
-    for command_set in result:
-        print(command_set)
-        for command in result[command_set]:
-            print('\t' + command)
-            for var in result[command_set][command]:
-                print('\t\t' + var + ' : ' +
-                      result[command_set][command][var])
+
+if __name__ == '__main__':
+    # I'm lazy
+    input_file_path = 'Traceline_driver_stat_parser/WlGetDriverStats_eth42.log'
+    output_file_path = 'Traceline_driver_stat_parser/test.json'
+    format_file_path = 'Traceline_driver_stat_parser/format.txt'
+
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "i:o:f:", [
+                                   "input_file_path=", "output_file_path=", "format.txt="])
+    except getopt.GetoptError:
+        sys.exit(2)
+    for i in opts:
+        if len(i) != 2:
+            print("Something wrong with opts")
+            raise getopt.GetoptError
+        if i[0] == '-i':
+            # example.xlsx:sheet tag
+            # sheet tag will be using at separate same sheet name from different file
+            # input_file_list.append(i[1].split(':'))
+            input_file_path = i[1]
+        elif i[0] == '-o':
+            output_file_path = i[1]
+        elif i[0] == '-f':
+            format_file_path = i[1]
+
+    log_paths = []
+
+    """logfloder_path = 'TracelineLog'
+    for model_name in os.listdir(logfloder_path):
+        for report_ID in os.listdir(logfloder_path + '\\' + model_name):
+            for file in os.listdir(logfloder_path + '\\' + model_name + '\\' + report_ID):
+                if 'WlGetDriverStats_' in file and '.json' not in file:
+                    log_paths.append(logfloder_path + '\\' +
+                                     model_name + '\\' + report_ID + '\\' + file)"""
+
+    with open(format_file_path, 'r', encoding='utf-8', errors='ignore') as format_file:
+        format_lines = remove_control_characters_lines(format_file.readlines())
+
+    with open(input_file_path, 'r', encoding='utf-8', errors='ignore') as log_file:
+        log_lines = remove_control_characters_lines(log_file.readlines())
+
+    result = stat_to_dict(log_lines, format_lines, input_file_path)
+    try:
+        if 'RSSI' not in result['WLStatistics_0']['STATUS'] and 'Not_associated' not in result['WLStatistics_0']['STATUS']:
+            print('rssi not in  ' + input_file_path)
+            print(result)
+    except KeyError:
+        print("KeyError: can't find rssi, " + input_file_path)
+
+    output_file_path = input_file_path + '.json'
     with open(output_file_path, 'w', encoding='utf-8', errors='ignore') as output_file:
-        output_file.write(json.dumps(result, skipkeys=True))
+        output_file.write(json.dumps(result, skipkeys=False))
