@@ -75,32 +75,32 @@ def parse_mem_usage(mem_usage):
                 # mem usage keep risng
                 if rising >= 3:
 
-                    func_out = func
-                    i = 1
-                    while func_out in bad_funcs.keys():
-                        i = i + 1
-                        func_out = func + str(i)
-                    bad_funcs[func_out] = {}
+                    func = func
+                    if func not in bad_funcs.keys():
+                        bad_funcs[func] = {}
+                    if pid not in bad_funcs[func].keys():
+                        bad_funcs[func][pid] = {}
                     for i in range(len(mem_usage[func][pid])):
                         if mem_usage[func][pid][i].date.year > 2019:
-                            bad_funcs[func_out]['start_time'] = mem_usage[func][pid][i].date.strftime(
+                            bad_funcs[func][pid]['start_time'] = mem_usage[func][pid][i].date.strftime(
                                 '%Y-%b-%d %H:%M:%S')
                             break
-                    if 'start_time' not in bad_funcs[func_out].keys():
-                        bad_funcs[func_out]['start_time'] = mem_usage[func][pid][0].date.strftime(
+                    if 'start_time' not in bad_funcs[func][pid].keys():
+                        bad_funcs[func][pid]['start_time'] = mem_usage[func][pid][0].date.strftime(
                             '%Y-%b-%d %H:%M:%S')
 
-                    bad_funcs[func_out]['end_time'] = mem_usage[func][pid][-1].date.strftime(
+                    bad_funcs[func][pid]['end_time'] = mem_usage[func][pid][-1].date.strftime(
                         '%Y-%b-%d %H:%M:%S')
-                    bad_funcs[func_out]['start_size'] = mem_usage[func][pid][0].size
-                    bad_funcs[func_out]['end_size'] = mem_usage[func][pid][-1].size
+                    bad_funcs[func][pid]['start_size'] = mem_usage[func][pid][0].size
 
                     if mem_usage[func][pid][-1].size != 0:
-                        bad_funcs[func_out]['increased rate'] = format(
+                        bad_funcs[func][pid]['increased rate'] = format(
                             mem_usage[func][pid][-1].size / mem_usage[func][pid][0].size, '.2f')
+                        bad_funcs[func][pid]['end_size'] = mem_usage[func][pid][-1].size
                     else:
-                        bad_funcs[func_out]['increased rate'] = format(
+                        bad_funcs[func][pid]['increased rate'] = format(
                             mem_usage[func][pid][-2].size / mem_usage[func][pid][0].size, '.2f')
+                        bad_funcs[func][pid]['end_size'] = mem_usage[func][pid][-2].size
                     break
 
                 previous_mem = mem_usage[func][pid][i]
