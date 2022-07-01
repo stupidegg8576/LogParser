@@ -19,13 +19,19 @@ def split_time_from_log(log_lines, year='2022'):
         if time_search != None:
             log_shift = time_search.span()[1]
             # split log_lines to log_time and log_lines
-            print(log_lines[i])
             log_times.append(datetime.strptime(
                 year + log_lines[i][log_shift-16:log_shift], r'%Y%b %d %H:%M:%S '))
             log_lines[i] = log_lines[i][log_shift:]
         else:
-            log_times.append(None)
+            log_times.append('')
     return log_times, log_lines
+
+
+def correct_log_times(log_times):
+    for i in range(len(log_times)-1):
+        if log_times[i].month == 5 and log_times[i] - log_times[i+1]:
+            pass
+    return
 
 
 def remove_useless_char(log_lines):
@@ -136,7 +142,7 @@ if __name__ == '__main__':
         log_lines = log_file.readlines()
         log_times, log_lines = split_time_from_log(log_lines)
         log_lines = remove_useless_char(log_lines)
-        log_lines = replace_keywords(log_lines)
+        #log_lines = replace_keywords(log_lines)
     f = open('log_type.txt', 'w', encoding='utf-8')
     log_lines = sorted(log_lines, key=lambda x: x, reverse=False)
     for line in log_lines:

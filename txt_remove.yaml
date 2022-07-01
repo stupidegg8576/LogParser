@@ -21,9 +21,9 @@ END_OF_LINE:
   'regex': '\.($| )'
   'replace': ''
 
-COLON_WITH_SPACE:
-  'regex': '(: )|( :)'
-  'replace': ' '
+#COLON_WITH_SPACE:
+#  'regex': '(: )|( :)'
+#  'replace': ' '
 
 ARROW:
   'regex': '[=-]+>'
