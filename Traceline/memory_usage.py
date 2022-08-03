@@ -87,11 +87,14 @@ def parse_mem_usage(mem_usage):
                         '%Y-%b-%d %H:%M:%S')
                     bad_funcs[func][pid]['end_time'] = mem_usage[func][pid][-1].date.strftime(
                         '%Y-%b-%d %H:%M:%S')
+                    if mem_usage[func][pid][-1].size != 0:
+                        end_size = mem_usage[func][pid][-1].size
+                    else:
+                        end_size = mem_usage[func][pid][-2].size
                     bad_funcs[func][pid]['start_size'] = mem_usage[func][pid][0].size
-
-                    bad_funcs[func][pid]['end_size'] = mem_usage[func][pid][-1].size
+                    bad_funcs[func][pid]['end_size'] = end_size
                     bad_funcs[func][pid]['increased rate'] = format(
-                        mem_usage[func][pid][-1].size / mem_usage[func][pid][0].size, '.2f')
+                        end_size / mem_usage[func][pid][0].size, '.2f')
 
                 previous_mem = mem_usage[func][pid][i]
     return bad_funcs

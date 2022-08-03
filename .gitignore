@@ -1,7 +1,8 @@
-TracelineLog/*
+TracelineLog
 test*
 *.7z
 *.xlsx
+*.txt
 Log
 Traceline/Traceline_memory_usage
 Traceline/Traceline_driver_stat_parser

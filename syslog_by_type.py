@@ -2,6 +2,8 @@ import os
 import yaml
 import regex
 from datetime import datetime
+import sys
+import getopt
 
 
 def remove_control_characters(string):
@@ -11,7 +13,7 @@ def remove_control_characters(string):
 def combine_time_log(log_times, log_lines):
     for i in range(len(log_lines)):
         log_lines[i] = log_times[i].strftime(
-            r'%Y %b %d %H:%M:%S ') + log_lines[i]
+            r'%b %d %H:%M:%S ') + log_lines[i]
     return log_lines
 
 
@@ -54,7 +56,7 @@ def remove_useless_char(log_lines):
     return log_lines
 
 
-def replace_keywords(log_lines):
+"""def replace_keywords(log_lines):
 
     for i in range(len(log_lines)):
         # replace model_name: model should be replace before keywords
@@ -68,23 +70,18 @@ def replace_keywords(log_lines):
         for rule in replace_yaml:
             log_lines[i] = regex.sub(
                 replace_yaml[rule]['regex'], replace_yaml[rule]['replace'], log_lines[i])
-    return log_lines
+    return log_lines"""
 
 
 def log_separate_by_type(log_lines, log_type):
-    log_lines_by_type = {}
-    for type in log_type:
-        log_lines_by_type[type] = []
-    log_lines_by_type['others'] = []
+    log_lines_by_type = []
 
-    for i in range(len(log_lines)):
-        found = False
-        for type in log_type:
-            if type in log_lines[i]:
-                found = True
-                log_lines_by_type[type].append(log_lines[i])
-        if found == False:
-            log_lines_by_type['others'].append(log_lines[i])
+    l = log_type.__len__()
+
+    for line in log_lines:
+        t = line[16:16+l]
+        if t == log_type:
+            log_lines_by_type.append(line + '\n')
 
     return log_lines_by_type
 
@@ -128,51 +125,49 @@ def txt_to_log_word_count(log_lines, log_type):
 
 if __name__ == '__main__':
 
+    input_file_path = '.\\syslog.log'
+    output_file_path = '.\\test.txt'
+    capture_type = 'kernel'
+
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "i:o:t:", [
+                                   "input_file_path=", "output_file_path="])
+    except getopt.GetoptError:
+        print('GetoptError')
+        sys.exit(2)
+
+    for i in opts:
+        if len(i) != 2:
+            print("Something wrong with opts")
+            raise getopt.GetoptError
+        if i[0] == '-i':
+            # example.xlsx:sheet tag
+            # sheet tag will be using at separate same sheet name from different file
+            # input_file_list.append(i[1].split(':'))
+            input_file_path = i[1]
+        elif i[0] == '-o':
+            output_file_path = i[1]
+        elif i[0] == '-t':
+            capture_type = i[1]
+
     # load replace yaml
     remove_yaml_file = open('txt_remove.yaml', 'r', encoding='utf-8')
     remove_yaml = yaml.load(remove_yaml_file, yaml.CFullLoader)
-    replace_yaml_file = open('txt_replace.yaml', 'r', encoding='utf-8')
-    replace_yaml = yaml.load(replace_yaml_file, yaml.CFullLoader)
-    model_list_file = open('model_list.yaml', 'r', encoding='utf-8')
-    model_list = yaml.load(model_list_file, yaml.CFullLoader)
+    #replace_yaml_file = open('txt_replace.yaml', 'r', encoding='utf-8')
+    #replace_yaml = yaml.load(replace_yaml_file, yaml.CFullLoader)
+    #model_list_file = open('model_list.yaml', 'r', encoding='utf-8')
+    #model_list = yaml.load(model_list_file, yaml.CFullLoader)
 
-    # get files list
-    logfloder_path = './TracelineLog/'
-    log_paths = []
+    log_file = open(input_file_path, 'r', encoding='utf-8',
+                    errors='ignore')
 
-    INPUT_DATA_TYPE = 'raw'
+    log_lines = log_file.readlines()
+    log_times, log_lines = split_time_from_log(log_lines)
+    log_lines = remove_useless_char(log_lines)
+    #log_lines = replace_keywords(log_lines)
+    log_lines = combine_time_log(log_times, log_lines)
+    log_lines_by_type = log_separate_by_type(log_lines, capture_type)
 
-    # TracelineLog \ model_name \ report_ID
-    if INPUT_DATA_TYPE == 'traceline':
-        for model_name in os.listdir(logfloder_path):
-            for report_ID in os.listdir(logfloder_path + model_name):
-                if os.path.exists(logfloder_path + model_name + '/' + report_ID + '/syslog.log'):
-                    log_paths.append(logfloder_path + model_name +
-                                     '/' + report_ID)
-
-    # raw_log_by_type.txt
-    # smaller and non repeating data set
-    elif INPUT_DATA_TYPE == 'raw':
-        log_paths = ['syslog.log']
-
-    for log_path in log_paths:
-
-        if INPUT_DATA_TYPE == 'traceline':
-            log_path = log_path + '/syslog.log'
-        elif INPUT_DATA_TYPE == 'raw':
-            pass
-
-        log_file = open(log_path, 'r', encoding='utf-8',
-                        errors='ignore')
-        log_lines = log_file.readlines()
-        log_times, log_lines = split_time_from_log(log_lines)
-        log_lines = remove_useless_char(log_lines)
-        #log_lines = replace_keywords(log_lines)
-        log_lines = combine_time_log(log_times, log_lines)
-        log_type = ['kernel', 'wlceventd', 'BHC', 'rc_service', 'syslog']
-        log_lines_by_type = log_separate_by_type(log_lines, log_type)
-
-    for type in log_lines_by_type:
-        f = open('syslog_' + type + '.txt', 'w', encoding='utf-8')
-        for line in log_lines_by_type[type]:
-            f.write(line + '\n')
+    f = open('syslog_' + capture_type + '.txt', 'w', encoding='utf-8')
+    f.writelines(log_lines_by_type)
+    f.close()
